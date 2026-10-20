@@ -1,4 +1,4 @@
-# Phase 1 summary (v2, 23:20 UTC, includes track 22 buyer reviews)
+# Phase 1 summary (v3, 00:05 UTC, corrected after verification log 2; verifier tags kept)
 
 ## How to read this
 - All research ran on WebSearch only. WebFetch and curl were blocked by the environment network policy. Reddit, HN, Fiverr, Upwork, Meta Ad Library, Google Trends and vendor pages could NOT be opened. Everything is from search-result summaries and indexed snippets.
@@ -53,20 +53,20 @@
 - Zero advertisers evidenced running Meta, Google, TikTok or LinkedIn ads for this service after 47 targeted searches across two rounds (tracks 5, 18). The Ad Library could not be opened, so this is weak absence.
 - The "agencies spend heavily on Meta ads and close well" claim: nothing found that supports it. Weak counter-signals: sellers report word of mouth, referrals and SEO content hubs (tracks 10, 18).
 - Generic benchmarks only: Meta B2B CPL $50 to $380, cost per booked call $80 to $150, B2B close 20 to 29%; arithmetic gives roughly $400 to $1,000 per client, straddling the $600 line (track 18, all vendor benchmarks).
-- Marketplaces: Upwork jobs exist but proposal counts and fill status were not visible (tracks 7, 21). Outbound: about 101k Lovable sites on BuiltWith, [UNVERIFIED] maybe 5 to 10% with any revenue; legal limits mapped; no reply-rate data for this niche (tracks 13, 20).
+- Marketplaces: Upwork jobs exist but proposal counts and fill status were not visible (tracks 7, 21). Outbound: about 101k Lovable sites on BuiltWith (no snapshot date). BigIdeasDB, a self-published opt-in sample, says 7.6% of revenue-verified startups on vibe-coding subdomains report any revenue and none cleared $1,000 in 30 days; that cannot be scaled to the 101k (the earlier "5 to 10%" line was track 13's own arithmetic and is withdrawn). Legal limits are mapped in track 20; no reply-rate data for this niche (tracks 13, 20).
 
-**Gate 3: repeatable fix list.** SUPPORTED for the problem list, UNPROVEN for fix time. 11 of 21 tracks support it; none contradict.
-- Secrets/keys, RLS and access control, fake or missing auth checks, Stripe webhooks, error handling and deploy recur in 6 of 9 seller lists and in [UNVERIFIED] independent security research (CVE-2025-48757, 170 of 1,645 apps; Reeve 57% of 3,680 Supabase apps open reads) (tracks 11, 19).
+**Gate 3: repeatable fix list.** SUPPORTED for the security and data-access hardening list only; the rest of the rescue checklist is Wanile engineering judgment (29 of track 11's 38 items are [E]); fix time UNPROVEN. 12 of 22 tracks support it, most weakly; track 11's own JSON limits support to the security part; none contradict.
+- Secrets/keys and RLS/access control recur in 5 of 9 seller lists (payments and error handling 3 of 9; tests/CI and fake auth 2 of 9; per track 19's table, not its prose) and in security research: CVE-2025-48757 on NVD (170 of 1,645 Lovable apps open via anon key, figure relayed by a vendor blog) and Reeve's 57% of 3,680 Supabase apps with open reads (security-vendor marketing, not independent) (tracks 11, 19).
 - No published hours-per-task table. Fragments: "2 to 4 hours" per common pattern (vendor), 2 to 8 weeks for whole-app finishing (track 19).
 
-**Gate 4: credible position above the low-cost floor.** SUPPORTED, moderate to weak.
+**Gate 4: credible position above the low-cost floor.** UNCLEAR, weak support.
 - Floor: Fiverr $5 to $250 (median $25 to $30, 50 gigs), Upwork tiers $49 to $750, Pakistani sellers at $17/hr (tracks 7, 21).
 - At least 8 small Western or EU studios already list rescue at $1,400 to $2,500, so $2,000 is the median of the credible tier, not above it. Differentiation must come from proof, acceptance tests, warranty and security sign-off (track 21).
-- Buyers who name Lovable on marketplaces budget near the floor (track 17 contradicts).
+- Buyers who name Lovable on marketplaces budget near the floor (track 17 contradicts). Buyers appear to expect a Pakistan discount (track 15, old and thin). Base44 partner rates of $10 to $100/hr and audit floors of $199 to $399 anchor low (tracks 9, 16).
 
 **Gate 5: platform improvements unlikely to erase demand in 12 months.** UNCLEAR, leaning pass.
 - Lovable ships scanners, RLS checks, Lovable Cloud and a Wiz integration; Replit ships a Security Agent and pen tests. These commoditise the cheapest faults (track 12).
-- Volume growth (about 1M new Lovable projects a week, 80% non-technical per Lovable's own unaudited report), scanners that miss runtime holes, and no platform-run fix-it service found (track 20) argue demand persists but shifts from "security audit" to "finish, migrate, harden, payments".
+- Volume growth (about 1M new Lovable projects a week, 80% non-technical per Lovable's own unaudited report; Lovable does not say how many projects are alive), scanners that miss runtime holes, and no platform-run fix-it service found (track 20) argue demand persists but shifts from "security audit" to "finish, migrate, harden, payments". Two added risks: platforms intermediating (Base44's in-product marketplace, whose 15% fee is contradicted across cache entries; Replit routes experts to Contra) and AI tools patching small bugs, which shrinks small-fix retainers (track 14).
 - Lovable Cloud migration to own Supabase is manual and sellable (track 20).
 
 ## Prior findings re-verified
@@ -74,7 +74,7 @@
 - "Fiverr gigs $30 to $500": PARTLY WRONG. Floor is $5, median $25 to $30, max seen $250 for vibe-specific fixes; one generic $1,500 security review gig.
 - HN threads: all four exist with the stated titles (items 48823359, 48458586, 47386636, 45320431). Points and comment counts NOT verifiable from snippets. Dates: July 2026, June 2026 confirmed roughly; the other two not shown.
 - Reddit voices ("90+ of 100 files", "contract after contract", "untangle these messes"): NOT VERIFIED. Reddit unreachable.
-- "Pakistani freelancers already advertise this": CONFIRMED (XCONS Solutions Lahore, [UNVERIFIED] two Islamabad/Bahawalnagar sellers, Fiverr sellers Kamran Asif, Ahmed Javed with 60 to 86 reviews), all at floor prices.
+- "Pakistani freelancers already advertise this": CONFIRMED for XCONS Solutions (Lahore) and two sellers in Islamabad and Bahawalnagar (track 21, the Bahawalnagar match is weak), all at floor prices ($17/hr, $40 to $100 gigs). Fiverr sellers Kamran Asif and Ahmed Javed (60 to 86 reviews) sell this work but their countries were not shown.
 - Slopfix "$10k a week": CONFIRMED as a vendor offer (3 engineers, pay-by-lines-deleted, 2-week warranty), press-covered; no named clients.
 
 ## Appendix: unverified items
@@ -82,3 +82,10 @@
 - "independent security research (... Reeve 57% of 3,680 ...)" (Gate 3 read): wrong attribution. Track 11 grades Reeve as security-vendor marketing relayed by an aggregator (and the 170 of 1,645 scan as an independent researcher relayed by a vendor blog). Numbers match the cache; the "independent" label does not.
 - "four in five identify with non-technical roles" in quotation marks (prior finding 1): the cache shows these words only in the search tool's summary, not in quotation marks (track 12 downgraded the same phrase). Paraphrase, not a verbatim quote.
 - "two Islamabad/Bahawalnagar sellers, Fiverr sellers Kamran Asif, Ahmed Javed" as proof Pakistani sellers advertise (prior finding 5): track 21 says "Seller countries were not stated in snippets" for Kamran Asif and Ahmed Javed, and the Islamabad Upwork title (Wajahat S.) is marked [UNVERIFIED] in track 21. Only XCONS Solutions (Lahore) and the Bahawalnagar seller are place-stated in the track text. Does not match the track.
+
+
+## Orchestrator corrections after verification log 2 (00:05 UTC)
+- Gate 3 and gate 4 wording softened as above. Gate 2 "5 to 10% with any revenue" withdrawn.
+- Bookkeeping: tracks 13 and 16 JSON report sources_read 0 although 11 and 8 searches returned results; track 16 JSON seller_quotes 4 vs 5 in text; track 15 search counts do not reconcile. Evidence unaffected.
+- 10Pearls founding year: the cache's 2008 belongs to Tkxel (track 15 corrected by verifier).
+- Track 16's $8k to $15k and $15k to $35k "Lovable to production" bands are from "one vendor", not RapidDevelopers.
