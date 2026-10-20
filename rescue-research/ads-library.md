@@ -53,3 +53,59 @@ Inference (not evidence): sellers with a "free audit" front door (Chudovo, Agenc
 2. Filter out Lovable, Bolt, Replit, Cursor own ads. Keep service sellers.
 3. For each: record page name, start date, active ads count, offer, CTA, landing page. Screenshot.
 4. Check each Table B seller as a first target.
+
+
+---
+
+# Round 2 additions (agent B, 2026-10-20)
+
+Source: tracks/18-meta-ads-round2.md. Cache: cache/18-meta-ads-searches.md (S1 to S33). 33 searches used of a 35 cap. Meta Ad Library, Google Ads Transparency Center and TikTok Creative Center still could not be opened. Everything below is search snippet or tool summary.
+
+## Result
+- **Advertisers evidenced as running Meta, Google, TikTok or LinkedIn ads to sell vibe-code rescue: 0 (still).** Table A above stays empty.
+- Searches tried this round: site:facebook.com/ads/library (the site: operator is not honored by this index), facebook.com / instagram.com / tiktok.com / adstransparency.google.com as allowed domains, "saw an ad" buyer reports, agency "we run ads" posts, X, LinkedIn, YouTube, TikTok, and the round 1 seller names with "facebook ads", "instagram", "meta ads".
+- Negative results (not proof of absence): Red Leg Dev, Wavect, Chudovo, Innowise, Pragmatic Coders, ULAM Labs, Clockwise, Agence Scroll, Valletta, Beesoul, rapidevelopers, witscode, axonbuild, Slopfix, QuickLaunch, VibeCodeFixers, MetaCTO, Justin McKelvey: none returned any link to Facebook, Instagram, Meta, TikTok or Google ads.
+
+## Table D: sellers added this round (still NOT evidenced as advertisers)
+
+| Seller | Ad evidence | Offer / price as stated in search summary | Funnel | Source | Cache |
+|---|---|---|---|---|---|
+| MetaCTO "Vibe Rescue" | none | Free 48-hour code audit, takeover plan, production in 30 days, claims 100+ production systems. No price shown. | free audit | metacto.com/solutions/vibe-rescue | S32 |
+| Justin McKelvey "vibe code rescue" | none | Free 20-minute repo audit with Loom walkthrough; 4-8 weeks about $25K-$50K fixed price; lighter from $15K; complex SaaS $60K-$100K | free audit then fixed price | justinmckelvey.com/vibe-code-rescue | S32 |
+| ULAM Labs | none | Free assessment, improvement plan, cleanup sprints, ongoing care. Tagline "We clean up after vibe coding. Literally." | free audit | ulam.io/software-services/we-clean-up-after-vibe-coding | S21 |
+| Clockwise Software | none | Vibe coding cleanup page, client result claims | unknown | clockwise.software/vibe-coding-cleanup | S21 |
+| VibeCode Rescue (@VibeCodeRescue on X) | none shown; "the results don't show whether it runs paid ads" | Turns messy AI-generated code into production-ready solutions; free consultation | free consultation | x.com/VibeCodeRescue | S26 |
+| VibeCoding Agency (@vibecodingagency, Instagram) | none shown; has an Instagram presence | Claims to be first US agency specialised in vibe coding, Miami (own claim) | unknown | instagram.com/vibecodingagency/ | S29 |
+| Slopfix | none | Paste repo or upload zip, fixed quote $30-$100 | instant quote | slopfix.ptolemay.com | S9 |
+| Groovyweb | none | Vibe-code rescue / production hardening | unknown | groovyweb.co/service/vibe-coding-development | S32 |
+| RapidDev | none; content hub of 509 Lovable pages (SEO signal) | Done-for-you Lovable builds $13K-$25K | content / SEO | rapidevelopers.com/tools/lovable | S22 |
+
+## Table E: ad-adjacent facts added
+| Fact | Source | Type | Grade |
+|---|---|---|---|
+| Lovable (the platform) had 1,079 ads in the Meta library, 304 active, about two thirds video, per one third-party write-up (snapshot, undated); runs Google search ads on "vibe coding" | sprites.ai/blog/lovable-ads-strategy (S15) | vendor | weak |
+| Lovable has a built-in Google Ads feature for its users (platform feature) | docs.lovable.dev/integrations/google-ads (S7) | vendor | moderate |
+| A vendor TikTok post/ad citing "380,000 assets" and "40% expose sensitive data" was described by the search tool as a "TikTok ad"; no URL or vendor name tied to it; paid vs organic unknown | S29 | tool summary | weak |
+| A Hacker News seller says word of mouth and networking bring work and SEO stopped working | S14 | anecdote | weak |
+| QuickLaunch (rescue seller, $120k+ in 2025, own Indie Hackers post): one summary said no ads, referrals; a second search could not confirm. UNCONFIRMED | S9, S11 | anecdote | weak |
+
+## Table F: cost benchmarks (all vendor-published unless stated; details in tracks/18-meta-ads-round2.md section 5)
+| Metric | Figure | Source | Date | Label |
+|---|---|---|---|---|
+| Facebook lead campaign CPL, all industries | $27.66 (+21% YoY) | WordStream/LocaliQ | 2025-09 | vendor, own account data |
+| Facebook lead CTR / CPC | 2.59% / $1.92 | WordStream/LocaliQ | 2025 | vendor |
+| B2B SaaS Meta CPL | $63.40 (most cited); $80-$220 lead forms; $120-$380 landing page | Ryze, Adamigo, GrowthSpree | 2026 | vendor |
+| B2B CPL across channels, 153 advertisers | Instagram $138, Facebook $145, LinkedIn $202, Google $524 | Metadata via getpixel.ai | 2026 | vendor, lead definition unpublished |
+| Software development lead cost | $680 paid, $510 organic, $591 blended; software/IT SQL $1,680-$3,080 | table via S24; Belkins via Zephra | 2026 | vendor |
+| Meta CPM | $9.31 median (AdKit, Sep 2026); about $14 in other roundups | adkit.so; others | 2026 | vendor |
+| Meta lead CTR, B2B | 0.92%-1.37% (Focus Digital via compilation) | focus-digital.co | 2026 | vendor |
+| Cost per booked call (agency playbook, non-software) | $80-$150 | theblueprint.training | unknown | vendor |
+| Show rate / close rate | 75-85% / 20-29% (B2B generic) | various | 2025-26 | vendor |
+| Small-agency warm lead win rate | 30-50% (vs 10-20% cold) | pitchsite.io, gigradar.io | 2026 | vendor |
+| Google Ads search, all industries | CPC $5.26, CPL $70.11, conversion 7.52% | WordStream | 2025-09-29 | vendor |
+| Google CPC, software brands | about $3.88 | Pixis | 2025 | vendor |
+
+No CPC, CPL, cost per call or cost per client was found for rescue, "lovable developer" or "vibe coded app" terms, on Meta or Google.
+
+## Read on the claim "agencies spend heavily on Meta ads and close well"
+Unsupported. Zero advertisers evidenced; no buyer reports; no seller says it. Weak counter-signals (word of mouth, SEO hub, free-audit front doors) are snippet-only. Still unproven in either direction because the Ad Library could not be opened. First action for a person with a browser remains the Table A search list in "What the next person should do".
