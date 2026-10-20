@@ -269,7 +269,7 @@ Our rules (all [E], built from the above):
 | F1 | [E] | Production domain, HTTPS, www redirect, DNS, SPF, DKIM, DMARC. | W1 | 1 to 3 | AI-led | t11 6b-25 [E]. |
 | F2 | [S] | Dev, staging, prod with own env vars. Deploy from a branch. Staging URL for the client. | W1 | 2 to 4 | Human-led | t19 5b: Wavect names staging/prod split (1 of 9). t11 6b-26 [E]. |
 | F3 | [E] | Security headers (CSP, HSTS, frame options). Removes noise from the client's own scans. | W1 | 0.5 to 1.5 | AI-led | t11 6b-27 and finding 6 (99% figure was mostly headers). |
-| F4 | [S] | Deploy smoke: 'works in preview, fails when deployed', env vars, CORS and redirect mismatches. | W2 | 1 to 3 | Human-led | t21 #12 (seller lists, round 2). |
+| F4 | [S] | Deploy smoke: [PARAPHRASE, NOT VERBATIM] 'works in preview, fails when deployed', env vars, CORS and redirect mismatches. | W2 | 1 to 3 | Human-led | t21 #12 (seller lists, round 2). |
 | F5 | [S] | Lovable Cloud to own Supabase: schema, data, auth users, storage, password-reset emails, rewire. Separate quote. | X | 12 to 30 | Human-led | t20 #4: manual, needs reset email to every user. Hours are our guess. |
 
 ### G. Performance
@@ -589,3 +589,6 @@ Caveat:
 
 ---
 End of file. Companion files: offers.md (prices, guarantee, rebuild terms), risk.md (contract, refund, liability), channels.md (cost per client).
+
+## Appendix: unverified items
+- Checklist item F4, "works in preview, fails when deployed" [t21 #12]: downgraded to [PARAPHRASE, NOT VERBATIM], propagated from track 21. The cache wording is "App works in preview but not in deployment".

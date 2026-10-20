@@ -38,3 +38,7 @@ Working dir: /home/user/askmabdullah/rescue-research
 
 ## Phase 3: verification
 - 23:45 UTC: verifiers 1 and 2 launched (tracks 1 to 16, ads-library, pricing-map, competitors, phase1-summary). 23:55: verifier 3 launched (tracks 17 to 22, all model files). Procedure in verification-procedure.md.
+- 00:25 UTC: Phase 3 COMPLETE. 31 files, ~2,980 items checked, ~2,813 passed, 34 failed ([UNVERIFIED], in appendices), 53 downgraded to [PARAPHRASE, NOT VERBATIM], ~246 labelled assumptions. No failure changes a gate figure. verification-log.md merged from logs 1 to 3. Fiverr means withdrawn; medians stand.
+
+## Phase 4: synthesis and red team
+- 00:25 UTC: synthesis and red-team agents launched in parallel (model fable, max effort). Red team does not see the synthesis.

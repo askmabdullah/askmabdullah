@@ -85,7 +85,7 @@ Delivery-date guarantee: if the report is more than 5 business days late, the au
 100% upfront at booking. Card is fine at this size. The credit is a line on the later invoice, not a refund.
 
 ### Why $495: the evidence
-- 14 vendor audit prices found in Phase 1 (my count): $49 (AfterBuild), $199 (Valletta, about 80 checks; kodingklouds), $297 (TechPotions), $299 (Vibe Code Rescue, credited), $350 (Flow Lab), $399 (MobiDev; Arkroot at EUR 399), $497 (Base44Devs), $900 (Relevant), $1,500 (Upwork 72-hour audit, credited; Soatech EUR 1,500; Frenchy low end), $4,950 (TopDevz, credited). Median is about $400. [T16 #6, #1; T19 #13; T21 #7; T22 #6; T8 #4; T17 #7]
+- 14 vendor audit prices found in Phase 1 (my count): $49 (AfterBuild), $199 (Valletta, about 80 checks; kodingklouds), $297 (TechPotions) [UNVERIFIED attribution: $297 is in T20 section 5, not in the tracks cited at the end of this line], $299 (Vibe Code Rescue, credited), $350 (Flow Lab), $399 (MobiDev; Arkroot at EUR 399), $497 (Base44Devs), $900 (Relevant), $1,500 (Upwork 72-hour audit, credited; Soatech EUR 1,500; Frenchy low end), $4,950 (TopDevz, credited). Median is about $400. [T16 #6, #1; T19 #13; T21 #7; T22 #6; T8 #4; T17 #7]
 - Buyer side, only two audit-specific numbers: $150 for a Base44 security audit (Upwork, 2026-04-08) and a $1,000 audit step inside a $1,500 job (J10) [T21 sec 3, T17 J10]. $495 sits between them.
 - Why not free: three sellers give free audits (MetaCTO 48 hours, Agence Scroll, McKelvey 20 minutes) [T20 #19, T19 #6]. A free audit costs us about $183 of salary-only labour (16 engineer hours plus 5 lead hours plus fees) and attracts the $20 crowd. We can still offer a free 15-minute fit call and a 30-minute "does this qualify" glance with no written output. The paid audit is the first deliverable.
 - Why not $199 or less: this is the Valletta and AfterBuild floor. It does not cover 5 senior hours plus a readout, and a $199 anchor drags the sprint price down. At $199 the audit loses money loaded.
@@ -375,3 +375,6 @@ Cross-offer kill signal: if the first 10 qualified leads report budgets of $1,25
 5. Retainer attach rate: no evidence found [T14 #8, T20 #11].
 6. Reddit, where most buyer voices would be, was unreachable in all rounds [T17, T19, T20, T22].
 7. Lead reviewer cost ($2,400 per month) and the 1.75 loaded multiplier are my assumptions. If the true loaded multiplier is 2.5, B's expected margin falls to about 50% and C's to about 40% [A, not computed from data].
+
+## Appendix: unverified items
+- Section 3 audit price list, "$297 (TechPotions)": attribution differs. The figure is in track 20 section 5 (TechPotions two-day triage from $297), but the pointer list at the end of that line does not include T20.

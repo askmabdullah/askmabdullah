@@ -45,7 +45,7 @@ Grade for the whole file: weak to moderate. Treat the brand call as a decision f
    - Rescue buyers are non-technical builders with small budgets, many price-shopping on Upwork and Fiverr [t17][t21].
    - One site speaking to both confuses both. The SME ops buyer sees "fix your Lovable app" and reads "junior shop".
 2. Price point sits next to the floor.
-   - Fiverr fix gigs: min $5, median $25, mean $40.8, max $250 across 50 gigs [t21 #9].
+   - Fiverr fix gigs: min $5, median $25, mean [UNVERIFIED] $40.8, max $250 across 50 gigs [t21 #9].
    - Upwork productized tiers: $49 to $750 [t21 #3].
    - Pakistani sellers at $17/hr and $40 to $100 gigs [t21 #5].
    - A $2,000 sprint on the main brand pulls that comparison onto Wanile's name.
@@ -296,7 +296,7 @@ Not for you:
 - Our line: A written audit tells you what is broken, what it costs to fix, and whether a rebuild is cheaper.
 
 **3. Works on your screen, not live.**
-- "works in preview, fails when deployed" [t21 #12, S]
+- [PARAPHRASE, NOT VERBATIM] "works in preview, fails when deployed" [t21 #12, S]
 - Payments do not work in preview; test after deploy; Stripe webhook secret mismatch [t01 #5, S/docs]
 - "a live database was readable by anyone with devtools" [t21 s4, S]
 - 170 of 1,645 Lovable showcase apps had critical access-control failures [t01 #4, I]
@@ -402,7 +402,7 @@ Working text (final terms belong in model/risk.md):
   5. HN commenter, secondhand, ~July 2025: "Now he's hiring a developer to shore it up." [t03 B1][t17 3B]
   6. Freelancer.com poster: "I understand $1,500 may not cover every fix." [t17 3B]
   7. PeoplePerHour poster: "We need somebody that built a clone of one of these two platforms or something similar, not somebody that is using these platforms to vibe code." [t21] (link approximate)
-- Closest labelled snippets (seller text, not buyer): "works in preview, fails when deployed"; "a live database was readable by anyone with devtools" [t21 #12, s4].
+- Closest labelled snippets (seller text, not buyer): [PARAPHRASE, NOT VERBATIM] "works in preview, fails when deployed"; "a live database was readable by anyone with devtools" [t21 #12, s4].
 - Rules for ads:
   - Do not run any buyer's words as a testimonial. They are anonymous, unverified and not given for this use.
   - Use the pain in our own words, close to theirs.
@@ -518,3 +518,8 @@ Thresholds are my assumptions to test, not sourced numbers.
 - Whether Wanile can staff a shifted overlap window: unknown.
 - Hours per fix, and so how safe a $2,000 fixed week is: no published table [t19 #1]. That belongs to delivery.md.
 - Track 22 (buyer reviews on Clutch, G2, Trustpilot) was not available when this file was written. Re-check section 3 when it lands.
+
+## Appendix: unverified items
+- Section 3 (Fiverr line), "mean $40.8" across 50 gigs [t21 #9]: propagated [UNVERIFIED] from track 21. The round-2 mean of $51.2 (and so the combined $40.8) is not reproducible from the cache. Min $5, median $25 and max $250 are supported.
+- "works in preview, fails when deployed" (two places, [t21 #12]): downgraded to [PARAPHRASE, NOT VERBATIM], propagated from track 21. The cache wording is "App works in preview but not in deployment".
+- File-level: a note near the end says track 22 was not available when this file was written (so brand.md predates the Clutch review evidence).
