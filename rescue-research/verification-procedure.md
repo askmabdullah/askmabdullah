@@ -1,0 +1,13 @@
+# Verification procedure (Phase 3). Follow exactly.
+
+Goal: every quote, username, date, price, count and number in the files assigned to you is checked against the cached search output in cache/. Nothing is fetched from the web. No WebSearch, no WebFetch.
+
+For each assigned file:
+1. List every checkable item: (a) text in quotation marks presented as a quote; (b) usernames and page names; (c) dates; (d) prices and dollar/euro/pound figures; (e) counts, percentages, points, review counts, user numbers; (f) URLs cited as sources.
+2. For each item, grep the cache file(s) named in that track (cache/<track>-searches.md) and, if not found there, all of cache/. Use the Bash tool with grep -n -i -F on a distinctive fragment (a 4 to 8 word substring for quotes; the bare number for figures). A quote PASSES only if the exact wording (ignoring case and surrounding punctuation) appears in a cache file. A number PASSES if it appears in a cache entry whose context matches the claim (same subject). A URL passes if it appears in the cache.
+3. Items the file itself labels as paraphrase, [A], [E], [GK], [V], "our estimate", "assumption", "inferred" or "my arithmetic" are NOT claims to verify. Count them separately as "labelled assumptions".
+4. For every FAILED item, edit the file: put [UNVERIFIED] immediately before the item where it appears, and also list it in a new final section "## Appendix: unverified items" with one line each (the item, why it failed: not in cache / wording differs / number differs / wrong attribution). Use python or sed via Bash to edit. Do not delete content.
+5. Special rule for quotes: if the cache shows the words only inside the search tool's summary (not inside quotation marks in the summary), downgrade the item: mark it [PARAPHRASE, NOT VERBATIM] rather than [UNVERIFIED], and count it as "downgraded".
+6. Model files (model/*.md): the checkable items are the figures they attribute to a track or to a source. Check that the figure appears in the named track file with the same meaning. If the track file has the figure but marked [UNVERIFIED], propagate [UNVERIFIED] into the model file. Figures labelled as assumptions are counted as assumptions, not failures.
+7. Write your log to verification-log-<N>.md with: files checked; per file: items checked, passed, failed, downgraded, labelled assumptions; a full list of failures (file, item, reason); the three most consequential failures for the verdict (anything touching a GO gate); and any file-level problem (for example, a file whose JSON block does not match its text).
+8. Work file by file and append to the log as you go. Budget: 35 minutes. If you run out of time, record which files were not checked.
