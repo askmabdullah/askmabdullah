@@ -38,7 +38,7 @@ Bottom line: this track is THIN. It confirms what breaks and the credit-loop pai
 6. What builders try next (as described by sellers, not buyers): reload version history, duplicate the project, post in Lovable Discord (peer-to-peer, not an official hiring channel), export to GitHub and hand the repo to a contractor.
    Grade: weak | Type: vendor marketing | Link: rapidevelopers.com/lovable-issues/hiring-a-lovable-developer ; azumo.com (above) | Cache: QUERIES 1 and 5 in cache file
 
-7. Prior claim "About 80% of Lovable's builders are non-technical (The Next Web, May 2026)": PARTLY CONFIRMED, date looks wrong. The figure comes from Lovable's own "A first look at the build economy" report, published 9 June 2026 per the search summary (lovable.dev/blog/a-first-look-at-the-build-economy). The Next Web covered it under the title "Lovable hit $500 million in revenue with 146 employees. Its new data shows who is actually building software now." (thenextweb.com/news/lovable-build-economy-500m-arr-vibe-coding). Lovable's phrasing, per the summary: 80% of builders are in "self-identified non-technical roles", also "4 in 5". The data are usage data Jan 2025 to May 2026 plus a May 2026 user survey; this is likely where "May 2026" came from, not the article date. TNW coverage reportedly says the figures are not independently audited and that surveying active users skews to enthusiasts. I could not open the TNW page, so I do NOT have the article's own sentence or its date. Exact wording of the TNW sentence: NOT VERIFIED.
+7. Prior claim "About 80% of Lovable's builders are non-technical (The Next Web, May 2026)": PARTLY CONFIRMED, date looks wrong. The figure comes from Lovable's own "A first look at the build economy" report, published 9 June 2026 per the search summary (lovable.dev/blog/a-first-look-at-the-build-economy). The Next Web covered it under the title "Lovable hit $500 million in revenue with 146 employees. Its new data shows who is actually building software now." (thenextweb.com/news/lovable-build-economy-500m-arr-vibe-coding). Lovable's phrasing, per the summary: 80% of builders are in [PARAPHRASE, NOT VERBATIM] "self-identified non-technical roles", also "4 in 5". The data are usage data Jan 2025 to May 2026 plus a May 2026 user survey; this is likely where "May 2026" came from, not the article date. TNW coverage reportedly says the figures are not independently audited and that surveying active users skews to enthusiasts. I could not open the TNW page, so I do NOT have the article's own sentence or its date. Exact wording of the TNW sentence: NOT VERIFIED.
    Grade: moderate (figure exists, company self-reported) | Type: vendor marketing (Lovable self-reported) with an independent news outlet repeating it | Cache: QUERIES "80%" Lovable builders non-technical The Next Web ; Lovable build economy report "non-technical" "4 in 5" builders
 
 8. Scale context: Lovable claims $500M ARR, 146 employees, 720M monthly visits to Lovable-built projects, 8 in 10 users plan to monetise, 50M projects (communityone.io, June 2026 headline), 60M projects (other outlet), valuation about $13.3B after a $400M round (Spanish-language outlet, unverified). Large pool of builders, but this says nothing on how many are stuck.
@@ -121,7 +121,7 @@ Bias flag: these sellers earn money when builders believe they are stuck. Treat 
 | $50 to $150/hour; $5,000 to $15,000 per project (freelancers); $13,000 to $25,000 (agencies, full build) | seller price lists for Lovable developers | rapidevelopers.com/lovable-issues/hiring-a-lovable-developer | unknown | vendor | weak |
 | 0 | buyer posts found asking to hire a dev | n/a | 2026-10-20 | n/a | tool limit |
 
-Counts for this track (from search results, partial): 10 searches run, 3 blocked by budget, 1 domain rejected, 1 fetch failed. Threads found: 0 Reddit / 0 HN / 0 IH / 0 X / 0 forum. Distinct buyer voices with any quote text: 1 (plus about 5 to 6 paraphrased, unnamed Trustpilot reviewers). Distinct seller voices: about 8 domains/handles (RapidDevelopers, VP0, Azumo, Superblocks, Bastion, lowcode.agency, 3 Fiverr handles). Dates: almost all unknown; only the build economy report (2026-06-09) and incident windows have dates.
+Counts for this track (from search results, partial): [UNVERIFIED] 10 searches run, 3 blocked by budget, 1 domain rejected, 1 fetch failed. Threads found: 0 Reddit / 0 HN / 0 IH / 0 X / 0 forum. Distinct buyer voices with any quote text: 1 (plus about 5 to 6 paraphrased, unnamed Trustpilot reviewers). Distinct seller voices: about 8 domains/handles (RapidDevelopers, VP0, Azumo, Superblocks, Bastion, lowcode.agency, 3 Fiverr handles). Dates: almost all unknown; only the build economy report (2026-06-09) and incident windows have dates.
 
 ## 6. What this means for the offer
 - The pain is real but the buyer evidence here is thin: credits wasted, loops, and security. A paid audit that starts with RLS, auth, Stripe webhooks and secrets is the most defensible first step, since those are the same fixes sellers already list.
@@ -140,3 +140,12 @@ Counts for this track (from search results, partial): 10 searches run, 3 blocked
 {"track": "01-lovable-builders", "demand_signal": "weak", "buyer_price_points_usd": [], "seller_price_points_usd": [50, 150, 5000, 15000, 13000, 25000], "gates_supported": [3], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 10, "buyer_quotes": 1, "seller_quotes": 5}
 ```
 Note on "demand_signal": rated weak because of coverage, not because demand was disproved. Reddit, HN, IH, X and the Lovable forum were not reachable. A rerun with those sources is needed before relying on this track.
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED (not in cache / number differs):
+- Counts line "10 searches run": cache/01 holds 9 result sets plus 1 domain error (number differs).
+
+DOWNGRADED:
+- "self-identified non-technical roles" (key finding 7): in cache/01 only inside the tool summary, not in quotation marks.

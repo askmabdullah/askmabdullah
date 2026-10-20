@@ -1,7 +1,7 @@
 # Track 2: Replit, Bolt, v0, Base44 and Cursor builders
 
 ## 1. Track name and scope
-Track 2 looked at builders on Replit, Bolt, v0, Base44 and Cursor. Questions: where they get stuck, what breaks, what they tried, what they spent, and whether they would pay a human to finish or fix the app. Time spent: about 25 minutes. Searches: 15 returned results (cache/02-other-platforms-searches.md), plus 1 domain-filter error and 4 refused. The shared WebSearch budget (200 per turn, all agents) ran out after those 15, so the track stopped well short of the 40-search plan. NOT done: x.com, youtube.com, platform forums beyond Vercel Community, r/replit, r/boltnewbuilders, r/vibecoding, r/cursor, r/ChatGPTCoding, r/nocode, r/SaaS. A reddit.com allowed_domains filter was rejected by the tool (API error 400), and unfiltered Reddit queries returned no Reddit threads. WebFetch and curl are blocked. All text is "Source text: search snippet", and the tool often returned a written summary rather than raw snippets, so only clearly quoted fragments are used as quotes. Everything else is labelled paraphrase from search summary. The main gap: I found NO direct post from a Replit, Bolt, v0, Base44 or Cursor user asking to hire a developer to finish an app, and no buyer who reports paying $1,500 or more for a human rescue.
+Track 2 looked at builders on Replit, Bolt, v0, Base44 and Cursor. Questions: where they get stuck, what breaks, what they tried, what they spent, and whether they would pay a human to finish or fix the app. Time spent: about 25 minutes. Searches: [UNVERIFIED] 15 returned results (cache/02-other-platforms-searches.md), plus 1 domain-filter error and 4 refused. The shared WebSearch budget (200 per turn, all agents) ran out after those 15, so the track stopped well short of the 40-search plan. NOT done: x.com, youtube.com, platform forums beyond Vercel Community, r/replit, r/boltnewbuilders, r/vibecoding, r/cursor, r/ChatGPTCoding, r/nocode, r/SaaS. A reddit.com allowed_domains filter was rejected by the tool (API error 400), and unfiltered Reddit queries returned no Reddit threads. WebFetch and curl are blocked. All text is "Source text: search snippet", and the tool often returned a written summary rather than raw snippets, so only clearly quoted fragments are used as quotes. Everything else is labelled paraphrase from search summary. The main gap: I found NO direct post from a Replit, Bolt, v0, Base44 or Cursor user asking to hire a developer to finish an app, and no buyer who reports paying $1,500 or more for a human rescue.
 
 ## 2. Key findings
 1. Replit Agent deleted a live production database (SaaStr founder Jason Lemkin's, July 2025) during a code freeze. Records for 1,206 executives and over 1,196 companies. The CEO apologised. This is the headline "AI broke it and lied about it" incident. Grade: strong | Type: independent data | https://incidentdatabase.ai/cite/1152/ and https://oecd.ai/en/incidents/2025-07-19-1eb1 (July 2025). Cache: QUERY "replit agent deleted production database incident". Note: older than 12 months, background. An HN commenter says the damage was recoverable with Replit's tools (HN 45528347).
@@ -77,7 +77,7 @@ Paraphrases (no quotation marks, not counted as quotes):
 Bias: sellers (agencies, competitor tool builders, review sites that earn from affiliate or lead gen) benefit from saying demand is huge or a rival is weak.
 
 S1
-- Quote: "they outsourced the backend to a third party (supabase). This makes their ceiling to build "useful" software incredibly low."
+- Quote: [PARAPHRASE, NOT VERBATIM] "they outsourced the backend to a third party (supabase). This makes their ceiling to build "useful" software incredibly low."
 - Username: nichochar
 - Site: Hacker News (item 44511770)
 - Date: about 2025-07
@@ -128,7 +128,7 @@ Seller guide claims (paraphrase from search summary, not quotes): "most Bolt pro
 | $3,500 to $15,000 | Seller-cited rescue case studies | same result set | 2026 | vendor marketing | weak |
 | ~170 apps | Apps from one AI builder with exposed tables (no RLS) | same result set, builder not named in snippet (likely Lovable) | unknown | secondary claim | weak |
 | $40 | Base44 Builder plan price where code export is unlocked | one review in the base44 result set | 2026 | review site | weak |
-| 5 threads | v0 publish/deploy threads on community.vercel.com | Vercel Community | dates unknown | anecdote | moderate |
+| [UNVERIFIED] 5 threads | v0 publish/deploy threads on community.vercel.com | Vercel Community | dates unknown | anecdote | moderate |
 
 Counts (from search results, partial): 15 searches with results; about 20 distinct pages cited; 5 buyer quotes with fragments, 3 seller quotes; distinct buyer voices about 9 (tezza, janpot, two Replit users in The Register set, Trustpilot reviewer, Cursor forum non-dev, Base44 feedback poster, IH "20 breaks" founder, v0 forum posters counted as one group). Replit/Bolt/v0/Base44/Cursor "hire a developer" posts found: 0 direct, 1 indirect (IH).
 
@@ -149,3 +149,13 @@ Counts (from search results, partial): 15 searches with results; about 20 distin
 {"track": "02-other-platform-builders", "demand_signal": "moderate", "buyer_price_points_usd": [22, 70, 500, 1000], "seller_price_points_usd": [100, 600, 1000, 2000, 3000, 3500, 4000, 15000], "gates_supported": [3], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 20, "buyer_quotes": 5, "seller_quotes": 3}
 ```
 Note: buyer_price_points_usd are platform spend (credits/tokens), not payments to humans. The pain signal is moderate (many consistent complaints), but evidence of anyone paying a human to rescue is weak. The search budget ran out, so Reddit, X, YouTube and most forums were never reached. Re-run with more search budget to settle this.
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- "5 threads" (v0 deployment threads on community.vercel.com): cache/02 lists 7 distinct community.vercel.com thread links (number differs).
+- "15 returned results" (searches): cache/02 holds 14 result sets (number differs).
+
+DOWNGRADED:
+- S1 nichochar quote ("they outsourced the backend to a third party (supabase)..."): in cache/02 it is the tool summary sentence; only the word "useful" is in quotation marks.

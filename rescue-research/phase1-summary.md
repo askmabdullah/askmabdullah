@@ -53,10 +53,10 @@
 - Zero advertisers evidenced running Meta, Google, TikTok or LinkedIn ads for this service after 47 targeted searches across two rounds (tracks 5, 18). The Ad Library could not be opened, so this is weak absence.
 - The "agencies spend heavily on Meta ads and close well" claim: nothing found that supports it. Weak counter-signals: sellers report word of mouth, referrals and SEO content hubs (tracks 10, 18).
 - Generic benchmarks only: Meta B2B CPL $50 to $380, cost per booked call $80 to $150, B2B close 20 to 29%; arithmetic gives roughly $400 to $1,000 per client, straddling the $600 line (track 18, all vendor benchmarks).
-- Marketplaces: Upwork jobs exist but proposal counts and fill status were not visible (tracks 7, 21). Outbound: about 101k Lovable sites on BuiltWith, maybe 5 to 10% with any revenue; legal limits mapped; no reply-rate data for this niche (tracks 13, 20).
+- Marketplaces: Upwork jobs exist but proposal counts and fill status were not visible (tracks 7, 21). Outbound: about 101k Lovable sites on BuiltWith, [UNVERIFIED] maybe 5 to 10% with any revenue; legal limits mapped; no reply-rate data for this niche (tracks 13, 20).
 
 **Gate 3: repeatable fix list.** SUPPORTED for the problem list, UNPROVEN for fix time. 11 of 21 tracks support it; none contradict.
-- Secrets/keys, RLS and access control, fake or missing auth checks, Stripe webhooks, error handling and deploy recur in 6 of 9 seller lists and in independent security research (CVE-2025-48757, 170 of 1,645 apps; Reeve 57% of 3,680 Supabase apps open reads) (tracks 11, 19).
+- Secrets/keys, RLS and access control, fake or missing auth checks, Stripe webhooks, error handling and deploy recur in 6 of 9 seller lists and in [UNVERIFIED] independent security research (CVE-2025-48757, 170 of 1,645 apps; Reeve 57% of 3,680 Supabase apps open reads) (tracks 11, 19).
 - No published hours-per-task table. Fragments: "2 to 4 hours" per common pattern (vendor), 2 to 8 weeks for whole-app finishing (track 19).
 
 **Gate 4: credible position above the low-cost floor.** SUPPORTED, moderate to weak.
@@ -70,9 +70,15 @@
 - Lovable Cloud migration to own Supabase is manual and sellable (track 20).
 
 ## Prior findings re-verified
-- "80% non-technical (TNW, May 2026)": PARTLY CONFIRMED. Source is Lovable's own "build economy" report (2026-06-09), "four in five identify with non-technical roles"; May is the survey month. Vendor data, unaudited. TNW article not opened.
+- "80% non-technical (TNW, May 2026)": PARTLY CONFIRMED. Source is Lovable's own "build economy" report (2026-06-09), [PARAPHRASE, NOT VERBATIM] "four in five identify with non-technical roles"; May is the survey month. Vendor data, unaudited. TNW article not opened.
 - "Fiverr gigs $30 to $500": PARTLY WRONG. Floor is $5, median $25 to $30, max seen $250 for vibe-specific fixes; one generic $1,500 security review gig.
 - HN threads: all four exist with the stated titles (items 48823359, 48458586, 47386636, 45320431). Points and comment counts NOT verifiable from snippets. Dates: July 2026, June 2026 confirmed roughly; the other two not shown.
 - Reddit voices ("90+ of 100 files", "contract after contract", "untangle these messes"): NOT VERIFIED. Reddit unreachable.
-- "Pakistani freelancers already advertise this": CONFIRMED (XCONS Solutions Lahore, two Islamabad/Bahawalnagar sellers, Fiverr sellers Kamran Asif, Ahmed Javed with 60 to 86 reviews), all at floor prices.
+- "Pakistani freelancers already advertise this": CONFIRMED (XCONS Solutions Lahore, [UNVERIFIED] two Islamabad/Bahawalnagar sellers, Fiverr sellers Kamran Asif, Ahmed Javed with 60 to 86 reviews), all at floor prices.
 - Slopfix "$10k a week": CONFIRMED as a vendor offer (3 engineers, pay-by-lines-deleted, 2-week warranty), press-covered; no named clients.
+
+## Appendix: unverified items
+- "maybe 5 to 10% with any revenue" (Gate 2 read): in track 13 this is labelled "my arithmetic on a weak source, not a measured figure" and rests on BigIdeasDB's 7.6% any-MRR rate among revenue-verified startups. The label was dropped here. Also dropped: the same source says none of those startups cleared $1,000 in the last 30 days. Wording differs from the source track.
+- "independent security research (... Reeve 57% of 3,680 ...)" (Gate 3 read): wrong attribution. Track 11 grades Reeve as security-vendor marketing relayed by an aggregator (and the 170 of 1,645 scan as an independent researcher relayed by a vendor blog). Numbers match the cache; the "independent" label does not.
+- "four in five identify with non-technical roles" in quotation marks (prior finding 1): the cache shows these words only in the search tool's summary, not in quotation marks (track 12 downgraded the same phrase). Paraphrase, not a verbatim quote.
+- "two Islamabad/Bahawalnagar sellers, Fiverr sellers Kamran Asif, Ahmed Javed" as proof Pakistani sellers advertise (prior finding 5): track 21 says "Seller countries were not stated in snippets" for Kamran Asif and Ahmed Javed, and the Islamabad Upwork title (Wajahat S.) is marked [UNVERIFIED] in track 21. Only XCONS Solutions (Lahore) and the Bahawalnagar seller are place-stated in the track text. Does not match the track.

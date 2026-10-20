@@ -40,9 +40,9 @@ Paraphrases from the tool summary (NOT quotes, do not quote them in the final re
 
 ## 4. Seller quotes
 Bias flag: sellers of cleanup work gain from saying demand is large. Commenters below are of unknown role.
-- Quote: "In one recent case, a client ended up going without a website for three days and having to pay Create Designs nearly $500 over a small line of code that ChatGPT had written for them."
+- Quote: [PARAPHRASE, NOT VERBATIM] "In one recent case, a client ended up going without a website for three days and having to pay Create Designs nearly $500 over a small line of code that ChatGPT had written for them."
   Username: unknown (web agency Create Designs, as named in text) | Site: news article via Yahoo | Date: unknown | Likes: unknown | Link: https://www.yahoo.com/news/articles/desperate-companies-now-hiring-humans-204421933.html (or the other Yahoo link in the same result; the source of this line is not shown) | Buyer tag: n/a, seller telling a client story. Client details unknown. Source text: search snippet (appears in parentheses inside the tool summary). Cache: cache/04-burned-searches.md, QUERY "reddit r/startups \"hired\" freelancer ...".
-- Quote: "the speed at which AI-generated codebases grow is far in excess of what human developers can achieve. What took years to accumulate in the past can be produced in a few days/weeks."
+- Quote: [PARAPHRASE, NOT VERBATIM] "the speed at which AI-generated codebases grow is far in excess of what human developers can achieve. What took years to accumulate in the past can be produced in a few days/weeks."
   Username: unknown HN commenter | Site: HN, thread "Cleaning up after AI rockstar developers" | Date: unknown (thread about 132 days before 2026-10-21 per tool, roughly June 2026) | Likes: unknown | Link: https://news.ycombinator.com/item?id=48458586 | Tag: commenter, role unknown, not a buyer. Source text: search snippet. Cache: QUERY "\"Cleaning up after AI rockstar developers\" Hacker News".
 - Quote: "Contractors are incredibly valuable in certain respects, but one thing they don't do generally is write code for future maintainability" (the tool's summary may have altered the ending; unverified wording).
   Username: unknown | Site: HN "Ask HN: Client replaced me with offshore team" | Date: 2019 (background only) | Link: https://news.ycombinator.com/item?id=20339344 | Tag: commenter, not a buyer. Cache: QUERY "Hacker News Ask HN I hired contractors offshore ...".
@@ -63,7 +63,7 @@ All from search results, partial. Source text: search snippet.
 | $10,000 per week | Slopfix price (HN title) | https://news.ycombinator.com/item?id=48823359 | 2026 (about July) | vendor | moderate |
 | 100,000 to 35,000 lines | Slopfix example target | TechRadar / Tom's Hardware links in cache | 2026 | vendor | weak |
 | 14 bids, 9 answered, 9 of 9 LLM and wrong | 2023 hCaptcha Upwork-style test | https://forums.theregister.com/forum/all/2023/05/09/upwork_chatgpt_problem/ | 2023-05-09 | independent (relayed) | moderate, old |
-| $400 in tokens | one IH founder's token bill on a comment system | IH "Vibe-coding your MVP is free. Your token bill says otherwise" | unknown | anecdote | weak |
+| $400 in tokens | one IH founder's token bill on a comment system | [UNVERIFIED] IH "Vibe-coding your MVP is free. Your token bill says otherwise" | unknown | anecdote | weak |
 | 9 searches, 3 buyer paraphrases, 0 verbatim buyer quotes | this track's yield | cache/04-burned-searches.md | 2026-10-21 | n/a | n/a |
 
 Not found: any buyer-stated price they accepted the second time; any count of burned-founder threads; any freelancer-origin data.
@@ -83,3 +83,13 @@ Not found: any buyer-stated price they accepted the second time; any count of bu
 {"track": "04-burned-by-freelancers", "demand_signal": "weak", "buyer_price_points_usd": [500, 650, 1000, 5000], "seller_price_points_usd": [2000, 15000, 10000, 40000, 150000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 9, "buyer_quotes": 0, "seller_quotes": 3}
 ```
 Note on the JSON: buyer_price_points are what buyers reported LOSING (not paying the second time). seller_price_points include the $150K rival agency quote as a vendor claim. sources_read counts successful searches, not opened pages.
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- IH post title "Vibe-coding your MVP is free. Your token bill says otherwise" (numbers table): not in cache. Only "$400 in tokens" and "token bill post" appear in cache/04.
+
+DOWNGRADED:
+- Seller quote "In one recent case, a client ended up going without a website..." : in cache/04 only as unquoted text in parentheses inside the tool summary.
+- HN quote "the speed at which AI-generated codebases grow...": in cache/04 only as unquoted text in parentheses inside the tool summary.

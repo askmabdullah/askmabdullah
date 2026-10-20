@@ -8,7 +8,7 @@ Reading rule used: tool-written summaries are NOT quotes. Text in quotation mark
 
 ## 2. Key findings
 
-1. The Lovable RLS exposure is real and has a CVE. CVE-2025-48757: "insufficient database RLS policy in Lovable through April 15, 2025", unauthenticated read or write of tables in generated sites. Published 30 May 2025. Disputed by Lovable: each customer is responsible for protecting their app data. Grade: strong (the CVE and the dispute); Type: independent data (NVD entry); https://nvd.nist.gov/vuln/detail/CVE-2025-48757 ; 2025-05-30. Cache: QUERY "Matt Palmer Lovable RLS statement on CVE-2025-48757 mattpalmer.io".
+1. The Lovable RLS exposure is real and has a CVE. CVE-2025-48757: [PARAPHRASE, NOT VERBATIM] "insufficient database RLS policy in Lovable through April 15, 2025", unauthenticated read or write of tables in generated sites. Published 30 May 2025. Disputed by Lovable: each customer is responsible for protecting their app data. Grade: strong (the CVE and the dispute); Type: independent data (NVD entry); https://nvd.nist.gov/vuln/detail/CVE-2025-48757 ; 2025-05-30. Cache: QUERY "Matt Palmer Lovable RLS statement on CVE-2025-48757 mattpalmer.io".
 2. Size of that exposure: Matt Palmer scanned 1,645 apps in Lovable's showcase and found about 170 (about 10%), with 303 endpoints readable or writable with only the public anon key. Number comes via a vendor blog summary (Superblocks) and the tool summary, not from Palmer's own page (could not open it). Grade: moderate; Type: independent researcher, relayed by vendor marketing; https://www.superblocks.com/blog/lovable-vulnerabilities ; 2025. Cache: QUERY "Lovable apps "row level security" exposed ...".
 3. Root cause is a pattern, not a one-off: the browser app calls Supabase directly with the public anon key, so RLS is the only access control. If RLS is off or the policy is weak, the table is open. Supabase docs say this plainly (see section 4, Supabase quote). Grade: strong; Type: independent data (platform docs); https://supabase.com/docs/guides/database/postgres/row-level-security ; accessed 2026-10-21. Cache: QUERY "Supabase docs Row Level Security ...".
 4. The same pattern is still found at scale in 2026. Reeve (August 2026): 57% of reachable Supabase-backed apps (2,096 of 3,680) allowed unauthenticated table reads. Symbiotic Security (April 2026): 1,046 of 1,072 Supabase-backed vibe-coded sites had at least one vulnerability. Both are security vendors (audit sellers), relayed through aggregator pages (vibe-eval, symbioticsec blog). Grade: moderate; Type: vendor marketing (with real scan data); https://vibe-eval.com/updates/vibe-coding-security-monthly-aug-2026/ and https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws ; 2026-04 and 2026-08. Cache: QUERY "vibe coded" apps security vulnerabilities study 2026 ...; QUERY Escape.tech ....
@@ -30,7 +30,7 @@ None found in this track. The Replit incident user (Jason Lemkin, SaaStr Fund in
 ## 4. Seller quotes
 These are platform and security-vendor statements, not rescuer sellers. Bias flagged: security vendors sell audits and scanners; platforms defend themselves.
 
-- Quote: "insufficient database RLS policy in Lovable through April 15, 2025" (NVD-style description; the tool also quoted "this is disputed by the Supplier because each individual customer of the Lovable platform accepts a responsibility over protecting the data of their application")
+- Quote: [PARAPHRASE, NOT VERBATIM] "insufficient database RLS policy in Lovable through April 15, 2025" (NVD-style description; the tool also quoted "this is disputed by the Supplier because each individual customer of the Lovable platform accepts a responsibility over protecting the data of their application")
   - Username: NVD / CVE record
   - Site: nvd.nist.gov
   - Date: 2025-05-30 (publication)
@@ -82,7 +82,7 @@ Count: 5 (all platform or vendor statements). Zero quotes from rescue sellers in
 | 91.5% | Kingbird: apps with at least one AI-hallucination-related flaw | https://www.softwareseni.com/91-5-percent-of-vibe-coded-apps-have-vulnerabilities-and-what-the-q1-2026-research-actually-shows/ | Q1 2026 | vendor, method unpublished | weak |
 | 57% (2,096 of 3,680) | Reeve: reachable Supabase apps allowing unauthenticated table reads | https://vibe-eval.com/updates/vibe-coding-security-monthly-aug-2026/ | 2026-08 | vendor, via aggregator | moderate |
 | 99% | Reeve: live apps with at least one finding (mostly missing headers) | same | 2026-08 | vendor | weak (low-severity inflated) |
-| 30,998 apps scanned | Reeve's August 2026 sample, from page title | same | 2026-08 | vendor | weak |
+| [UNVERIFIED] 30,998 apps scanned | Reeve's August 2026 sample, from page title | same | 2026-08 | vendor | weak |
 | 1,046 of 1,072 (98%) | Symbiotic: Supabase-backed vibe-coded sites with at least one vuln | https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws | 2026-04 | vendor | moderate |
 | 42.3 vs 9.6 | Symbiotic: avg vulns per AI-assisted repo vs human-only | https://www.symbioticsec.ai/ (via tool summary) | 2026-08 | vendor | weak |
 | 65% issues, 58% at least one critical; sample 5,600 or 1,400+ (disputed); 2,000+ vulns, 400 exposed secrets | Escape.tech scans | https://escape.tech/blog/methodology-how-we-discovered-vulnerabilities-apps-built-with-vibe-coding/ (methodology page; numbers via Medium and tool) | 2025-10 | vendor | weak |
@@ -182,3 +182,6 @@ Status: DRAFT. Each item is tagged. [S] = supported by a source in this file. [E
 ```json
 {"track": "11-technical-failure-patterns", "demand_signal": "moderate", "buyer_price_points_usd": [], "seller_price_points_usd": [], "gates_supported": ["3 (security hardening part only)"], "gates_contradicted": [], "evidence_grade": "moderate", "sources_read": 11, "buyer_quotes": 0, "seller_quotes": 5}
 ```
+
+## Appendix: unverified items
+- "30,998 apps scanned" (Reeve August 2026 sample, section 5 table): not in cache (no cache entry contains the number or the page title it is said to come from).

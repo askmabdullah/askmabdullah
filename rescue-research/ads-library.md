@@ -109,3 +109,12 @@ No CPC, CPL, cost per call or cost per client was found for rescue, "lovable dev
 
 ## Read on the claim "agencies spend heavily on Meta ads and close well"
 Unsupported. Zero advertisers evidenced; no buyer reports; no seller says it. Weak counter-signals (word of mouth, SEO hub, free-audit front doors) are snippet-only. Still unproven in either direction because the Ad Library could not be opened. First action for a person with a browser remains the Table A search list in "What the next person should do".
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- none
+
+DOWNGRADED:
+- none

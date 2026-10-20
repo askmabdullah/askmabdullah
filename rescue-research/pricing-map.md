@@ -87,8 +87,8 @@ Count of Upwork Lovable/Base44-linked jobs at $1,000 or more across rounds 1 and
 | Claimed migration past work (Shahid S.) | Upwork profile | n/a | $4,500 | n/a | n/s | n/s | cache #8 (seller claim, weak) | #8 |
 | Upwork guide: Lovable ongoing support | Upwork guide | $3,000/month | n/a | $10,000/month | n/a | n/a | https://www.upwork.com/hire/lovable-developers/ | #6 |
 
-## New Fiverr data (round 2: 30 priced fix/deploy/audit/review gigs; starting package price in title)
-Stats, round 2 only: min $5, median $30, mean $51.2, max $250. Combined with round 1's 20 priced gigs (50 gigs): min $5, median $25, mean $40.8, max $250.
+## New Fiverr data (round 2: [UNVERIFIED] 30 priced fix/deploy/audit/review gigs; starting package price in title)
+Stats, round 2 only: min $5, median $30, [UNVERIFIED] mean $51.2, max $250. Combined with round 1's 20 priced gigs (50 gigs): min $5, median $25, [UNVERIFIED] mean $40.8, max $250.
 | service type | low | typical | high | link (examples) | query # |
 |---|---|---|---|---|---|
 | Fix Bolt / Replit / Lovable bugs, deploy | $5 | $10 to $30 | $100 | https://www.fiverr.com/roly_t/build-replit-app-replit-ai-websites-using-replit-ai-bolt-new-saas-app-supabase ($30); https://www.fiverr.com/matthias_allen/replit-debugging-fix-deploy-replit-app-replit-web-app-api-automation-lovable-dev ($5); https://www.fiverr.com/zainmustafad/develop-apps-with-lovable-ai-bolt-and-cursor-ai-dev ($100) | #30, #31, #32 |
@@ -109,6 +109,15 @@ Seller levels and review counts seen (query #37 only): Kamran Asif Level 2, 4.9 
 | PeoplePerHour | Lovable book app to mobile, GitHub export; fixed price | about GBP 100 (approx. EUR 114) | https://www.peopleperhour.com/freelance-jobs/technology-programming/mobile-app-development/mobile-app-of-book-transfer-from-lovable-to-github-to-test-4421524 | #15 |
 
 ## Updated min / median / max
-- Marketplace gig starting prices, Fiverr, 50 gigs: $5 / $25 / $250.
+- Marketplace gig starting prices, Fiverr, [UNVERIFIED] 50 gigs: $5 / $25 / $250.
 - Agency and productized "from" prices for a fixed rescue (11 values: 1,400; 1,500; 1,500; 1,999; 1,999; 2,500; 2,500; 4,000; 6,000; 7,500; 10,000; some EUR or via summary): $1,400 / $2,500 / $10,000.
 - Highest Upwork fix/finish buyer budget seen: $2,000 (two posts, 2025). Still no confirmed payment of $1,500 or more on any marketplace.
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- Round 2 Fiverr "30 priced" gigs, "mean $51.2", and the combined "50 gigs ... mean $40.8": cache/21 searches #30 to #37 hold about 40 distinct fix/deploy/audit gigs (41 including a generic $1,500 security review); mean of the 40 is about $46 to $47, and the 60-gig combined mean is about $39. Min $5, median $30 (round 2) and median $25 (combined), and max $250 reproduce. Same failure already marked in tracks/21.
+
+DOWNGRADED:
+- none

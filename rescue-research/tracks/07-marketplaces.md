@@ -1,7 +1,7 @@
 # Track 7: Marketplaces (Fiverr, Upwork, Contra, Toptal, Codementor, PeoplePerHour)
 
 ## 1. Track name and scope
-Looked at Fiverr gig titles and Upwork job posts, productized services and freelancer profiles for Lovable, vibe-coded, Bolt, Replit and Base44 fix work. Only 8 searches returned results: 4 on fiverr.com, 4 on upwork.com. 3 more searches were refused because the shared WebSearch budget (200 per turn, shared by all agents) was used up. I did not work around it. Not searched at all: Contra, Toptal, Codementor, PeoplePerHour, and the queries "bolt.new", "replit", "cursor", "supabase fix", "stripe integration lovable", "deploy lovable app", "security audit lovable" on Fiverr. All counts below are "from search results, partial". Marketplace pages could not be opened. Snippets showed price in the title only. They did NOT show ratings, review counts, seller level or seller country. Date used for searches: 2026-10-20. Cache: cache/07-marketplaces-searches.md. Price map: pricing-map.md.
+Looked at Fiverr gig titles and Upwork job posts, productized services and freelancer profiles for Lovable, vibe-coded, Bolt, Replit and Base44 fix work. [UNVERIFIED] Only 8 searches returned results: 4 on fiverr.com, 4 on upwork.com. 3 more searches were refused because the shared WebSearch budget (200 per turn, shared by all agents) was used up. I did not work around it. Not searched at all: Contra, Toptal, Codementor, PeoplePerHour, and the queries "bolt.new", "replit", "cursor", "supabase fix", "stripe integration lovable", "deploy lovable app", "security audit lovable" on Fiverr. All counts below are "from search results, partial". Marketplace pages could not be opened. Snippets showed price in the title only. They did NOT show ratings, review counts, seller level or seller country. Date used for searches: 2026-10-20. Cache: cache/07-marketplaces-searches.md. Price map: pricing-map.md.
 
 A note on the "24 Best ... Services" Fiverr category pages: "24" looks like a fixed page template number, not a gig count. I did not use it as a count.
 
@@ -73,7 +73,7 @@ Fiverr gigs (22 distinct seen; price = "for $X" in title; all vendor, grade mode
 | Nancybannett build lovable website | $20 | https://www.fiverr.com/nancybannett/lovable-ai-lovable-dev-lovable-lovable-website-lovable-dev-ai-ai-developer | lovable developer |
 | Web_app543 lovable dev | $10 | https://www.fiverr.com/web_app543/build-modern-lovable-website-lovable-dev-fix-lovable-ai-website-app-with-next-js | lovable developer |
 | Sarah_1website build lovable web app | $20 | https://www.fiverr.com/sarah_1website/develop-your-lovable-app-with-lovable-dev-replit-app-and-ai-development | lovable developer |
-| Jose_ph18 build deploy lovable | $30 | https://www.fiverr.com/jose_ph18/lovable-ai-lovable-dev-lovable-website-lovable-ai-developer-ai-developer-v0 | lovable developer |
+| Jose_ph18 build deploy lovable | $30 | [UNVERIFIED] https://www.fiverr.com/jose_ph18/lovable-ai-lovable-dev-lovable-website-lovable-ai-developer-ai-developer-v0 | lovable developer |
 | Adamy67 base44 bug fixing, lovable expert | $20 | https://www.fiverr.com/adamy67/base44-bug-fix-base44-app-base44-expert-replit-base44-web-base44-api-integration | lovable expert fix |
 | Yemi_adepoju fix lovable | $5 (MIN) | https://www.fiverr.com/yemi_adepoju/fix-lovable-lovable-ai-website-lovable-dev-lovable-saas-mvp-to-your-style | lovable expert fix |
 | Everqor fix, build deploy base44 lovable replit bolt | $20 | https://www.fiverr.com/everqor/vibe-coding-base44-expert-base44-bug-fix-build-replit-base44-deploy-lovable-bolt | lovable expert fix |
@@ -133,3 +133,13 @@ Answers to the brief's questions, one by one:
 ```json
 {"track": "07-marketplaces", "demand_signal": "weak", "buyer_price_points_usd": [5, 20, 30, 60, 100, 300, 400, 500, 650, 1000, 1250], "seller_price_points_usd": [5, 10, 15, 20, 30, 35, 50, 100], "gates_supported": [3], "gates_contradicted": [1], "evidence_grade": "weak", "sources_read": 8, "buyer_quotes": 6, "seller_quotes": 7}
 ```
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- URL for Jose_ph18 gig in the Fiverr table: track slug "...lovable-website-lovable-ai-developer-ai-developer-v0"; cache slug is "...lovable-website-lovable-dev-ai-ai-developer-v0" (wording differs). Price $30 and handle verified.
+- "Only 8 searches returned results: 4 on fiverr.com, 4 on upwork.com": cache/07 holds 9 result sets (4 Fiverr, 5 Upwork) (number differs).
+
+DOWNGRADED:
+- none

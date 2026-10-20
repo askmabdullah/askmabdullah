@@ -81,3 +81,12 @@ No public CPL, cost per call or cost per client was found for vibe-code rescue, 
 {"track": "05-meta-ads", "demand_signal": "none", "buyer_price_points_usd": [], "seller_price_points_usd": [199, 500, 2500, 5000, 15000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 14, "buyer_quotes": 0, "seller_quotes": 2}
 ```
 Note: demand_signal "none" means no ad evidence was found, not that demand is absent. The seller price points are vendor claims copied from search summaries, mixed (audit, project, build); use with care.
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- none
+
+DOWNGRADED:
+- none

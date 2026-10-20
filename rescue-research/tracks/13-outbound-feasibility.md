@@ -13,7 +13,7 @@ Cache file for all searches: cache/13-outbound-searches.md. All source text is "
 
 ## 2. Key findings
 
-1. BuiltWith lists about 101,000 current Lovable sites. The summary says "101,034 current Lovable customers" and "117,323 websites in this full report, of which 16,289 are redirects". The figures do not fully reconcile and the snapshot date is not shown. This is the best single count for findable Lovable apps, and it includes any site with the Lovable fingerprint, not only lovable.app subdomains.
+1. BuiltWith lists about 101,000 current Lovable sites. The summary says [PARAPHRASE, NOT VERBATIM] "101,034 current Lovable customers" and [PARAPHRASE, NOT VERBATIM] "117,323 websites in this full report, of which 16,289 are redirects". The figures do not fully reconcile and the snapshot date is not shown. This is the best single count for findable Lovable apps, and it includes any site with the Lovable fingerprint, not only lovable.app subdomains.
    Grade: moderate | Type: independent data (third-party tracker, method unknown) | https://trends.builtwith.com/websitelist/Lovable | date unknown (found 2026-10-21) | QUERY: builtwith Lovable technology usage websites count
 
 2. The BuiltWith .ai slice shows 3,937 current Lovable sites. .ai domains skew toward AI startups, so this is a useful pre-filter for "serious" builders (a custom domain is a paid-plan signal and a cost signal).
@@ -41,7 +41,7 @@ Cache file for all searches: cache/13-outbound-searches.md. All source text is "
    Grade: weak | Type: independent estimates / competitor content | https://shipper.now/replit-stats/ ; https://shipper.now/base44-stats/ ; https://www.dataprovider.com/recipes/bolt/ ; https://claude.com/customers/base44 | QUERIES: replit.app...; base44.app...; bolt.host...
 
 10. Subdomain enumeration is technically possible via certificate transparency logs (crt.sh style wildcard queries), but I found no published count of lovable.app or lovableproject.com subdomains. Per the search summary, CT shows only hosts that had certificates issued. We did not run any such query (research only, and it is not needed to answer feasibility).
-    Grade: weak (method only) | Type: independent technical guides | https://en.internetwache.org/certificate-transparency-as-a-source-for-subdomains-14-12-2017/ | QUERY: certificate transparency lovable.app...
+    Grade: weak (method only) | Type: independent technical guides | [UNVERIFIED] https://en.internetwache.org/certificate-transparency-as-a-source-for-subdomains-14-12-2017/ | QUERY: certificate transparency lovable.app...
 
 11. Scale proof from published research: Symbiotic Sec (April 2026) crawled 65,643 URLs and confirmed 1,085 vibe-coded sites using Supabase; 1,072 fully scanned; 1,046 (98%) had at least one vulnerability; 173 critical. Another researcher: 303 endpoints across 170 Lovable projects lacked proper RLS (2025 CVE). This shows live apps are findable by crawlers at the thousand-plus level, and that the problem is common. It also shows the crawl yield: about 1.7% of crawled URLs were confirmed vibe-coded Supabase sites. We must NOT repeat such scans (BRIEF rule: no probing).
     Grade: moderate | Type: vendor research (security vendor, bias: sells scanning) | https://www.symbioticsec.ai/blog/we-scanned-1-072-vibe-coded-apps-98-had-security-flaws ; https://www.superblocks.com/blog/lovable-rls-breach | QUERY: Lovable apps security scan thousands...
@@ -128,3 +128,6 @@ Search budget ran out before I could source these. Treat as flags, not findings.
 ```json
 {"track": "13-outbound-feasibility", "demand_signal": "weak", "buyer_price_points_usd": [], "seller_price_points_usd": [], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 0, "buyer_quotes": 0, "seller_quotes": 0}
 ```
+
+## Appendix: unverified items
+- URL https://en.internetwache.org/certificate-transparency-as-a-source-for-subdomains-14-12-2017/ (key finding 10): not in cache. The cache only has the title "Certificate Transparency as a source for subdomains (2017)" at domain internetwache.org, without this URL or the "en." host or date slug.

@@ -27,11 +27,11 @@ Important gap: I found NO data on which offer converts best, which attracts tyre
    Type: vendor marketing.
    Link: https://wavect.io/services/vibe-coding-rescue/ . Cache: query "money back guarantee" vibe coding rescue...
 
-4. "Pay only if we deliver" is rare and tiny in ticket size. Only aibrify.com showed it: $100 diagnosis (credited), fixed quotes "usually $100 or $300", fragment in search summary "If we cannot deliver a quoted fix, you do not pay for it", plus a 90-day free repair for what they fixed. This is a low-ticket shape. No evidence it works at $2,000+.
+4. "Pay only if we deliver" is rare and tiny in ticket size. Only aibrify.com showed it: $100 diagnosis (credited), fixed quotes [PARAPHRASE, NOT VERBATIM] "usually $100 or $300", fragment in search summary [PARAPHRASE, NOT VERBATIM] "If we cannot deliver a quoted fix, you do not pay for it", plus a 90-day free repair for what they fixed. This is a low-ticket shape. No evidence it works at $2,000+.
    Grade: weak. Type: vendor marketing.
    Link: https://aibrify.com/en/fix . Cache: query "or you don't pay"...
 
-5. Free audit is used by agencies as a lead magnet. Example: Agence Scroll (Paris) "Dr Lovable" offers a free audit in 48 hours with three outcomes: targeted intervention, rebuild, or ongoing maintenance (paraphrase of search summary). A directory (vibecoding.app) says audits run "free or fixed-price (typically 2-5 business days, $0-$500)". The search tool itself warned that free-audit firms are selling follow-on work.
+5. Free audit is used by agencies as a lead magnet. Example: Agence Scroll (Paris) "Dr Lovable" offers a free audit in 48 hours with three outcomes: targeted intervention, rebuild, or ongoing maintenance (paraphrase of search summary). A directory (vibecoding.app) says audits run [PARAPHRASE, NOT VERBATIM] "free or fixed-price (typically 2-5 business days, $0-$500)". The search tool itself warned that free-audit firms are selling follow-on work.
    Grade: weak-moderate for existence; none for conversion.
    Type: vendor marketing.
    Links: https://agence-scroll.com/en/dr-lovable ; https://vibecoding.app/agencies . Cache: query "free audit" vibe coded app...
@@ -44,15 +44,15 @@ Important gap: I found NO data on which offer converts best, which attracts tyre
    Grade: weak-moderate. Type: vendor marketing.
    Links: https://aibrify.com/blog/fix-vibe-coded-app-cost ; https://vibecoding.app/blog/how-much-does-a-vibe-coding-agency-cost . Cache: queries "vibe coded app code audit price", "paid audit credited".
 
-8. "Lovable to production" price ranges (no 7-day productized offer found): $8,000 to $15,000 basic conversion (security, performance, deployment); $15,000 to $35,000 full production build (RapidDevelopers via search summary); freelance finish/harden $5,000 to $15,000; agency full production $13,000 to $25,000; Fuzen says 3 to 4 weeks done-for-you. A "Lovable to production in 7 days" offer did NOT turn up in the one search I ran.
+8. "Lovable to production" price ranges (no 7-day productized offer found): $8,000 to $15,000 basic conversion (security, performance, deployment); $15,000 to $35,000 full production build [UNVERIFIED] (RapidDevelopers via search summary); freelance finish/harden $5,000 to $15,000; agency full production $13,000 to $25,000; Fuzen says 3 to 4 weeks done-for-you. A "Lovable to production in 7 days" offer did NOT turn up in the one search I ran.
    Grade: weak. Type: vendor marketing (SEO content).
    Links: https://www.rapidevelopers.com/md/lovable-issues/hiring-a-lovable-developer ; https://www.fuzen.io/posts/lovable-pricing-explained-credits-plans-and-real-monthly-cost-2026 . Cache: query "lovable to production" days fixed price.
 
-9. Paid discovery / "roadmapping" is a named, documented first-sale shape in freelance literature. Double Your Freelancing (Brennan Dunn) lesson: fragment in search summary "Roadmapping is essentially taking the discovery work you do now and turning it into a product". It turns unpaid proposal research into a paid engagement that ends with a roadmap. I saw no conversion rate. Not yet checked: Jonathan Stark (search blocked).
+9. Paid discovery / "roadmapping" is a named, documented first-sale shape in freelance literature. Double Your Freelancing (Brennan Dunn) lesson: fragment in search summary [PARAPHRASE, NOT VERBATIM] "Roadmapping is essentially taking the discovery work you do now and turning it into a product". It turns unpaid proposal research into a paid engagement that ends with a roadmap. I saw no conversion rate. Not yet checked: Jonathan Stark (search blocked).
    Grade: weak (definition only, no data). Type: vendor marketing (course/seller).
    Link: https://doubleyourfreelancing.com/lesson/what-is-roadmapping/ . Cache: query Brennan Dunn paid roadmapping...
 
-10. Fixed-price scope risk is acknowledged by vendors themselves. Fragment in search summary: "fixed price requires airtight scope". Wavect says the work starts with a signed statement of work with a fixed price, scoped from an initial audit. This points to audit-then-fixed-quote as the shape that protects the vendor.
+10. Fixed-price scope risk is acknowledged by vendors themselves. Fragment in search summary: [PARAPHRASE, NOT VERBATIM] "fixed price requires airtight scope". Wavect says the work starts with a signed statement of work with a fixed price, scoped from an initial audit. This points to audit-then-fixed-quote as the shape that protects the vendor.
    Grade: weak. Type: vendor marketing.
    Links: https://wavect.io/services/vibe-coding-rescue/ ; RapidDevelopers page above.
 
@@ -67,13 +67,13 @@ All are vendor marketing. Bias: sellers describe their own offers as attractive.
 
 - Quote (fragment in search summary): "Cancel any week. Last week refunded if we didn't blow you away."
   Username: Wavect (vendor page). Site: wavect.io. Date: unknown. Likes: n/a. Link: https://wavect.io/services/vibe-coding-rescue/ . Cache: 16-offer-shapes-searches.md, QUERY: "money back guarantee" vibe coding rescue fix lovable app developer.
-- Quote (fragment): "If we cannot deliver a quoted fix, you do not pay for it."
+- Quote (fragment): [PARAPHRASE, NOT VERBATIM] "If we cannot deliver a quoted fix, you do not pay for it."
   Username: aibrify (vendor page). Site: aibrify.com. Date: unknown. Link: https://aibrify.com/en/fix . Cache: QUERY: "or you don't pay" fix app production lovable bolt cursor.
-- Quote (fragment): "when you ship the fixes, we re-verify the critical findings at no extra cost"
+- Quote (fragment): [PARAPHRASE, NOT VERBATIM] "when you ship the fixes, we re-verify the critical findings at no extra cost"
   Username: Valletta Software (vendor page). Site: vallettasoftware.com. Date: unknown. Link: https://vallettasoftware.com/blog/post/vibe-coding-audit . Cache: QUERY: "paid audit" "credited" toward project dev agency vibe coded app.
-- Quote (fragment): "Roadmapping is essentially taking the discovery work you do now and turning it into a product"
+- Quote (fragment): [PARAPHRASE, NOT VERBATIM] "Roadmapping is essentially taking the discovery work you do now and turning it into a product"
   Username: Double Your Freelancing (Brennan Dunn site). Site: doubleyourfreelancing.com. Date: unknown. Link: https://doubleyourfreelancing.com/lesson/what-is-roadmapping/ . Cache: QUERY: Brennan Dunn paid roadmapping discovery first sale productized conversion.
-- Quote (fragment): "fixed price requires airtight scope"
+- Quote (fragment): [PARAPHRASE, NOT VERBATIM] "fixed price requires airtight scope"
   Site: RapidDevelopers-linked result (exact page uncertain). Date: unknown. Cache: QUERY: "lovable to production" days fixed price. Weak attribution, do not use in verdict.
 
 ## 5. Numbers found
@@ -91,7 +91,7 @@ All "Source text: search snippet". Page dates unknown unless stated. Type is ven
 | $0 to $500; 2-5 business days | typical free or fixed audit per directory | https://vibecoding.app/agencies | unknown | vendor | weak |
 | $1,500 to $5,000 | paid audit / discovery range per directory | https://vibecoding.app/blog/how-much-does-a-vibe-coding-agency-cost | unknown | vendor | weak |
 | $1,500 to $5,000; $3,000 to $8,000; $3,000 to $5,000 | specialist agencies; full-stack rescue agencies; audit plus fixes | https://aibrify.com/blog/fix-vibe-coded-app-cost | unknown | vendor | weak |
-| $8,000 to $15,000; $15,000 to $35,000 | "Lovable to production" basic conversion; full production build | https://www.rapidevelopers.com/md/lovable-issues/hiring-a-lovable-developer | unknown | vendor | weak |
+| $8,000 to $15,000; $15,000 to $35,000 | "Lovable to production" basic conversion; full production build | [UNVERIFIED] https://www.rapidevelopers.com/md/lovable-issues/hiring-a-lovable-developer | unknown | vendor | weak |
 | $5,000 to $15,000; $13,000 to $25,000 | freelance finish/harden; agency full production | source page not identified in the search output (summary says "another source") | unknown | vendor | weak |
 | $25,000+ over 8-16 weeks | full production rebuild per directory | https://vibecoding.app/agencies | unknown | vendor | weak |
 | 3 to 4 weeks | Fuzen done-for-you Lovable build | https://www.fuzen.io/posts/lovable-pricing-explained-credits-plans-and-real-monthly-cost-2026 | unknown | vendor | weak |
@@ -115,3 +115,6 @@ Cache query names: audit prices from "vibe coded app code audit price..."; sprin
 ```json
 {"track": "16-offer-shapes", "demand_signal": "none", "buyer_price_points_usd": [], "seller_price_points_usd": [100, 199, 399, 1500, 4000, 7000, 8000, 15000, 25000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 0, "buyer_quotes": 0, "seller_quotes": 4}
 ```
+
+## Appendix: unverified items
+- Attribution of "$8,000 to $15,000 basic conversion; $15,000 to $35,000 full production" to RapidDevelopers (key finding 8 and section 5 table): wrong or unsupported attribution. The cache says only "One vendor puts..." for these figures. The figures are in the cache; the named vendor and the rapidevelopers.com/md/lovable-issues/hiring-a-lovable-developer page are not tied to them.

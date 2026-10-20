@@ -23,7 +23,7 @@ Time spent: well under the 60 minutes. Only snippets and tool-written summaries 
    Grade: weak | Type: unknown | Link: moniquemalcolmhay.substack.com/p/vibe-coding-searches-are-up-6700/comments .
 6. NO search volume or trend data found for any rescue-type term: "fix my lovable app", "lovable developer", "hire lovable developer", "lovable expert", "vibe coded app", "bolt.new developer", "hire replit developer". I did not find Ahrefs, Semrush or Glimpse numbers for them. This is a gap, not evidence of zero demand.
    Grade: n/a (no evidence found).
-7. Who shows up for "fix my lovable app" (proxy): 5 of 9 results are Fiverr gig pages (fiverr.com: faith_midetoo, victor_bamii, john_65mix, durrah10, andynenth; one other on de.fiverr.com: schorlast). The rest are agency/DIY blogs: forasoft.com (agency blog), vp0.com (blog), rapidevelopers.com (agency blog). Type: marketplace (Fiverr) and agency blog. No community or platform page appeared.
+7. Who shows up for "fix my lovable app" (proxy): [UNVERIFIED] 5 of 9 results are Fiverr gig pages (fiverr.com: faith_midetoo, victor_bamii, john_65mix, durrah10, andynenth; one other on de.fiverr.com: schorlast). The rest are agency/DIY blogs: forasoft.com (agency blog), vp0.com (blog), rapidevelopers.com (agency blog). Type: marketplace (Fiverr) and agency blog. No community or platform page appeared.
    Grade: moderate (snippet only, proxy) | Type: independent observation of search output | Cache: QUERY fix my lovable app.
 8. Who shows up for "lovable app not working hire developer" (proxy): rapidevelopers.com (agency, 2 pages), rohitraj.tech (individual developer blog, 6 language versions of one page), fiverr.com/emmmyweb (marketplace). Agencies and one freelancer blog duplicate pages across languages.
    Grade: moderate | Type: independent observation | Cache: QUERY lovable app not working hire developer.
@@ -49,7 +49,7 @@ Buyer quotes count: 0.
 ## 4. Seller quotes
 Bias flag: these are agency or freelancer guides. Sellers gain from saying the pain is common. All: Source text: search snippet (text inside parentheses in the tool summary, page-level text). Date: unknown. Upvotes: n/a.
 
-- Quote: "use Lovable's version history to revert to the last working version; clicking 'Try to Fix' repeatedly burns credits and often makes things worse."
+- Quote: [PARAPHRASE, NOT VERBATIM] "use Lovable's version history to revert to the last working version; clicking 'Try to Fix' repeatedly burns credits and often makes things worse."
 - Username: unknown (one of forasoft.com, vp0.com or rapidevelopers.com guides in the result list; the summary does not say which)
 - Site: web (agency/blog guide)
 - Date: unknown
@@ -58,7 +58,7 @@ Bias flag: these are agency or freelancer guides. Sellers gain from saying the p
 - Buyer tag: n/a (seller)
 - Cache file: cache/06-google-searches.md, QUERY: fix my lovable app
 
-- Quote: "Read the exact error message, then resolve one layer at a time (build, then preview, then integrations, then deploy) instead of firing off another anxious prompt."
+- Quote: [PARAPHRASE, NOT VERBATIM] "Read the exact error message, then resolve one layer at a time (build, then preview, then integrations, then deploy) instead of firing off another anxious prompt."
 - Username: unknown (same set of guides)
 - Site: web (agency/blog guide)
 - Date: unknown
@@ -67,7 +67,7 @@ Bias flag: these are agency or freelancer guides. Sellers gain from saying the p
 - Buyer tag: n/a (seller)
 - Cache file: cache/06-google-searches.md, QUERY: fix my lovable app
 
-- Quote: "Duplicate the project (Settings > Duplicate) to create a clean copy."
+- Quote: [PARAPHRASE, NOT VERBATIM] "Duplicate the project (Settings > Duplicate) to create a clean copy."
 - Username: unknown (same set of guides)
 - Site: web (agency/blog guide)
 - Date: unknown
@@ -103,7 +103,7 @@ All from search snippets or tool summaries. Source text: search snippet. Cache f
 | 2 to 4 weeks | Chudovo's cleanup execution phase estimate | vibe code cleanup service | 2026 | vendor | weak |
 | 10% commission | Lovable Expert program, on Business plans brought in | lovable expert | unknown | vendor (platform) | moderate |
 | 5 | Lovable Expert program size cap in people ("under five people") | lovable expert | unknown | vendor (platform) | moderate |
-| 5 of 9 | Fiverr pages among results for "fix my lovable app" (proxy) | fix my lovable app | 2026-10-21 | independent | moderate |
+| [UNVERIFIED] 5 of 9 | Fiverr pages among results for "fix my lovable app" (proxy) | fix my lovable app | 2026-10-21 | independent | moderate |
 | 7 of 9 | Agency cleanup pages among results for "vibe code cleanup service" (proxy) | vibe code cleanup service | 2026-10-21 | independent | moderate |
 
 Ranking table (PROXY, from this tool, 2026-10-21, not Google SERPs):
@@ -152,3 +152,12 @@ Pattern: no Reddit, no Lovable community forum, no Hacker News page appeared in 
 ```json
 {"track": "06-google-search", "demand_signal": "weak", "buyer_price_points_usd": [], "seller_price_points_usd": [19, 39, 750, 2000, 2500, 3000, 5000, 13000, 15000, 25000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 12, "buyer_quotes": 0, "seller_quotes": 3}
 ```
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- "5 of 9" Fiverr pages among results for "fix my lovable app" (finding 7, numbers table): cache/06 shows 6 of 9 results are Fiverr (faith_midetoo, victor_bamii, john_65mix, durrah10, andynenth plus de.fiverr schorlast). The track's own handle list also names six (number differs).
+
+DOWNGRADED:
+- All three seller quotes (version history; read the exact error message; Duplicate the project): in cache/06 only as unquoted text in parentheses inside the tool summary.

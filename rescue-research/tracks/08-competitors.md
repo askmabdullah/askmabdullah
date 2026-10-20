@@ -29,11 +29,11 @@ None. This track covers sellers only. Count: 0.
 ## 4. Seller quotes
 Bias flag: sellers benefit from saying demand is huge. Source text: search snippet for all. Username: n/a (company). Upvotes or likes: unknown. Buyer tag: not applicable (seller).
 
-- Quote: "Audit is free (48 hours). Rescue engagements run $50–150k depending on codebase size and severity."
+- Quote: [PARAPHRASE, NOT VERBATIM] "Audit is free (48 hours). Rescue engagements run $50–150k depending on codebase size and severity."
   - Company: MetaCTO | Site: metacto.com (via search result summary text; the tool did not put it in quotation marks, so treat as page text shown in summary) | Date: seen 2026-10-21 | Link: https://www.metacto.com/solutions/product-development/vibe-rescue | Cache: cache/08-competitors-searches.md, QUERY: "vibe coded" "security audit" fixed price
 - Quote: "Vibe Coding Audit | Investor-Ready Code | From $199"
   - Company: Valletta Software | Site: page title in result list | Date: 2026-10-21 | Link: https://vallettasoftware.com/blog/post/vibe-coding-audit | Cache: same QUERY as above
-- Quote: "The Valletta Vibe Coding Audit is a fixed-fee senior-engineer review of an AI-built application."
+- Quote: [PARAPHRASE, NOT VERBATIM] "The Valletta Vibe Coding Audit is a fixed-fee senior-engineer review of an AI-built application."
   - Company: Valletta Software | Site: summary text | Date: 2026-10-21 | Link: https://vallettasoftware.com/vibe-audit | Cache: same QUERY
 - Quote: "Slopfix: We Charge $10k a Week to Delete AI-Generated Code"
   - Company: Slopfix (mirrored HN title) | Site: zeli.app story page title | Date: July 2026 per tool summary, exact date unknown | Link: https://zeli.app/story/48823359 | Cache: QUERY: "We charge $10k a week to delete AI-generated code"
@@ -88,3 +88,13 @@ Market verdict: crowded for generic "vibe coding cleanup" (12 or more agencies w
 ```json
 {"track": "08-competitors", "demand_signal": "moderate", "buyer_price_points_usd": [], "seller_price_points_usd": [199, 900, 2500, 3000, 10000, 40000, 50000, 150000], "gates_supported": [4], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 9, "buyer_quotes": 0, "seller_quotes": 6}
 ```
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- none
+
+DOWNGRADED:
+- MetaCTO "Audit is free (48 hours). Rescue engagements run $50-150k...": in cache/08 it is unquoted summary text (the track says so itself).
+- Valletta "The Valletta Vibe Coding Audit is a fixed-fee senior-engineer review...": unquoted summary text in cache/08.

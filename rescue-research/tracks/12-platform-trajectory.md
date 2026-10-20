@@ -15,7 +15,7 @@ Sources blocked: WebFetch and curl blocked per NETWORK-NOTES (not retried). No R
    Grade: moderate | Type: independent data (press, Dealroom, SEC Form D mention via Autobound) | Links: dealroom.co/news/144597-lovable-raises-400m-at-13-3b-valuation-eyes-600m-revenue-run-rate/ ; northeasttimes.com/2026/08/13/... (2026-08-13) | Cache: QUERY "Lovable funding valuation 2026"
 3. Lovable volume: 50M projects built to date, 1M new projects per week, 720M visits per month to Lovable-built projects (data Jan 2025 to May 2026, report published 2026-06-09). Lovable has not disclosed how many projects are still in use, so 50M is not a count of live products.
    Grade: moderate | Type: vendor marketing (self-reported, unaudited) | Links: techcrunch.com/2026/06/09/... ; thebuildeconomy.lovable.app/ | Cache: QUERY "Lovable build economy report 50 million projects..."
-4. The "80% non-technical" claim is TRACEABLE but not independent. It comes from Lovable's own "Build Economy" report (2026-06-09), built on usage data plus a May 2026 user survey. Correct wording: "four in five users identify with non-technical roles"; developers about 20% (ShiftMag). TNW covered it (title: "Lovable hit $500 million in revenue with 146 employees. Its new data shows who is actually building software now."). Date correction: the report is June 2026, not May 2026 (the survey was May). Caveats from the search: self-reported, unaudited, survey of active users skews to enthusiasts; CEO Osika said 55% of users have more than 11 years of work experience, so "non-technical" means role, not seniority or budget. About two-thirds come from outside the tech industry.
+4. The "80% non-technical" claim is TRACEABLE but not independent. It comes from Lovable's own "Build Economy" report (2026-06-09), built on usage data plus a May 2026 user survey. Correct wording: [PARAPHRASE, NOT VERBATIM] "four in five users identify with non-technical roles"; developers about 20% (ShiftMag). TNW covered it (title: "Lovable hit $500 million in revenue with 146 employees. Its new data shows who is actually building software now."). Date correction: the report is June 2026, not May 2026 (the survey was May). Caveats from the search: self-reported, unaudited, survey of active users skews to enthusiasts; CEO Osika said 55% of users have more than 11 years of work experience, so "non-technical" means role, not seniority or budget. About two-thirds come from outside the tech industry.
    Grade: moderate (the claim exists as stated by Lovable; the truth of it is weak) | Type: vendor marketing | Links: thenextweb.com/news/lovable-build-economy-500m-arr-vibe-coding ; shiftmag.dev/lovables-co-founder-on-why-developers-still-use-a-platform-made-for-non-technical-users-10744/ | Cache: QUERY "Lovable 80% non-technical users" (domain thenextweb.com), "Lovable users non-technical percentage builders"
 5. Monetisation of Lovable builders is unclear. Sources conflict: 35% already earn, 8 in 10 plan to monetise, 3 in 5 plan to monetise, about 1 in 10 earn directly. Only some of the builders have revenue; that matters for who can pay $2,000.
    Grade: weak | Type: vendor marketing | Cache: QUERY "Lovable build economy report 50 million projects..." and "Lovable users non-technical percentage builders"
@@ -37,7 +37,7 @@ Sources blocked: WebFetch and curl blocked per NETWORK-NOTES (not retried). No R
     Grade: moderate | Type: vendor marketing relayed by third-party news (runtimewire.com) | Links: runtimewire.com/article/replit-adds-black-box-pen-tests-agent-remediation ; docs.replit.com/updates/2026/04/24/changelog ; semgrep.dev/blog/2025/replit-and-semgrep-secure-vibe-coding | Cache: QUERY "Replit Agent 4 production readiness security scan launch"
 14. GROW: Security incidents on Lovable. A TNW article is titled "Lovable security crisis: 48 days of exposed projects, closed bug reports, & the structural failure of vibe coding security". I only saw the title, not the body or date. It signals that scanner-era platforms still leak, and that press frames the problem as structural.
     Grade: weak (title only) | Type: independent data (press) | Link: thenextweb.com/news/lovable-vibe-coding-security-crisis-exposed | Cache: QUERY "Lovable 80% non-technical users" (domain thenextweb.com)
-15. GROW: Maintenance is the open question. TechTimes headline: "Lovable Says It Hit $500 Million Run Rate: Vibe Coding's Maintenance Test Still Looms". The Build Economy report does not address whether vibe-coded software can sustain maintenance, debugging and scaling. Lovable does not disclose how many of 50M projects are still alive, so churn or graduation cannot be computed.
+15. GROW: Maintenance is the open question. TechTimes headline: [PARAPHRASE, NOT VERBATIM] "Lovable Says It Hit $500 Million Run Rate: Vibe Coding's Maintenance Test Still Looms". The Build Economy report does not address whether vibe-coded software can sustain maintenance, debugging and scaling. Lovable does not disclose how many of 50M projects are still alive, so churn or graduation cannot be computed.
     Grade: weak | Type: independent data (press commentary) | Link: techtimes.com/articles/318072/20260609/... | Cache: QUERY "Lovable build economy report 50 million projects..."
 16. GROW: Apple App Store crackdown. TNW headline: "Vibe coding drove an 84% jump in App Store submissions. Apple is cracking down." Title only. It suggests more vibe-coded mobile apps and new rejection and compliance friction.
     Grade: weak (title only) | Type: independent data (press) | Link: thenextweb.com/news/vibe-coding-apple-app-store-surge-crackdown | Cache: QUERY "Lovable 80% non-technical users"
@@ -65,7 +65,7 @@ All of the below are vendor or press text, shown as search-result titles or tool
   - Date: unknown
   - Link: https://thenextweb.com/news/lovable-vibe-coding-security-crisis-exposed
   - Cache file: same QUERY as above
-- Quote: "Lovable Says It Hit $500 Million Run Rate: Vibe Coding's Maintenance Test Still Looms"
+- Quote: [PARAPHRASE, NOT VERBATIM] "Lovable Says It Hit $500 Million Run Rate: Vibe Coding's Maintenance Test Still Looms"
   - Username: unknown (TechTimes)
   - Site: techtimes.com (result title)
   - Date: 2026-06-09 (from URL path)
@@ -77,7 +77,7 @@ All of the below are vendor or press text, shown as search-result titles or tool
   - Date: May 2026 (approx; Lovable post dated 2026-05-07)
   - Link: https://itdaily.com/news/security/wiz-integrates-security-scans-directly-into-lovable/
   - Cache file: QUERY "Lovable Security scan launch vulnerabilities built-in"
-- Quote: "The black-box scan found a separate admin dashboard at a predictable address with no authentication."
+- Quote: [PARAPHRASE, NOT VERBATIM] "The black-box scan found a separate admin dashboard at a predictable address with no authentication."
   - Username: unknown (runtimewire.com, relaying Replit)
   - Site: runtimewire.com (fragment shown by search tool)
   - Date: 2026-08 (approx; feature dated 2026-08-17)
@@ -150,7 +150,7 @@ Evidence that demand WILL persist or grow (grow):
 - Volume: 1M new Lovable projects per week; 50M total; Replit and Base44 growing revenue 1.5x to 2x within months. Even a 50% reduction in broken rate leaves more broken apps in 12 months than today.
 - Mix: 80% of Lovable builders are non-technical (vendor claim), growing fastest in founders, designers and sales roles. They cannot judge scanner output or approve agent patches. Replit requires a human to approve fixes and republish.
 - Scanners miss things: Replit says its black-box scan found an unauthenticated admin dashboard the code scanner missed. First-generation scanners find holes, they do not fix business logic, payment edge cases, data model errors or performance.
-- Press framing: "Vibe Coding's Maintenance Test Still Looms" (TechTimes) and the Lovable "48 days of exposed projects" headline (TNW) show security and maintenance are unresolved even for the leader.
+- Press framing: [PARAPHRASE, NOT VERBATIM] "Vibe Coding's Maintenance Test Still Looms" (TechTimes) and the Lovable "48 days of exposed projects" headline (TNW) show security and maintenance are unresolved even for the leader.
 - Migration friction: no one-click move from Lovable Cloud to your own Supabase.
 - Wiz integration is for teams already on Wiz, not for a solo founder.
 - The feature curve has been 2 years of improvement while the rescue chatter (HN threads in the brief) kept rising.

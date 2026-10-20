@@ -35,7 +35,7 @@ Rule used: the search tool writes summaries. Text counts as a quote only if the 
 ### 3A. Clutch reviews of AI-built app work (buyer-written)
 
 R1. GeekyAnts (India agency) review by a contract-intelligence company
-- Agency: GeekyAnts, Bengaluru, India.
+- Agency: GeekyAnts, [UNVERIFIED] Bengaluru, India.
 - Reviewer role: not shown. Company type: contract-intelligence software company (S13, S16). One result named it "Zetld"; a second search could not find that name (S16). Treat the name as UNVERIFIED.
 - Buyer country: not shown. Product "initially supporting multiple Australian jurisdictions (NSW and Victoria)" (S16, tool text).
 - Cost band as Clutch shows it: NOT SHOWN. Profile-level only: "$10,000 - $49,999" is the agency's most common band (S16).
@@ -49,7 +49,7 @@ R1. GeekyAnts (India agency) review by a contract-intelligence company
 - Cache: S11, S13, S16.
 
 R2. Connectish (Germany) review by a client with a Bolt prototype
-- Agency: Connectish, Markt Schwaben, Germany, 10 to 49 staff.
+- Agency: Connectish, Markt Schwaben, Germany, [UNVERIFIED] 10 to 49 staff.
 - Reviewer role and company type: not shown. Buyer country: not shown.
 - Cost band: NOT SHOWN. Profile-level: "Less than $10,000 (6) $10,000 to $49,000 (1)"; "project size $5,000+ minimum"; "$50 - $99 /hr" (S10, tool text).
 - Project length: not shown.
@@ -73,7 +73,7 @@ R3. Cleveroad review of an audit of AI-built code
 
 ### 3B. Reviews checked and EXCLUDED (not AI-built, or no link shown)
 - Empat: client needed a vendor to "Take over and stabilize the product development after a previous unsuccessful vendor experience" (S7, quotation marks in tool output). Rescue of a failed vendor project; AI-built not stated. Excluded. https://clutch.co/profile/empat
-- TechStaunch (nonprofit platform client): "inherited a platform with a lot of technical debt" (S30, paraphrase). Not AI-built. Excluded. https://clutch.co/profile/techstaunch-software-solutions
+- TechStaunch (nonprofit platform client): "inherited a platform with a lot of technical debt" (S30, paraphrase). Not AI-built. Excluded. [UNVERIFIED] https://clutch.co/profile/techstaunch-software-solutions
 - Reckonsys (GetReplies founder): team turned "a rough prototype into a fully functional platform ready for real users" (S18). No AI tools mentioned. Excluded.
 - Torii Studio (healthcare client): "Post the security overhaul, there were no reported security breaches or vulnerabilities" (S18). AI-built not stated. Excluded.
 - TechQuarter LLC: "vibe-coded MVP" wording is the firm's own profile copy, not a client review (S4). Excluded.
@@ -115,7 +115,7 @@ Bias: sellers benefit from saying rescue demand is large and prices are high.
 | $10,000 - $49,999 | GeekyAnts most common band, 75 to 77 reviews (profile) | same | 2026-10 | independent profile field | weak for gate 1 |
 | $5,000+ ; 6 of 7 under $10,000 | Connectish minimum and band split (profile) | clutch.co/profile/connectish | 2026-10 | independent profile field | weak |
 | $50,000 to $199,999 | bands on other Cleveroad engagements | clutch.co/profile/cleveroad | 2026-10 | independent profile field | weak |
-| $25,000+ | DBB Software minimum project size | clutch.co/developers/artificial-intelligence | 2026-10 | independent profile field | weak |
+| $25,000+ | DBB Software minimum project size | [UNVERIFIED] clutch.co/developers/artificial-intelligence | 2026-10 | independent profile field | weak |
 | $5,000+ ; $3,000 to $7,000 ; $25,000+ | LovableXperts minimum; Icebreaker Agency range; HQ minimum (HQ common band $10,000 - $49,999 on 3 reviews) | clutch.co/profile/lovablexperts ; /icebreaker-agency ; /hq | 2026-10 | profile fields | weak |
 | $1,000+ | GetDevDone minimum project size (turns Lovable, Bolt, v0, Cursor, Replit prototypes into production sites) | clutch.co/profile/getdevdone | 2026-10 | vendor profile | weak |
 | €1,500 | Soatech Production Audit, 3 days | clutch.co/profile/soatech-state-art-technologies | 2026-10 | vendor | weak |
@@ -145,3 +145,9 @@ Bias: sellers benefit from saying rescue demand is large and prices are high.
 {"track": "22-buyer-reviews-round3", "demand_signal": "weak", "buyer_price_points_usd": [30, 650, 1000, 1250, 18000], "seller_price_points_usd": [80, 199, 750, 900, 1500, 2500, 5000, 10000, 15000, 25000], "gates_supported": [3, 4], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 0, "buyer_quotes": 3, "seller_quotes": 8}
 ```
 Notes: sources_read is 0 because no page was opened; 40 searches were run. buyer_quotes 3 = the three Clutch reviews R1 to R3 (no cost band shown for any). 18000 is a build, not a rescue. 1000 and 1250 repeat track 17 items J6 and J8. 1500 is a seller (Soatech EUR 1,500 shown as 1500 for scale only). 25000 is a vendor minimum.
+
+## Appendix: unverified items
+- R1 "GeekyAnts, Bengaluru, India": not in cache. The cache names GeekyAnts and its Clutch profile pages but gives no city or country. (Detail only; no effect on the cost-band finding.)
+- R2 "Connectish ... 10 to 49 staff": not in cache. The cache gives Markt Schwaben, Germany, "$5,000+ minimum" and the band split, but no staff size.
+- URL https://clutch.co/profile/techstaunch-software-solutions (section 3B): not in cache. The cache mentions TechStaunch's review wording (S30) but shows no URL for it.
+- URL clutch.co/developers/artificial-intelligence (section 5, DBB Software row): not in cache. The $25,000+ DBB minimum is in S5 ("ranking lists $25,000+ minimum project size"), but the cited ranking URL is not shown.

@@ -57,7 +57,7 @@ HN commenters who describe clients (anecdotes, practitioner-reporting-on-buyers,
 Bias flag: all below are people who sell, or could sell, this work. They benefit from saying it is needed and systematic. Source text: search snippet. Usernames, points and dates are unknown unless stated. Wording is as shown inside quotation marks in the tool output.
 
 - "As a freelance developer, I've already had one job that was essentially vibe coding cleanup - though I ended up recommending that I just rewrite the whole codebase (I reused one tiny piece)."
-  - Username unknown; HN; date about 2025-09; points unknown; https://news.ycombinator.com/item?id=45320431 ; Cache N=25.
+  - Username unknown; HN; [UNVERIFIED] date about 2025-09; points unknown; [UNVERIFIED] https://news.ycombinator.com/item?id=45320431 ; Cache N=25.
 - "One of my current clients vibe coded an app then hired me to assess it, and ultimately rewrite it."
   - Username unknown; HN; date unknown; https://news.ycombinator.com/item?id=45320431 (thread attribution from tool, item not confirmed); Cache N=25.
 - "I've been getting more requests than ever to debug AI-generated codebases where the original "developer" can't explain what any of it does. The security audit work alone is keeping me busy"
@@ -88,8 +88,8 @@ Bias flag: all below are people who sell, or could sell, this work. They benefit
 
 | Number | What it measures | Source | Date | Type | Grade |
 |---|---|---|---|---|---|
-| about 100 hours | Build time to take a simple app (Cryptosaurus) from prototype to working product | https://kanfa.macbudkowski.com/vibecoding-cryptosaurus ; N=1 | 2026-03 | anecdote | moderate |
-| about 2-3x | Speedup commenters say AI gives once back-and-forth is counted (HN 47386636, summary) | https://news.ycombinator.com/item?id=47386636 ; N=1 | 2026-03 | anecdote | weak |
+| about 100 hours | Build time to take a simple app (Cryptosaurus) from prototype to working product | https://kanfa.macbudkowski.com/vibecoding-cryptosaurus ; N=1 | [UNVERIFIED] 2026-03 | anecdote | moderate |
+| about 2-3x | Speedup commenters say AI gives once back-and-forth is counted (HN 47386636, summary) | https://news.ycombinator.com/item?id=47386636 ; N=1 | [UNVERIFIED] 2026-03 | anecdote | weak |
 | 2-4 hours | Fix time for the five most common audit patterns (vendor scanner author) | dev.to systagproject ; N=27 | 2026 | vendor | weak |
 | about 2 hours | Fix time for critical Supabase key exposure in one vendor's sample audit | N=27 | 2026 | vendor | weak |
 | 1-2 days | Vendor-claimed typical fix time | N=23 | 2026 | vendor | weak |
@@ -162,3 +162,7 @@ Gate 3 read: LEAN PASS on problem classes, UNPROVEN on time. A rescue checklist 
 Is a fixed-price week viable? Yes for a scoped hardening week on a small app (say under 20 to 30k lines, one stack, Supabase plus Stripe), if (a) a paid audit comes first and gates the sprint, (b) scope is a named checklist with acceptance tests, (c) rebuild candidates are priced separately, (d) a code freeze is in the contract. No for "finish my app" at $2,000: the market sellers who offer finishing charge $15K to $50K and 4 to 8 weeks. Our cost side (my arithmetic, assumption): an engineer at roughly $1,000 to $1,100 a month is about $6 to $7 per working hour at 160 hours; a 40-hour engineer week plus 8 hours of lead review costs on the order of $300 to $600 even with a 2x overrun. So delivery cost is not the risk. The risks are acquisition cost, a 3x overrun on a bad codebase eating a second week for free, and refund or dispute handling. A 2x overrun is survivable; a rebuild-grade app sold as a week is not. Triage in the audit.
 
 Evidence gaps: Reddit voices on hours, client re-prompting, refund fights; QuickLaunch sprint price, client count and channel; Siddiqi Fiverr price and reviews; 404 Media prices and names beyond what is above; any conversion rate; share of rescues that became rebuilds. Reddit access remains the blocker.
+
+## Appendix: unverified items
+- Section 5, "2026-03" date for the Cryptosaurus post and HN 47386636 (two table rows): not in cache. N=1 shows no date for the post or the thread.
+- Section 4, first HN quote ("As a freelance developer, I've already had one job..."): date "about 2025-09" and item id 45320431 not supported. N=25 says "Item ids/usernames/dates/points not shown". The quote wording itself is verified (inside quotation marks in the tool text).

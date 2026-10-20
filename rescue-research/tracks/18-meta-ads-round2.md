@@ -62,7 +62,7 @@ All from search snippets or tool summaries. "Vendor" = marketing blog or softwar
 | $245.30 | enterprise software Meta CPL (Ryze table) | get-ryze.ai | 2026 | vendor | weak | S18 |
 | $138 / $145 / $202 / $524 | B2B CPL Instagram / Facebook / LinkedIn / Google Ads, 153 advertisers, 2025 spend (Metadata benchmark; lead definition not published) | getpixel.ai/benchmark-report-2026/insights/cpl-illusion | 2026 | vendor | weak | S18, S24 |
 | $9.31 | median Meta CPM, AdKit September 2026 snapshot | adkit.so/benchmarks | 2026-09 | vendor | weak | S2 |
-| $14.19 | all-industry Meta CPM 2026 (one source) | digitalapplied.com | 2026 | vendor | weak | S2 |
+| $14.19 | all-industry Meta CPM 2026 (one source) | [UNVERIFIED] digitalapplied.com | 2026 | vendor | weak | S2 |
 | $7-$14 / ~$14 (+20% YoY) | Meta CPM ranges in 2026 roundups | S31 list | 2026 | vendor | weak | S31 |
 | $15.06 CPM, 2.39% CTR, $38.99 CPA | Triple Whale medians, ecommerce only | via S31 compilation | 2026 | vendor | weak (not lead gen) | S31 |
 | 0.92%-1.37% | B2B Meta CTR (Focus Digital via compilation) | focus-digital.co | 2026 | vendor | weak | S31 |
@@ -111,3 +111,7 @@ Arithmetic note for gate 2 (my calculation, not a sourced figure): cost per clie
 {"track": "18-meta-ads-round2", "demand_signal": "none", "buyer_price_points_usd": [], "seller_price_points_usd": [30, 100, 15000, 25000, 50000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 33, "buyer_quotes": 0, "seller_quotes": 2}
 ```
 Note: demand_signal "none" means no ad evidence found, not that demand is absent. Advertisers evidenced: 0. Best claim read: unsupported, mildly contradicted by weak seller anecdotes that rely on word of mouth.
+
+## Appendix: unverified items
+- Section 5, $14.19 all-industry Meta CPM attributed to digitalapplied.com: wrong or unconfirmed attribution. S2 gives "$14.19 in one source" without naming it; digitalapplied.com is only one of nine links in that result list. The figure itself is in the cache.
+- File-level note (not a failure): "Slopfix quotes $30-$100 fixed price" (slopfix.ptolemay.com, S9) appears to be a different product (different domain) from the Odra "Slopfix" at $10,000 a week used in tracks 17, 21 and 08. Same name, two vendors; the cache does not say they are the same. Do not merge them.

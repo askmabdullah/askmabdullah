@@ -14,7 +14,7 @@ Source text: all material is search snippets or search-tool summaries. No full p
 Counts (from search results, partial): threads or pages surfaced = 10 HN titles + 10 IH titles + 9 vendor/agency pages + 2 mirror subreddit listing pages. Threads with usable content in the summary = 2 HN (items 44739556, 47599303) + about 4 IH + 1 r/lovable mirror post. Distinct buyer voices with any revenue or stage signal = 3 (all second-hand), see section 3.
 
 ## 2. Key findings
-1. The pattern "non-technical founder vibe-codes an app, gets some revenue, then hires a developer to shore it up" appears in first-person anecdote, but I found only one concrete case with revenue. An HN commenter says a non-technical friend built a SaaS on Replit and Supabase, it made revenue "with little marketing", and "Now he's hiring a developer to shore it up." No price, no revenue number, no country.
+1. The pattern "non-technical founder vibe-codes an app, gets some revenue, then hires a developer to shore it up" appears in first-person anecdote, but I found only one concrete case with revenue. An HN commenter says a non-technical friend built a SaaS on Replit and Supabase, it made revenue [PARAPHRASE, NOT VERBATIM] "with little marketing", and [PARAPHRASE, NOT VERBATIM] "Now he's hiring a developer to shore it up." No price, no revenue number, no country.
    Grade: weak | Type: first-person anecdote (second-hand) | https://news.ycombinator.com/item?id=44739556 | date unknown (item id suggests mid 2025, not stated in result) | cache: QUERY "Vibe code is legacy code" ...
 2. The worst reported trigger is a security breach, not a slow app. Same HN thread: the user list was leaked in front-end code and an attacker emailed all customers. Commenters speculated about refunds. The thread did not confirm who issued refunds. Relevant to risk and refund exposure.
    Grade: weak | Type: first-person anecdote (second-hand) | https://news.ycombinator.com/item?id=44739556 | cache: same
@@ -37,7 +37,7 @@ Counts (from search results, partial): threads or pages surfaced = 10 HN titles 
 Rule check: none of these is confirmed as exact page text. Each is a fragment that appeared inside a search-tool summary. Usernames, dates and upvotes were not in the result text. Verifiers: please treat as UNCONFIRMED until the thread is opened.
 
 B1
-- Quote: "Now he's hiring a developer to shore it up."
+- Quote: [PARAPHRASE, NOT VERBATIM] "Now he's hiring a developer to shore it up."
 - Username: unknown (HN commenter describing a friend)
 - Site: Hacker News, thread "Vibe code is legacy code"
 - Date: unknown
@@ -48,7 +48,7 @@ B1
 - Cache file: cache/03-founders-searches.md, QUERY: "Vibe code is legacy code" news.ycombinator.com non-engineer built business hired developer refund
 
 B2
-- Quote: "In my case, i needed around 300 messages to get here."
+- Quote: [PARAPHRASE, NOT VERBATIM] "In my case, i needed around 300 messages to get here."
 - Username: unknown (r/lovable user)
 - Site: Reddit r/lovable (via mirror reddit.birdcat.cafe listing)
 - Date: unknown
@@ -95,7 +95,7 @@ S2
 - Cache file: same
 
 S3 (vendor, fragment)
-- Quote: "Plenty of non-technical founders are vibe-coding products that actually get traction. But at some point they hit scaling problems and realize they need a technical partner."
+- Quote: [PARAPHRASE, NOT VERBATIM] "Plenty of non-technical founders are vibe-coding products that actually get traction. But at some point they hit scaling problems and realize they need a technical partner."
 - Username: unknown (one of the fractional CTO vendor pages; the summary does not say which)
 - Site: vendor blog. Candidates: groovyweb.co, solguruz.com
 - Date: unknown
@@ -135,3 +135,14 @@ No independent data on how many revenue-stage non-technical founders are stuck. 
 ```json
 {"track": "03-nontech-founders-with-revenue", "demand_signal": "weak", "buyer_price_points_usd": [], "seller_price_points_usd": [5000, 15000, 8000, 25000], "gates_supported": [], "gates_contradicted": [], "evidence_grade": "weak", "sources_read": 7, "buyer_quotes": 2, "seller_quotes": 3}
 ```
+
+## Appendix: unverified items
+(Verifier 1, 2026-10-20. Cache = cache/*.md. Full log: verification-log-1.md.)
+
+FAILED:
+- none
+
+DOWNGRADED:
+- Key finding 1 and B1 "Now he's hiring a developer to shore it up." and "with little marketing": appear in cache/03 only as unquoted summary text.
+- B2 "In my case, i needed around 300 messages to get here.": unquoted summary text in cache/03.
+- S3 "Plenty of non-technical founders are vibe-coding products...": unquoted summary text in cache/03.

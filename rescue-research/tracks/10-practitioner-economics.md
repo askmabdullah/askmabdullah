@@ -27,7 +27,7 @@ Why it matters: it is the closest match to Wanile's idea (fixed 7-day sprint), a
 Grade: moderate | Type: first-person anecdote, secondhand (Mezha and Slashdot summaries of a paywalled piece) | Link: https://www.404media.co/the-software-engineers-paid-to-fix-vibe-coded-messes/ , https://mezha.ua/en/news/freelancers-and-companies-making-money-fixing-vibe-code-304768/ | Date: Slashdot URL dated 2025-09-13. Queries: "404 Media the software engineers paid to fix vibe coded messes Hamid Siddiqi"; "freelancers and companies making money fixing vibe code mezha".
 Note: "only 30-40 projects matched" is a weak demand signal for a dedicated marketplace.
 
-5. HN "Vibe coding cleanup as a service" (Sept 2025) reads as mixed. The post (donado.co) was called "a thin advertorial". One freelancer had one cleanup job and recommended a full rewrite. Another thought "the market wasn't quite ready". A consultant says clients "only ever bring in consultants when they need a fix and are in a hurry". Another said the problem is often not the code. One commenter guessed cleanup bills about $200/hr vs $100/hr for regular maintenance.
+5. HN "Vibe coding cleanup as a service" (Sept 2025) reads as mixed. The post (donado.co) was called "a thin advertorial". One freelancer had one cleanup job and recommended a full rewrite. Another thought [PARAPHRASE, NOT VERBATIM] "the market wasn't quite ready". A consultant says clients [PARAPHRASE, NOT VERBATIM] "only ever bring in consultants when they need a fix and are in a hurry". Another said the problem is often not the code. One commenter guessed cleanup bills about $200/hr vs $100/hr for regular maintenance.
 Grade: weak | Type: first-person anecdote | Link: https://news.ycombinator.com/item?id=45320431 , https://news.ycombinator.com/item?id=45321882 | Date: about 2025-09. Queries: "Vibe coding cleanup as a service"; "Ask HN freelance developer fixing vibe coded projects clients what do you charge".
 Note: several quoted phrases above are from the tool's summary, not confirmed verbatim. See section 4.
 
@@ -48,7 +48,7 @@ Use with care: this is the only buyer-side price in my results and it is $600, b
 ## 4. Seller quotes
 Bias flag: every voice below sells cleanup, or writes content to attract cleanup buyers. They gain from saying demand is huge. Source text for all: search snippet. Username and upvotes are unknown unless shown.
 
-- Quote: "One week. Three senior engineers. $10,000."
+- [PARAPHRASE, NOT VERBATIM] Quote: "One week. Three senior engineers. $10,000."
   - Username: unknown (firm named by a commenter as Slopfix; post on odra.dev)
   - Site: Hacker News
   - Date: about 2026-07 (thread "about 104 days old" on 2026-10-21)
