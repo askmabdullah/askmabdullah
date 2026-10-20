@@ -26,3 +26,10 @@
 - Opening Meta Ad Library, Google Trends, Google autocomplete, Fiverr or Upwork search pages directly. You can only find what search engines have indexed or what third parties have written about them.
 - Reading full Reddit or HN threads. You get snippets only.
 - Counting things precisely. Give what the snippets show and label counts as "from search results, partial".
+
+## UPDATE (round 2, 22:20 UTC): hard search quota
+- WebSearch has a shared quota of 200 calls per turn across ALL agents. Your brief gives you a hard cap. Do not exceed it. Count your searches. When you hit your cap, stop and write up.
+- allowed_domains ["reddit.com"] returns API error 400. Do NOT use it. Instead put "site:reddit.com" or "reddit" in the query text. Results come back from Reddit mirrors (reddit.birdcat.cafe, redlib.hackliberty.org, etc.). Those count as Reddit evidence; record the mirror URL and the subreddit and thread slug.
+- For HN use "site:news.ycombinator.com" in the query text, or search the thread title plus "hacker news".
+- WebSearch returns a tool-written summary plus links. Only text inside quotation marks in the summary may be recorded as a quote, with the label "search snippet". Everything else is a paraphrase and must be labelled so.
+- Use mode "extended" for Reddit and HN queries; it returns more and fresher material. Use "standard" for vendor pages.

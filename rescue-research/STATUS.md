@@ -26,3 +26,7 @@ Working dir: /home/user/askmabdullah/rescue-research
 ## Phase 1: research tracks
 - 22:10 UTC: 16 track agents launched in parallel on model sonnet (WebSearch-only). Outputs expected in tracks/01..16, plus ads-library.md (track 5), pricing-map.md (track 7), competitors.md (track 8). Cache in cache/<track>-searches.md.
 - scripts/merge_phase1.py prepared to build phase1-summary.md from the JSON blocks.
+- Track 14 (retention) written: tracks/14-retention.md; 14 searches OK, shared search budget exhausted at search 18.
+
+- Track 7 (marketplaces): PARTIAL. 8 of ~45 searches returned results; shared WebSearch budget exhausted. tracks/07-marketplaces.md and pricing-map.md written. Contra, Toptal, Codementor, PeoplePerHour and 7 of the Fiverr queries not searched. Needs a re-run when search budget resets.
+- 22:20 UTC: 13 of 16 tracks returned PARTIAL (10 to 19 searches each) because of a shared WebSearch quota of 200 calls per turn. Tracks 3, 7, 8 still running. reddit.com domain filter fails (400); "site:reddit.com" in the query reaches Reddit mirrors. Round 2 launched with per-agent hard caps.
