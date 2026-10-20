@@ -32,3 +32,9 @@ Working dir: /home/user/askmabdullah/rescue-research
 - 22:20 UTC: 13 of 16 tracks returned PARTIAL (10 to 19 searches each) because of a shared WebSearch quota of 200 calls per turn. Tracks 3, 7, 8 still running. reddit.com domain filter fails (400); "site:reddit.com" in the query reaches Reddit mirrors. Round 2 launched with per-agent hard caps.
 - 23:10 UTC: Round 2 (5 agents, 150 searches) and track 3 complete. Round 3 (buyer reviews on Clutch/G2/Trustpilot, 40 searches) running. phase1-summary.md v1 written. Total tracks: 21 files. Phase 2 delivery, risk and brand agents launched; offers and channels wait for track 22.
 - 23:20 UTC: Round 3 (track 22) complete. Phase 1 CLOSED: 22 track files, about 460 searches, 0 pages opened. phase1-summary.md v2. Offer designer and channel economist launched.
+
+## Phase 2: modelling
+- 23:55 UTC: COMPLETE. model/offers.md, channels.md, delivery.md, risk.md, brand.md written (sonnet, evidence-only, 1 web search total).
+
+## Phase 3: verification
+- 23:45 UTC: verifiers 1 and 2 launched (tracks 1 to 16, ads-library, pricing-map, competitors, phase1-summary). 23:55: verifier 3 launched (tracks 17 to 22, all model files). Procedure in verification-procedure.md.
