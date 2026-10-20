@@ -70,3 +70,67 @@ The search didn't turn up the exact phrase "I have $", so I couldn't find a spec
 - **Marketplaces for this now exist:** One startup describes itself as a double-sided marketplace connecting "vibe coders" with experienced professional engineers.
 - **Revenue examples are modest:** One builder reports a live product, used by real users, that started making revenue recently (~$100+ in December). Another says their vibe-coded app has paying subscribers. Certainly not commercially successful though.
 ---
+QUERY: "Vibe code is legacy code" news.ycombinator.com non-engineer built business hired developer refund | MODE: extended | DOMAINS: news.ycombinator.com | DATE: 2026-10-21
+Web search results for query: ""Vibe code is legacy code" news.ycombinator.com non-engineer built business hired developer refund"
+
+Links: [{"title":"Vibe code is legacy code","url":"https://news.ycombinator.com/item?id=44739556"},{"title":"Vibe code may be \"disposable,\" but isn't \"legacy code\" if it has *automated test...","url":"https://news.ycombinator.com/item?id=44740579"},{"title":"Vibe coding cleanup as a service","url":"https://news.ycombinator.com/item?id=45320431"},{"title":"> I think you are not going far enough though: All code is legacy code. So vibe ...","url":"https://news.ycombinator.com/item?id=44740410"},{"title":"My two insights are: Legacy code is difficult to work with because the reasons \"...","url":"https://news.ycombinator.com/item?id=44742791"}]
+
+The search turned up the Hacker News thread "Vibe code is legacy code" (originally a val.town post), but it doesn't match the refund part of your query exactly.
+
+**The story:** A commenter describes a non-technical friend who vibe-coded a SaaS app on Replit and Supabase, which began generating revenue with little marketing. He was able to prove out a viable business in a matter of a few months with no engineering background and no technical capability. Now he's hiring a developer to shore it up.
+
+**The refund:** The refund wasn't a developer's doing. The thread describes a hacker who attacked the app. The user list was leaked on the front end of the code and the hacker emailed all of the customers. Commenters then speculate about a forced refund. One commenter adds that the hacker could not initiate a chargeback from knowing the merchant's Stripe keys. That suggests the refunds were issued through the merchant's account, though the thread doesn't confirm this.
+
+**Other views in the thread:**
+- Some argue the code is simply legacy from day one. One commenter says vibe code may be "disposable," but isn't "legacy code" if it has automated tests, since tests make the code safe to change.
+- Others argue that the best practical definition of legacy code is that it is voluminous, entrenched and owned by nobody currently in the organisation.
+- A commenter reports a similar case where non-developers built a proof of concept with Excel and Access VBA, won large customers, then hired a seasoned team that ultimately failed to deliver a real product.
+
+I found no source confirming a developer-initiated refund. The refunds in the thread were attributed to the hacker, and that attribution is speculative.
+---
+QUERY: "Client took over development by vibe coding" Ask HN | MODE: standard | DOMAINS: news.ycombinator.com | DATE: 2026-10-21
+Web search results for query: ""Client took over development by vibe coding" Ask HN"
+
+Links: [{"title":"Ask HN: Client took over development by vibe coding. What to do?","url":"https://news.ycombinator.com/item?id=47599303"}]
+
+The search returned one matching thread: an Ask HN post titled "Client took over development by vibe coding. What to do?" (about 202 days old at the time of indexing).
+
+- **The situation:** The original poster built a marketplace web app for a client over about a year, then the client began adding around 10,000 lines of AI-generated code in a single week. Most of the features they introduced are functional, but the performance of the application has suffered already. The poster's main worries are maintainability and getting the app live. They have lost enthusiasm for the project, but abandoning it completely may be premature from a professional standpoint.
+
+- **Main advice from commenters:**
+  - Treat ownership as the key issue. One commenter suggests asking the client whether they will take responsibility for maintaining and fixing the code they add, and if not, renegotiating pricing, since the poster would effectively be maintaining code they didn't write. (Ask the client whether they accept long-term maintenance and fixes for new code they add; if not, discuss pricing changes.)
+  - Work through pull requests and approve changes, rather than giving the client direct push rights. Another commenter suggests putting in the contract that the poster is the sole developer and the client may only submit specs or feature requests. (The contract should say the poster is the sole dev and the client cannot add code; the client should only send specs or feature requests.)
+  - Charge extra for cleanup and debugging, since untangling the code will likely require expertise. (Commenters advise charging separately for the different skill of cleanup and debugging.)
+  - Some commenters suggest mentally letting go of ownership, relying on tests, and focusing on a deployment pipeline with rollback capability. One also questioned how a project could go a year without ever being deployed.
+
+- **Other experiences:** One commenter reported that two clients behaved similarly, and they stopped working with both. In one case, an audit found serious vulnerabilities in code written with AI assistance.
+
+The full thread has more detail: https://news.ycombinator.com/item?id=47599303
+---
+QUERY: r/vibecoding "paying customers" "can't" fix bugs AI keeps breaking looking for developer to take over | MODE: standard | DOMAINS: none | DATE: 2026-10-21
+Web search results for query: "r/vibecoding "paying customers" "can't" fix bugs AI keeps breaking looking for developer to take over"
+
+Links: [{"title":"Follow Slashdot stories on Twitter","url":"https://tech.slashdot.org/story/25/09/13/054206"},{"title":"Forgot your password?","url":"https://developers.slashdot.org/story/25/09/13/054206/the-software-engineers-paid-to-fix-vibe-coded-messes"},{"title":"Everything that can go wrong when you vibe code an app","url":"https://softr.io/blog/what-can-go-wrong-when-you-vibe-code"},{"title":"What Users Want When Vibe Coding","url":"https://snyk.io/articles/what-users-want-when-vibe-coding/"},{"title":"Boing Boing","url":"https://boingboing.net/2025/09/11/humans-fixing-bad-vibe-code-for-good-money.html/amp"},{"title":"DEV Community","url":"https://dev.to/dev_frank/hey-this-is-why-your-vibe-coded-app-will-fail-25d3"},{"title":"Українська правда","url":"https://mezha.ua/en/news/freelancers-and-companies-making-money-fixing-vibe-code-304768/amp/"}]
+[NOTE by agent: the raw result also listed many repeated 'Reddit: https://dev.to/dev_frank/...' link entries (same URL). Elided here for size; no other content lost.]
+
+I didn't find the specific r/vibecoding post you're describing. The search returned related coverage of freelancers and firms who take over broken vibe-coded projects, but no Reddit thread matching the "paying customers" wording.
+
+- **Freelancers and firms are selling cleanup work.** A 404 Media piece, summarized by Slashdot, describes "Freelance developers and entire companies are making a business out of fixing shoddy vibe coded software."
+- **Fiverr sellers report steady demand.** One seller, Hamid Siddiqi, said "Currently, I work with around 15-20 clients regularly, with additional one-off projects throughout the year."
+- **The bugs that come up most are often cost and regression problems.** One fixer named "credit burn," the spending on AI usage fees when adding new features breaks existing features late in development.
+- **Founders sometimes can't recover.** A Softr article describes a startup whose users discovered they could access premium features for free or overwrite other people's data. The founder couldn't fix it, even with continued AI assistance, and the platform was shut down.
+- **The "whack-a-mole" loop is a recurring theme.** Developers describe repeatedly feeding errors back to the AI, which The original bug disappears. A new one shows up somewhere else. The community calls this "prompt whack-a-mole".
+- **A marketplace for this exists.** VibeCodeFixers.com allows people with AI-powered projects to find experienced developers to fix bugs.
+
+If you want the exact Reddit post, searching r/vibecoding directly or the phrase "paying customers" with "vibe coded" would be the next step.
+---
+QUERY: "non-technical founder" lovable app paying users need developer budget "$" Supabase security fix | MODE: standard | DOMAINS: reddit.birdcat.cafe | DATE: 2026-10-21
+RESULT: "Web search was not performed: this turn's web search budget is used up (limit: 200 WebSearch calls per turn, shared by every agent in it)."
+---
+QUERY: "vibe coded" SaaS MRR "hired a developer" OR "hired a freelancer" fix cost me $ | MODE: extended | DOMAINS: indiehackers.com | DATE: 2026-10-21
+RESULT: same budget-exhausted message. No search performed.
+---
+QUERY: founder built app with Lovable 500 users paying hired agency to rebuild cost lessons | MODE: standard | DOMAINS: medium.com, substack.com | DATE: 2026-10-21
+RESULT: same budget-exhausted message. No search performed.
+---
+SUMMARY: 7 searches returned content (1 unfiltered fractional CTO, 1 unfiltered Lovable/reddit, 1 IH, 3 HN, 1 unfiltered r/vibecoding). 3 searches failed with API 400 (reddit.com domain filter blocked). 3 searches refused (shared 200-search budget exhausted). Total attempted: 13.
