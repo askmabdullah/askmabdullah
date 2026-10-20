@@ -1,0 +1,28 @@
+# STATUS
+
+Run started: 2026-10-20 22:03 UTC (brief date: 21 Oct 2026)
+Working dir: /home/user/askmabdullah/rescue-research
+
+## Phase 0: setup
+- [x] Folders created: cache/, tracks/, model/
+- [x] BRIEF.md saved (full prompt)
+- [x] template-track.md written
+- Network note: shell curl is blocked by the egress proxy (403 on hn.algolia.com, arctic-shift, reddit.com). Agents must use WebSearch/WebFetch tools.
+
+## Phase 1: research tracks
+(not started)
+
+## Phase 2: modelling
+(not started)
+
+## Phase 3: verification
+(not started)
+
+## Phase 4: synthesis and red team
+(not started)
+- Network finding (22:06 UTC): WebFetch is blocked for all public hosts (DNS ENOTFOUND on 18 of 18 probe URLs; reddit.com refused by policy). WebSearch works. Decision: run all research on WebSearch, cache raw search output verbatim for verification, and label every quote as snippet-sourced. Gaps to be stated in the report: Meta Ad Library, Google Trends, Fiverr/Upwork pages and full Reddit/HN threads cannot be opened directly. Fix for the user: broaden the environment's network access (Edit environment > Network access) and re-run.
+- NETWORK-NOTES.md written for all agents.
+
+## Phase 1: research tracks
+- 22:10 UTC: 16 track agents launched in parallel on model sonnet (WebSearch-only). Outputs expected in tracks/01..16, plus ads-library.md (track 5), pricing-map.md (track 7), competitors.md (track 8). Cache in cache/<track>-searches.md.
+- scripts/merge_phase1.py prepared to build phase1-summary.md from the JSON blocks.

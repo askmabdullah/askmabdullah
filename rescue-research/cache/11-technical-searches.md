@@ -1,0 +1,14 @@
+# Track 11 search cache. Source text for all entries: search snippet / tool-written summary (full pages not opened; WebFetch blocked).
+---
+QUERY: Lovable apps "row level security" exposed vulnerability research 2025 CVE-2025-48757 | MODE: standard | DOMAINS: none | DATE: 2026-10-21
+Links: [{"title":"Lovable Vulnerability Explained: How 170+ Apps Were Exposed","url":"https://www.superblocks.com/blog/lovable-vulnerabilities"},{"title":"Lovable Vulnerability Explained: How 170+ Apps Were Exposed","url":"https://www.superblocks.com/blog/lovable-rls-breach"},{"title":"The Hidden Security Risks of Lovable's AI App Builder","url":"https://medium.com/@evebrennan2013/the-hidden-security-risks-of-lovables-ai-app-builder-b138ae3dc619"},{"title":"Saturday, September 12, 2026","url":"https://cybersecuritynews.com/lovable-security-vulnerability/"},{"title":"cve 2025 48757","url":"https://www.sentinelone.com/vulnerability-database/cve-2025-48757/"},{"title":"CVE 2025 48757","url":"https://cvemon.intruder.io/cves/CVE-2025-48757"},{"title":"lovable security guide","url":"https://rapidevelopers.com/lovable-issues/lovable-security-guide"},{"title":"20250602 loveable ai made service vulnerability","url":"https://gigazine.net/gsc_news/en/20250602-loveable-ai-made-service-vulnerability"},{"title":"Lovable April 2026 Data Breach: Every Project Before November 2025 Exposed","url":"https://bastion.tech/blog/lovable-april-2026-data-breach"}]
+
+[Tool-written summary, NOT a quote:]
+The CVE is a 2025 Row Level Security flaw in Lovable-generated apps. NVD-style description: insufficient database RLS policy in Lovable through April 15, 2025, which let unauthenticated remote attackers read or write arbitrary tables of generated sites. CWE-863 Incorrect Authorization. Record published May 30, 2025.
+Matt Palmer's scan of Lovable's public showcase is the origin of the numbers. One summary says he found 170 apps (about 10%), 303 endpoints, where Supabase tables were readable or writable using just the public anon key, out of 1,645 apps scanned. Exposed data included personal details and in some cases API keys.
+Root cause: apps that called Supabase directly from the browser, where the anon key is public; Lovable default output didn't always force RLS on. Lovable's position: each customer accepts responsibility over protecting the data of their application (CVE marked disputed).
+CVSS: one source lists 9.3 (Critical), another cites 8.26 to 9.3.
+Lovable launched a security scan feature, critics note it only flagged presence of RLS, not whether it worked. Palmer's disclosure followed a 45-day window.
+Separate later incident: April 2026 backend regression (BOLA-type access control flaw) active Feb 3 to Apr 20, 2026, platform-level bug.
+Source quality caveat from tool: Superblocks, Rapid Developers, Bastion are vendor marketing; Medium unverified; prefer mattpalmer.io and NVD.
+---
