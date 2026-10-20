@@ -1,0 +1,14 @@
+# Cache: track 17 buyer voices round 2 (searches)
+---
+S1 | QUERY: site:reddit.com r/lovable "How much to hire a dev" lovable app budget | MODE: extended | DOMAINS: none | DATE: 2026-10-20
+Links: Lovable (company) wikipedia; block.fiverr.com/gigs/lovable-dev; techcrunch.com/?p=3024216; getlago.substack.com/p/lovable-makes-60m-in-6-monthsbut; block.fiverr.com/gigs/lovable-website; techcrunch.com/?p=3101477; lovablepro.gumroad.com/l/course; block.fiverr.com/gigs/lovable-dev-ai?page=4; block.fiverr.com/gigs/lovable; dev.to/johnbrawner/how-i-built-an-ai-product-with-lovabledev-no-code-full-breakdown-costs-and-insights-3agb
+Summary: The search didn't return any r/lovable Reddit threads, so I couldn't find the "How much to hire a dev" discussion itself. Fiverr listings: Lovable-focused developers list starting prices from about $30, around $80 to $100 for smaller builds and fixes, $400 or more for app development. Some agencies $250 to $500. Custom AI software and full-stack web apps start at $1,000 per one listing. Build costs from a user write-up (dev.to): Lovable spend roughly $400, total project cost around $2,070 with ads, Supabase and other tools. Subscription: $25 a month for 250 credits. One Reddit user documented an app with 29,000+ lines of code built for $250.
+---
+S2 | QUERY: site:reddit.com r/lovable "paid a developer" to fix my lovable app cost me $ | MODE: extended | DOMAINS: none | DATE: 2026-10-20
+Links: wikipedia Lovable; getlago substack; techcrunch ?p=3024216; techradar lovable review; onaitech.substack.com/p/lovable-the-ai-developer-that-builds; au.trustpilot.com/review/lovable.dev ("Hogwards never sent me a letter but with a few prompts..."); catalaize substack; siliconvalleyinvestclub substack; g2 lovable reviews
+Summary: No r/lovable threads about paying a developer. Trustpilot (au): one reviewer said the AI could not fix an issue in their architecture and they spent over $100 in credits on repeated fix requests. TechCrunch: one Reddit user documented a 29,000-line app built for about $250 in credits. Onaitech Substack: cites a developer quote of $4,000 and 4 weeks for a meal-planning app.
+---
+S3 | QUERY: site:reddit.com r/lovable "hired someone" to finish my app quoted me $ developer | MODE: extended | DOMAINS: none | DATE: 2026-10-20
+Links: wikipedia Lovable; Alien Blue; onaitech substack; substack.com/@ssdavid/note/c-88059022; wifiwealth.substack.com/p/make-money-vibe-coding/comments; au.trustpilot.com/review/lovable.dev; block.fiverr.com/gigs/lovable?page=15; block.fiverr.com/gigs/lovable; bryancollins.substack.com/p/i-built-a-5000-web-app-in-just-2; block.fiverr.com/gigs/lovable-dev-ai?page=4
+Summary: No r/lovable threads returned. Fiverr: a Lovable fix listing starts at $30, a general build-an-app listing from $1,000. One blog author says a developer friend said a professional would charge several grand for an app built in Lovable for a $20 subscription (bryancollins substack).
+---
