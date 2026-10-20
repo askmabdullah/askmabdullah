@@ -1,4 +1,4 @@
-# Phase 1 summary (draft v1, written 23:10 UTC; v2 will add track 22 buyer reviews)
+# Phase 1 summary (v2, 23:20 UTC, includes track 22 buyer reviews)
 
 ## How to read this
 - All research ran on WebSearch only. WebFetch and curl were blocked by the environment network policy. Reddit, HN, Fiverr, Upwork, Meta Ad Library, Google Trends and vendor pages could NOT be opened. Everything is from search-result summaries and indexed snippets.
@@ -46,6 +46,8 @@
 - Buyer-stated budgets on Upwork and Freelancer.com: 18 posts found; confirmed Lovable/AI-built fix-or-finish posts top out at $1,200 (2026-10-15). Two Lovable/Base44 posts at $2,000 (Oct and Dec 2025). Two Supabase hardening posts at $1,500 and $2,500 (Oct 2026) where AI-built is not stated (tracks 17, 21).
 - Seller asking prices cluster at $1,400 to $2,500 "from" for small studios, $5k to $15k for finishing, $10k/week Slopfix, $25k to $50k+ for premium (tracks 8, 10, 19, 21). No named paying client at these prices was found anywhere.
 - Reddit, HN comment threads and Indie Hackers were unreachable, so the buyer-voice absence is partly a tool limit.
+
+**Gate 1 addendum (track 22, buyer reviews).** Three Clutch reviews describe the right kind of job: GeekyAnts took a Lovable prototype to a production platform (profile floor $10,000+); Cleveroad audited two AI-built codebases and gave a prioritised fix list; Connectish (Germany) rebuilt a Bolt prototype with a Supabase backend (profile minimum $5,000, most projects under $10,000). The per-review cost band was never visible in search output, so none counts as proof. These three pages are the fastest way to settle gate 1: open them in a browser and read "Project size".
 
 **Gate 2: a channel with plausible cost per paying client under $600.** UNCLEAR, leaning against for Meta.
 - Zero advertisers evidenced running Meta, Google, TikTok or LinkedIn ads for this service after 47 targeted searches across two rounds (tracks 5, 18). The Ad Library could not be opened, so this is weak absence.
