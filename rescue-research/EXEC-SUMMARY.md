@@ -8,7 +8,7 @@
 
 **Offer.** $495 audit, credited in full. Then a Hardening Week at $2,500 ($1,950 for the first three), sized from the audit, with written acceptance tests and a 30-day warranty. Sell it as launch hardening for Supabase and Stripe apps, not "vibe-code rescue".
 
-**Channel.** Zero ad spend for 30 days. Twenty Upwork proposals, platform directories, inbound. Expected cost per client $425 to $470, all assumptions. Meta only in month two if the UK/EU Ad Library shows real advertisers and three audits have closed.
+**Channel.** Zero ad spend for 30 days. Twenty Upwork proposals, platform directories, inbound. Expected cost per client $425 to $470, all assumptions. Meta only in month two if the UK/EU Ad Library shows real advertisers.
 
 **Biggest risk.** Founder attention spent on $495 audits while Wanile moves to AI operations. No AI-ops prospect is touched; four founder hours a week.
 
