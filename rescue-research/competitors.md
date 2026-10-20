@@ -48,3 +48,68 @@ Query key: Q1 = "vibe coding cleanup" service. Q2 = "vibe code" rescue agency. Q
 | 31 | Fiverr sellers (5 gigs seen: faith_midetoo, nensiahmetbeja, sohail961, the_waweru, victor_bamii) | https://fiverr.com/faith_midetoo/fix-broken-lovable-website-or-app-in-1hr and others | not shown | not shown in text (prior brief says about $30 to $500; not re-verified here) | "fix broken Lovable app in 1hr", "fix or improve your Lovable MVP", "review, fix, and deploy", "fix your vibe coded app" | not shown | cheap, the price floor | no | no evidence found (not checked) | https://fiverr.com/the_waweru/fix-your-vibe-coded-app | 2026-10-21 |
 
 Reading guide: rows 1-16 show a rescue, audit or finish offer (row 6 is second-hand via an article). Rows 17-22 are Lovable build/production agencies, not clearly rescue. Rows 23-29 are weak (dubious, directory-only or list pages). Rows 30-31 are the marketplace price floor and belong to Track 7. Total rows: 31.
+
+
+---
+
+# Round 2 additions (agent E, track 21)
+
+**ALL ROWS ARE VENDOR MARKETING** unless marked. Source text: WebSearch result text only; nothing opened. Search date 2026-10-20. Cache: `cache/21-marketplaces-competitors-searches.md`, query number shown as "Q#" (#1 to #40). Prices are "from" prices or tool summaries, grade weak unless the snippet showed the number clearly. "n/s" = not shown. "Evidence of ads" = no evidence found (not checked; Ad Library not reachable). Detail and grading: tracks/21-marketplaces-competitors-round2.md.
+
+New competitors found in round 2: 34 (24 agencies or productized sellers, 10 marketplace sellers). Pakistan-confirmed: 3 (XCONS, Wajahat S., Ahmad M.), plus 2 unconfirmed leads. No Indian rescue agency confirmed with a city.
+
+## A. Agencies and productized services (24)
+| # | name | website | country | price (text seen) | offer | guarantee | positioning | case studies | source link | Q# |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 32 | XCONS Solutions | https://xconssolutions.pk/blog/vibe-coding-expert-in-lahore/ | Pakistan (Lahore) | n/s | "vibe code rescue service can refactor and productionize" prototypes from Lovable, Bolt, Replit, Cursor, ChatGPT | n/s | local Lahore, self-described | n/s | https://xconssolutions.pk/blog/vibe-coding-expert-in-lahore/ | #18 |
+| 33 | AfterBuild Labs | https://afterbuildlabs.com/platforms/lovable-developer | n/s | $49 repo audit (48 hours); about $1,500 single integration fix; $1,999 "Production Pass" (5 to 7 days, deploy, auth, payments); $7,500 to $15,000 full pass (last via AxonBuild, vendor-labelled) | fixed-fee Lovable rescue: Supabase security, Stripe, OAuth; also "clean up AI-generated code pre-launch" | n/s | cheap entry audit plus fixed passes | n/s | https://afterbuildlabs.com/solutions/clean-up-ai-generated-code | #19, #25, #29, #38 |
+| 34 | AppStuck | https://www.appstuck.com/platforms/bolt | n/s | $70/hr, 5-hour prepaid minimum (=$350); simple fixes 5 to 10 hours, full production launch 15 to 40 hours; fixed quotes after free assessment | rescue and launch for Bolt, Lovable apps | n/s | hourly, transparent | n/s | https://www.appstuck.com/platforms/bolt ; https://www.appstuck.com/platforms/lovable | #26, #38 |
+| 35 | Nightlamp | https://nightlamp.app/fix/bolt | n/s | guide: one-time rescue agencies about $2,500 per fix; retainers $1,000 to $3,499; monitoring $79 to $279/month | "Who can fix my Bolt app" guide plus own service (own price not shown) | n/s | rescue plus monitoring | n/s | https://nightlamp.app/fix/bolt | #26 |
+| 36 | GainCafe | https://gaincafe.com/hire-lovable-expert | n/s | "Lovable Project Rescue" 3 to 7 days from $2,500 | code review, bug fixes, performance, feature completion | claims "100% success guarantee" (unverified marketing) | fixed-price sprint, same unit as our idea | n/s | https://gaincafe.com/hire-lovable-expert | #19, #25, #38 |
+| 37 | TechAvidus | https://www.techavidus.com/lovable-ai-developer | n/s | n/s | Lovable agency with "vibe coding rescue", security reviews, production refinements | n/s | generic Lovable agency | n/s | https://www.techavidus.com/lovable-ai-developer | #19, #21 |
+| 38 | Teyrex | https://teyrex.com/fix-vibe-coded-app | n/s | "fixed-price rescues from $1,400, report from 3 days" (tool wording) | fix vibe-coded app; lists hardcoded secrets, no input validation, SQL injection risk | n/s | fixed-price, report first | n/s | https://teyrex.com/fix-vibe-coded-app | #22 |
+| 39 | Triple Minds | https://tripleminds.co/ai/vibe-coding-cleanup-services/ | n/s | "From $4K, 2-4 weeks" | refactor and harden security without rewrite | n/s | mid | n/s | https://tripleminds.co/ai/vibe-coding-cleanup-services/ | #20 |
+| 40 | Arkroot | https://www.arkroot.com/ai-codebase-rescue/ | Germany / EU (per tool) | audit from EUR 399; rescue from EUR 1,999 | AI codebase rescue for Cursor, Lovable, Bolt code | n/s | EU, fixed "from" prices | n/s | https://www.arkroot.com/ai-codebase-rescue/ | #29 |
+| 41 | TopDevz | https://topdevz.com/blog/ai-code-rescue-what-it-is-what-it-costs-and-when-you-need-one/ | n/s | typical $1,500 to $30,000; fixed-fee audit with roadmap $4,950 credited to the fix; remediation teams from $15,000/month | AI code rescue | n/s | mid to premium; paid audit credited to work | n/s | same link | #29 |
+| 42 | Base44Devs | https://www.base44devs.com/migrate | n/s | migrations from $6,000 (small), $12,000 (medium, payments and multi-role auth), $25,000+; $1,500 bug-fix sprint; $497 audit | Base44 migration and rescue specialist | n/s | niche platform specialist | n/s | https://www.base44devs.com/migrate | #27 |
+| 43 | Escape Base44 | https://escapebase44.com/ | n/s | one-time price, figure not shown; its table puts manual developer migration at $2,500+ | self-serve migration tool, says 120 migrations | n/s | automation, not people | claims 120 migrations | https://escapebase44.com/ | #27 |
+| 44 | Variant Systems | https://variantsystems.io/blog/fix-replit-agent-app/ | n/s | n/s | moves Replit Agent apps off the platform; case: hosting about $150/month cut 85% after VPS move (agency claim) | n/s | Replit migration | 1 unnamed | https://variantsystems.io/blog/fix-replit-agent-app/ | #28 |
+| 45 | Morph Dev | https://morphdev.com/vibe-rescue | n/s | n/s (triage typically 1 to 2 weeks) | free 48-hour codebase audit, then repair | n/s | free audit funnel | n/s | https://morphdev.com/vibe-rescue | #22 |
+| 46 | Cloverlabs | https://cloverlabs.io/fix-vibe-coded-app/ | n/s | n/s | security hardening, untangle code, scale without rewrite | n/s | generic | n/s | https://cloverlabs.io/fix-vibe-coded-app/ | #22 |
+| 47 | Fix My Vibe | https://fixmyvibe.io/ | n/s | n/s | vibe-coded app fixing | n/s | name-led niche | n/s | https://fixmyvibe.io/ | #22 |
+| 48 | Soft Dev Digital | https://softdevdigital.com/blog/fix-vibe-coded-app | n/s | n/s | blog advice: rescue if real users, working core, validated demand; commit to git first | n/s | content marketing | n/s | https://softdevdigital.com/blog/fix-vibe-coded-app | #22 |
+| 49 | imaddhin | https://www.imaddhin.com/vibe-code-rescue | n/s | fixed-price production-readiness audit (amount n/s) | vibe-code rescue for Lovable, Bolt, Cursor apps before launch | n/s | solo or small | n/s | https://www.imaddhin.com/vibe-code-rescue | #23 |
+| 50 | devPulse | https://devpulse.com/services/engineering/fixing-vibe-coding-from-ai-prototype-to-production-ready-product/ | n/s | n/s (audit delivered in 5 to 10 business days) | audit with fix-or-rebuild call per module | n/s | mid | n/s | same link | #20 |
+| 51 | Zethic | https://zethic.com/vibe-coding-cleanup/ | n/s | free assessment, price by complexity | tool-agnostic codebase assessment | n/s | free audit funnel | n/s | same link | #20 |
+| 52 | Mobilions | https://mobilions.com/services/ai-code-cleanup/ | n/s | n/s | "rescue not rewrite" | n/s | generic | n/s | same link | #20 |
+| 53 | Codex-Soft | https://codex-soft.com/solutions/vibe-coding-cleanup-solutions | n/s | n/s | speciality in vibe-coded and AI-assisted projects | n/s | generic | n/s | same link | #20 |
+| 54 | AcornGlobus | https://acornglobus.com/services/ai-app-rescue/ | n/s | n/s | "AI App Rescue" page | n/s | generic | n/s | same link | #19 |
+| 55 | Flow Lab (on Contra) | https://contra.com/s/klr2Nv2L-finish-and-launch-your-ai-built-app-lovable-bolt-claude-code | Belarus (per tool) | "starting at $350", 3 days | finish and launch AI-built apps (Lovable, Bolt, Claude Code, Cursor); optional monthly support | n/s | cheap 3-day rescue with sample review (invented example) | n/s | same link | #12 |
+
+Note: ISHIR (round 1 row 27, directory only) now has a Vibe Coding Cleanup page: it says teams are in India, LATAM and East Europe and serves Texas; projects run from a few weeks to several sprints (Q#20). Analyse Digital (https://analysedigital.com/lovable-developers/), a no-code agency whose delivery team is "based in India" (no city), appeared in Q#21 but has no rescue offer shown; not counted.
+
+## B. Marketplace sellers (10)
+| # | name | platform | country | price | proof signals | offer | link | Q# |
+|---|---|---|---|---|---|---|---|---|
+| 56 | Wajahat S. | Upwork | Pakistan (Islamabad, from title) | n/s | n/s | "Vibe Coding Expert ReactNative, Expo, Lovable, Cursor, ClaudCod, GPT5" | https://www.upwork.com/freelancers/wajahatshaw | #2 |
+| 57 | Ahmad M. | Upwork | Pakistan (Bahawalnagar) | $17/hr on a matching profile (matched by details, weak) | self-reported Top Rated Plus, 360+ projects; another summary said over $300K earned (lifetime) | "Vibe Code Rescue": audit first, written report of what is broken and what the fix costs | https://www.upwork.com/hire/flutter-freelancers/pk/bahawalnagar/ | #11, #19, #40 |
+| 58 | Syed H. | Upwork | n/s | $60/hr | Top Rated Plus, 100% job success, over $50K earned | rescues Lovable, Base44, Replit, Bolt apps | https://www.upwork.com/hire/base44-experts/ | #11 |
+| 59 | Shahid S. | Upwork | n/s | $4,500 (claimed past Next.js migration) | n/s | migrate Lovable, no-code and prototype projects into maintainable systems | cache #8 (link not given) | #8 |
+| 60 | Kamran Asif (Rkamranasif) | Fiverr | not stated | from $40 | Level 2, 4.9 from 86 reviews | "specialized in fixing and rescuing vibe coded apps" | https://www.fiverr.com/rkamranasif/fix-errors-and-bugs-in-your-vibe-coded-website-or-app-replit-lovable-etc | #18, #37 |
+| 61 | Ahmed Javed (Ahmed__javed) | Fiverr | not stated | from $10 | Level 2, "Senior Engineer", 5.0 from 62 reviews (profile says 75) | vibe coding expert, MVP to production | https://www.fiverr.com/ahmed__javed/be-your-vibe-coding-expert-using-base44-v0-and-loveable-for-building-mvp | #37 |
+| 62 | iTechnoLabs (Pankaj711) | Fiverr | not stated | from $100 | "Vetted by Fiverr Pro", 5.0 from 28 reviews, agency 14+ years | vibe coding mobile apps, Lovable among tools | https://www.fiverr.com/pankaj711/develop-a-mobile-app-for-ios-and-android-by-using-flutter | #37 |
+| 63 | Geeksofkolachi | Fiverr | Karachi-linked, not confirmed | n/s | "Pro vetted", 5.0 (tool summary) | Lovable and vibe-code repair | cache #18 (link not given) | #18 |
+| 64 | Ahmarbaig726 | Fiverr | not stated | $80 (deploy with custom domain), $150 (deploy and fix) | n/s | deploy Lovable, Bolt, v0 apps live | https://www.fiverr.com/ahmarbaig726/deploy-and-fix-your-lovable-replit-bolt-or-ai-app | #35 |
+| 65 | Mhassanbaig | Fiverr | not stated | $250 | n/s | securely deploy apps built in Lovable, Base44, Replit | https://www.fiverr.com/mhassanbaig/securely-deploy-apps-built-in-lovable-base44-replit-etc | #36 |
+
+Fiverr names with no extra detail beyond price are in pricing-map.md round 2 section (about 25 more gigs, $5 to $200).
+
+## C. Seen but not counted (no rescue offer shown)
+CodingCops (Lahore, $25 to $49/hr directory listing), Deliverydevs (Karachi, 50 to 249 employees), Cubix (Pakistan, GoodFirms lists Lovable, 4.9 from 33 reviews), MentorCruise Lovable experts page, Concetto Labs, lovablexperts.com, withnocode.io, Zeroic (engineering blog, Lovable vs Bolt vs Cursor), Joylo (blog on rescue services), Fora Soft Medium post ($2,500 to $6,000 typical project, vendor).
+
+## D. Round 2 reading
+- Pakistan: the brief's prior claim is now supported (2 Upwork freelancers and 1 Lahore company with a rescue page), but prices shown sit at the floor ($17/hr, $40 to $100 gigs) and no Pakistani studio shows a $1,500+ price. Moderate for existence, weak for price. A Lahore studio at $2,000 would be above every Pakistani price seen.
+- India: no confirmed Indian rescue agency; ISHIR and Analyse Digital mention India delivery. Search for city names returned noise (a lingerie brand and real estate).
+- Price band $1,400 to $2,500 is now served by Teyrex ($1,400), Base44Devs ($1,500 sprint), AfterBuild ($1,500 to $1,999), Arkroot (EUR 1,999), GainCafe ($2,500), Forasoft ($2,500, round 1). Median of 11 fixed-rescue "from" prices: $2,500.
+- Guarantees: still rare. GainCafe claims "100% success guarantee" (vague); Slopfix two-week warranty (round 1). Case studies by name: none seen.
+- Ads: no evidence found for any competitor (not checked).
