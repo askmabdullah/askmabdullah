@@ -42,3 +42,15 @@ Working dir: /home/user/askmabdullah/rescue-research
 
 ## Phase 4: synthesis and red team
 - 00:25 UTC: synthesis and red-team agents launched in parallel (model fable, max effort). Red team does not see the synthesis.
+- 00:55 UTC: Phase 4 COMPLETE. FINAL-REPORT.md (17 sections, ~13k words; synthesis on fable/max), red-team.md (~5k words, fable/max), section 17 "Red team and final call" written by orchestrator, EXEC-SUMMARY.md written (<300 words).
+
+## FINAL CALL
+GO WITH CHANGES (narrow probe, zero ad spend, Wanile name, $495 audit first). NO-GO on the original "$2,000/week via Meta under a new brand" idea. Gates: 1 unclear leaning not met; 2 unclear leaning against for Meta; 3 partial pass (security core only); 4 unclear weak support; 5 unclear leaning pass.
+
+## Run totals
+- Agents: 16 round 1 + 5 round 2 + 1 round 3 + 5 Phase 2 + 3 verifiers + 2 Phase 4 = 32 subagents, plus 2 probes.
+- Searches: about 460 WebSearch calls. Pages opened: 0 (network policy blocked WebFetch and curl for all public hosts).
+- Verification: ~2,980 items checked, 34 failed, 53 downgraded, ~246 labelled assumptions.
+- Deliverables present: EXEC-SUMMARY.md, FINAL-REPORT.md, red-team.md, verification-log.md (+ logs 1 to 3), ads-library.md, competitors.md, pricing-map.md, STATUS.md, BRIEF.md, phase1-summary.md, tracks/ (22), model/ (5), cache/ (22 search caches).
+- Skipped or degraded: Meta Ad Library direct scan, Google Trends, autocomplete, Ads Transparency, Fiverr/Upwork page reads, full Reddit and HN threads. All stated in FINAL-REPORT section 16.
+- Elapsed: 22:03 to 00:55 UTC, about 2h52m of the 4h budget.
