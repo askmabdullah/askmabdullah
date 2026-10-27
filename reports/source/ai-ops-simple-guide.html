@@ -1,0 +1,1112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where AI Work Pays</title>
+<style>
+  @page {
+    size: 110mm 196mm;
+    margin: 11mm 0 13mm 0;
+    @bottom-center {
+      content: counter(page);
+      font-family: Inter, sans-serif;
+      font-size: 8.5pt;
+      color: #9aa0ab;
+    }
+  }
+  @page cover {
+    margin: 0;
+    @bottom-center { content: none; }
+  }
+
+  :root {
+    --ink: #111827;
+    --ink2: #464d5b;
+    --muted: #7b8291;
+    --line: #e6e2d8;
+    --paper: #f7f5f0;
+    --navy: #0e1a2b;
+    --blue: #2a78d6;
+    --blue-d: #1c5cab;
+    --blue-l: #e6effc;
+    --aqua: #1baf7a;
+    --aqua-d: #0d7350;
+    --aqua-l: #e1f5ec;
+    --violet: #6250d6;
+    --violet-d: #4a3aa7;
+    --violet-l: #ece9fb;
+    --gray-bar: #c9cdd4;
+    --good-t: #0b7a23; --good-b: #e2f4e5;
+    --hold-t: #1c5cab; --hold-b: #e3edfb;
+    --mix-t: #8a5800;  --mix-b: #fcefd3;
+    --bad-t: #b2342e;  --bad-b: #fbe6e3;
+  }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: Inter, "DejaVu Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .wrap { padding: 0 8mm; }
+  .pg { break-before: page; }
+  .keep { break-inside: avoid; }
+
+  .kicker {
+    font-size: 10.5px; letter-spacing: .13em; text-transform: uppercase;
+    color: var(--blue-d); font-weight: 700; margin: 0 0 4px;
+  }
+  h1, h2, h3 { font-family: "Inter Display", Inter, sans-serif; margin: 0; }
+  h2 { font-size: 26px; line-height: 1.12; letter-spacing: -0.012em; font-weight: 750; margin: 0 0 12px; text-wrap: balance; }
+  h3 { font-size: 18px; line-height: 1.2; font-weight: 700; margin: 20px 0 8px; break-after: avoid; }
+  h4 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--ink2); margin: 16px 0 6px; break-after: avoid; }
+  p { margin: 0 0 10px; }
+  .lead { font-size: 17px; line-height: 1.42; font-weight: 500; color: var(--ink); }
+  .muted { color: var(--muted); }
+  .small { font-size: 12.5px; line-height: 1.45; color: var(--ink2); }
+  .tiny { font-size: 11px; line-height: 1.4; color: var(--muted); }
+  strong { font-weight: 700; }
+  a { color: var(--blue-d); text-decoration: none; }
+  ul.clean { list-style: none; margin: 0; padding: 0; }
+  ul.clean li { margin: 0 0 8px; padding-left: 0; }
+
+  .icon { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  .icon.sm { width: 16px; height: 16px; stroke-width: 2.2; }
+
+  /* ---------- cover ---------- */
+  .cover {
+    page: cover;
+    height: 196mm; box-sizing: border-box;
+    background: var(--navy);
+    color: #fff;
+    padding: 15mm 9mm 12mm;
+    display: flex; flex-direction: column;
+    break-after: page;
+    position: relative; overflow: hidden;
+  }
+  .cover .glow {
+    position: absolute; right: -60px; top: -40px; width: 260px; height: 260px; border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(42,120,214,.55), rgba(42,120,214,0) 70%);
+  }
+  .cover .glow2 {
+    position: absolute; left: -80px; bottom: 120px; width: 240px; height: 240px; border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(27,175,122,.30), rgba(27,175,122,0) 70%);
+  }
+  .cover .tag { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: #9fc3f3; font-weight: 700; position: relative; }
+  .cover h1 { font-size: 40px; line-height: 1.02; letter-spacing: -0.02em; font-weight: 800; margin: 14px 0 14px; position: relative; }
+  .cover h1 span { color: #7fb4f5; }
+  .cover .sub { font-size: 16px; line-height: 1.45; color: #d6deea; position: relative; }
+  .cover .chain { margin-top: auto; position: relative; }
+  .chain-row { display: flex; align-items: stretch; gap: 6px; }
+  .chain-step { flex: 1; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 10px 6px 9px; text-align: center; }
+  .chain-step b { display: block; font-family: "Inter Display"; font-size: 26px; line-height: 1; font-weight: 800; }
+  .chain-step span { display: block; font-size: 10.5px; line-height: 1.25; color: #c3cee0; margin-top: 5px; }
+  .chain-step.last { background: #2a78d6; border-color: #2a78d6; }
+  .chain-step.last span { color: #eaf2fd; }
+  .chain-arrow { align-self: center; color: #6c7d96; font-size: 14px; }
+  .cover .who { margin-top: 18px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.14); font-size: 12px; color: #aeb9cb; position: relative; display: flex; justify-content: space-between; }
+
+  /* ---------- generic blocks ---------- */
+  .card { background: var(--paper); border-radius: 14px; padding: 13px 15px; margin: 12px 0; break-inside: avoid; }
+  .card.line { background: #fff; border: 1px solid var(--line); }
+  .callout { border-left: 4px solid var(--blue); background: var(--blue-l); border-radius: 0 12px 12px 0; padding: 11px 14px; margin: 14px 0; break-inside: avoid; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .bet-mini { display: flex; gap: 12px; align-items: flex-start; border-radius: 14px; padding: 13px 14px; margin: 10px 0; break-inside: avoid; border: 1px solid var(--line); background: #fff; }
+  .bet-mini .num { flex: none; width: 34px; height: 34px; border-radius: 50%; color: #fff; font-family: "Inter Display"; font-weight: 800; font-size: 17px; display: flex; align-items: center; justify-content: center; }
+  .bet-mini .t { font-family: "Inter Display"; font-weight: 700; font-size: 16.5px; line-height: 1.2; margin-bottom: 4px; }
+  .bet-mini p { font-size: 13.5px; line-height: 1.45; color: var(--ink2); margin: 0; }
+  .bet-mini .score { font-size: 11.5px; font-weight: 700; margin-top: 6px; }
+  .c1 { --c: var(--blue); --cd: var(--blue-d); --cl: var(--blue-l); }
+  .c2 { --c: var(--aqua); --cd: var(--aqua-d); --cl: var(--aqua-l); }
+  .c3 { --c: var(--violet); --cd: var(--violet-d); --cl: var(--violet-l); }
+  .bet-mini .num { background: var(--c); }
+  .bet-mini .score { color: var(--cd); }
+  .bet-mini { border-left: 4px solid var(--c); }
+
+  /* ladder */
+  .ladder { margin: 14px 0 6px; }
+  .rung { border-radius: 14px; padding: 12px 14px; margin-bottom: 0; break-inside: avoid; position: relative; }
+  .rung .lvl { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; }
+  .rung .t { font-family: "Inter Display"; font-weight: 750; font-size: 19px; line-height: 1.15; margin: 2px 0 4px; }
+  .rung p { font-size: 13.5px; margin: 0; line-height: 1.45; }
+  .rung .pay { margin-top: 7px; font-size: 13px; font-weight: 600; display: flex; gap: 6px; align-items: flex-start; }
+  .rung.top { background: var(--navy); color: #fff; }
+  .rung.top .lvl { color: #9fc3f3; }
+  .rung.top p { color: #d6deea; }
+  .rung.mid { background: #dce8fa; }
+  .rung.mid .lvl { color: var(--blue-d); }
+  .rung.low { background: #f1efe9; }
+  .rung.low .lvl { color: var(--muted); }
+  .rung-gap { height: 16px; display: flex; justify-content: center; align-items: center; color: #9aa0ab; font-size: 12px; }
+  .money { display: inline-flex; gap: 2px; }
+  .money i { font-style: normal; font-weight: 800; }
+
+  /* funnel */
+  .funnel-row { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; break-inside: avoid; }
+  .funnel-row .n { width: 44px; flex: none; text-align: right; font-family: "Inter Display"; font-weight: 800; font-size: 24px; line-height: 1; }
+  .funnel-row .body { flex: 1; }
+  .funnel-row .track { height: 14px; border-radius: 4px; background: #f0eee8; position: relative; overflow: hidden; }
+  .funnel-row .bar { height: 100%; border-radius: 4px; background: var(--blue); }
+  .funnel-row .lbl { font-size: 13px; line-height: 1.3; margin-top: 4px; color: var(--ink2); }
+  .funnel-row.final .bar { background: var(--navy); }
+  .funnel-row.final .n { color: var(--blue-d); }
+
+  /* tiles */
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+  .tile { background: var(--paper); border-radius: 12px; padding: 10px 11px; break-inside: avoid; }
+  .tile .hd { display: flex; align-items: center; gap: 7px; margin-bottom: 4px; color: var(--blue-d); }
+  .tile .hd b { font-family: "Inter Display"; font-size: 14px; color: var(--ink); line-height: 1.15; }
+  .tile p { font-size: 12px; line-height: 1.4; color: var(--ink2); margin: 0; }
+  .tile .no { font-size: 10px; font-weight: 700; color: var(--muted); }
+
+  /* tests */
+  .test { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+  .test:last-child { border-bottom: 0; }
+  .test .n { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; font-family: "Inter Display"; }
+  .test .n.hot { background: var(--bad-t); }
+  .test p { margin: 3px 0 0; font-size: 15px; line-height: 1.4; }
+
+  /* bar charts */
+  .hbar { margin: 12px 0 4px; }
+  .hbar-row { display: flex; align-items: center; gap: 8px; margin: 0 0 7px; break-inside: avoid; }
+  .hbar-row .name { width: 112px; flex: none; font-size: 12.5px; line-height: 1.2; color: var(--ink); }
+  .hbar-row .track { flex: 1; display: flex; align-items: center; gap: 6px; padding-right: 30px; box-sizing: border-box; }
+  .hbar-row .bar { flex: none; height: 16px; border-radius: 0 4px 4px 0; background: var(--gray-bar); }
+  .hbar-row .val { font-size: 12.5px; font-weight: 700; color: var(--ink2); font-variant-numeric: tabular-nums; }
+  .hbar-row.hi .bar { background: var(--blue); }
+  .hbar-row.hi .name { font-weight: 700; }
+  .hbar-row.hi .val { color: var(--ink); }
+  .axis-note { font-size: 10.5px; color: var(--muted); margin: 2px 0 0 120px; }
+  .reason-row { margin: 0 0 10px; break-inside: avoid; }
+  .reason-row .top { display: flex; justify-content: space-between; font-size: 13px; line-height: 1.3; margin-bottom: 4px; gap: 10px; }
+  .reason-row .top b { font-variant-numeric: tabular-nums; }
+  .reason-row .track { height: 12px; background: #f0eee8; border-radius: 3px; }
+  .reason-row .bar { height: 12px; border-radius: 3px; background: var(--bad-t); opacity: .85; }
+  .reason-row.minor .bar { background: #d99a95; }
+
+  /* heatmap */
+  table.heat { width: 100%; border-collapse: separate; border-spacing: 2px; table-layout: fixed; margin: 8px 0 4px; break-inside: avoid; }
+  table.heat th { font-size: 9.5px; font-weight: 700; color: var(--ink2); text-align: center; padding: 0 0 3px; line-height: 1.1; }
+  table.heat th.rowh { text-align: left; }
+  table.heat td { text-align: center; font-size: 11.5px; font-weight: 700; height: 22px; border-radius: 3px; font-variant-numeric: tabular-nums; }
+  table.heat td.rowh { text-align: left; font-weight: 500; font-size: 11px; color: var(--ink); padding-right: 2px; line-height: 1.1; }
+  table.heat tr.hi td.rowh { font-weight: 700; }
+  table.heat td.tot { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+  table.heat tr.hi td.tot { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .s3 { background: #e8f0fc; color: #24467a; }
+  .s4 { background: #cde2fb; color: #1d3f70; }
+  .s5 { background: #9ec5f4; color: #15355f; }
+  .s6 { background: #6da7ec; color: #0e2a50; }
+  .s7 { background: #3987e5; color: #fff; }
+  .s8 { background: #256abf; color: #fff; }
+  .s9 { background: #184f95; color: #fff; }
+  .keyrow { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--ink2); margin: 6px 0 0; }
+  .keyrow b { color: var(--ink); }
+
+  /* verdicts */
+  .verdict { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+  .verdict:last-child { border-bottom: 0; }
+  .badge { flex: none; display: inline-flex; align-items: center; gap: 4px; font-size: 10.5px; font-weight: 700; padding: 3px 7px 3px 5px; border-radius: 99px; width: 74px; box-sizing: border-box; justify-content: center; margin-top: 1px; }
+  .b-good { color: var(--good-t); background: var(--good-b); }
+  .b-hold { color: var(--hold-t); background: var(--hold-b); }
+  .b-mix  { color: var(--mix-t);  background: var(--mix-b); }
+  .b-bad  { color: var(--bad-t);  background: var(--bad-b); }
+  .verdict .t { font-weight: 700; font-size: 14px; line-height: 1.25; }
+  .verdict .t .sc { font-weight: 600; color: var(--muted); font-size: 12px; }
+  .verdict p { margin: 2px 0 0; font-size: 12.8px; line-height: 1.42; color: var(--ink2); }
+
+  /* fits / night */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0; }
+  .col { border-radius: 12px; padding: 10px 11px; break-inside: avoid; }
+  .col h5 { margin: 0 0 6px; font-size: 13px; display: flex; gap: 5px; align-items: center; font-family: "Inter Display"; }
+  .col ul { margin: 0; padding: 0 0 0 15px; font-size: 12.3px; line-height: 1.4; }
+  .col li { margin-bottom: 4px; }
+  .col.ok { background: var(--good-b); }
+  .col.ok h5 { color: var(--good-t); }
+  .col.no { background: var(--bad-b); }
+  .col.no h5 { color: var(--bad-t); }
+
+  .law { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+  .law:last-child { border-bottom: 0; }
+  .law .k { flex: none; width: 82px; font-weight: 700; font-size: 12.5px; line-height: 1.3; }
+  .law p { margin: 0; font-size: 12.8px; line-height: 1.42; color: var(--ink2); }
+  .law .good { color: var(--good-t); font-weight: 700; }
+
+  /* bet pages */
+  .bet-head { background: var(--c); color: #fff; border-radius: 16px; padding: 14px 15px; display: flex; gap: 12px; align-items: center; break-inside: avoid; margin-bottom: 14px; }
+  .bet-head .lbl { font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; opacity: .85; }
+  .bet-head h2 { color: #fff; font-size: 23px; margin: 3px 0 0; }
+  .ring { flex: none; width: 66px; height: 66px; position: relative; }
+  .ring svg { width: 66px; height: 66px; transform: rotate(-90deg); }
+  .ring .v { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: "Inter Display"; font-weight: 800; font-size: 20px; line-height: 1; }
+  .ring .v small { font-size: 9px; font-weight: 600; opacity: .85; margin-top: 2px; font-family: Inter; }
+  .oneline { font-size: 16px; line-height: 1.42; font-weight: 600; border-left: 4px solid var(--c); padding: 2px 0 2px 12px; margin: 0 0 14px; color: var(--ink); break-inside: avoid; }
+  .oneline .q { display: block; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--cd); font-weight: 700; margin-bottom: 2px; }
+
+  .flow { margin: 12px 0 8px; break-inside: avoid; }
+  .flow-step { display: flex; gap: 11px; align-items: flex-start; position: relative; padding-bottom: 14px; }
+  .flow-step:last-child { padding-bottom: 0; }
+  .flow-step::before { content: ""; position: absolute; left: 14px; top: 30px; bottom: 2px; width: 2px; background: var(--cl); }
+  .flow-step:last-child::before { display: none; }
+  .flow-step .dot { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--cl); color: var(--cd); font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; font-family: "Inter Display"; position: relative; z-index: 1; }
+  .flow-step.you .dot { background: var(--c); color: #fff; }
+  .flow-step .box { flex: 1; padding-top: 4px; }
+  .flow-step .box b { display: block; font-size: 14px; line-height: 1.3; }
+  .flow-step .box span { display: block; font-size: 12.5px; line-height: 1.4; color: var(--ink2); margin-top: 1px; }
+  .flow-step.you .box b { color: var(--cd); }
+
+  .stats { display: grid; grid-template-columns: 1fr; gap: 7px; margin: 10px 0; }
+  .stat { display: flex; gap: 12px; align-items: center; background: var(--paper); border-radius: 12px; padding: 10px 12px; break-inside: avoid; }
+  .stat b { flex: none; width: 104px; font-family: "Inter Display"; font-weight: 800; font-size: 19px; line-height: 1.1; color: var(--cd, var(--ink)); }
+  .stat span { font-size: 12.8px; line-height: 1.38; color: var(--ink2); }
+
+  .price { background: var(--cl); border-radius: 14px; padding: 13px 14px; margin: 12px 0; break-inside: avoid; }
+  .price .tag { font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; color: var(--cd); }
+  .price .line { display: flex; justify-content: space-between; gap: 10px; font-size: 13.5px; padding: 6px 0; border-bottom: 1px dashed rgba(0,0,0,.12); }
+  .price .line:last-of-type { border-bottom: 0; }
+  .price .line b { text-align: right; white-space: nowrap; }
+  .price .big { margin-top: 8px; font-family: "Inter Display"; font-weight: 800; font-size: 19px; line-height: 1.2; color: var(--ink); }
+  .price .big small { display: block; font-family: Inter; font-weight: 500; font-size: 12px; color: var(--ink2); }
+
+  .bul { margin: 6px 0 10px; padding: 0 0 0 18px; }
+  .bul li { margin: 0 0 6px; font-size: 14px; line-height: 1.45; }
+  .bul li::marker { color: var(--c, var(--blue)); }
+
+  .warn { background: #fff7ea; border-radius: 12px; padding: 11px 13px; margin: 12px 0; break-inside: avoid; border: 1px solid #f3dfb8; }
+  .warn h5 { margin: 0 0 6px; font-size: 13px; color: var(--mix-t); display: flex; gap: 6px; align-items: center; font-family: "Inter Display"; }
+  .warn ul { margin: 0; padding-left: 16px; font-size: 13px; line-height: 1.45; }
+  .warn li { margin-bottom: 4px; }
+  .halal { background: #eef7f1; border: 1px solid #cfe8d8; border-radius: 12px; padding: 11px 13px; margin: 12px 0; break-inside: avoid; }
+  .halal h5 { margin: 0 0 5px; font-size: 13px; color: #1d6b3a; font-family: "Inter Display"; display: flex; gap: 6px; align-items: center; }
+  .halal p { margin: 0; font-size: 13px; line-height: 1.45; color: #2c4a37; }
+
+  /* 14-day test */
+  .test14 { border: 1.5px solid var(--c); border-radius: 16px; padding: 13px 14px; margin: 14px 0 6px; }
+  .test14 .ttl { font-family: "Inter Display"; font-weight: 800; font-size: 19px; margin: 0 0 10px; color: var(--cd); }
+  .days { display: flex; gap: 3px; margin: 4px 0 12px; break-inside: avoid; }
+  .days div { border-radius: 8px; padding: 7px 7px 6px; color: #fff; font-size: 11px; line-height: 1.25; }
+  .days div b { display: block; font-size: 11.5px; margin-bottom: 2px; }
+  .days .d1 { flex: 4; background: var(--c); }
+  .days .d2 { flex: 8; background: var(--cd); }
+  .days .d3 { flex: 3; background: var(--navy); }
+  .qlist { counter-reset: q; list-style: none; padding: 0; margin: 6px 0 10px; }
+  .qlist li { counter-increment: q; position: relative; padding: 8px 0 8px 32px; border-bottom: 1px solid var(--line); font-size: 14px; line-height: 1.42; break-inside: avoid; }
+  .qlist li:last-child { border-bottom: 0; }
+  .qlist li::before { content: counter(q); position: absolute; left: 0; top: 8px; width: 22px; height: 22px; border-radius: 50%; background: var(--cl); color: var(--cd); font-weight: 800; font-size: 11.5px; display: flex; align-items: center; justify-content: center; }
+  .find { margin: 4px 0 8px; }
+  .find .f { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; break-inside: avoid; }
+  .find .f .c { flex: none; width: 30px; height: 30px; border-radius: 9px; background: var(--cl); color: var(--cd); font-weight: 800; font-family: "Inter Display"; font-size: 15px; display: flex; align-items: center; justify-content: center; }
+  .find .f p { margin: 0; font-size: 13.5px; line-height: 1.42; }
+  .pass { background: var(--navy); color: #fff; border-radius: 12px; padding: 11px 13px; margin: 10px 0 0; break-inside: avoid; }
+  .pass .tag { font-size: 10px; letter-spacing: .13em; text-transform: uppercase; color: #9fc3f3; font-weight: 700; }
+  .pass p { margin: 3px 0 0; font-size: 13.5px; line-height: 1.45; }
+
+  /* surprises */
+  .surp { display: flex; gap: 12px; margin: 12px 0; break-inside: avoid; }
+  .surp .n { flex: none; font-family: "Inter Display"; font-weight: 800; font-size: 34px; line-height: .9; color: var(--blue); width: 28px; }
+  .surp .t { font-family: "Inter Display"; font-weight: 750; font-size: 16.5px; line-height: 1.22; margin-bottom: 4px; }
+  .surp p { margin: 0 0 4px; font-size: 13.5px; line-height: 1.45; color: var(--ink2); }
+
+  /* glossary */
+  .gl { padding: 8px 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+  .gl b { display: block; font-size: 14px; }
+  .gl span { font-size: 13px; line-height: 1.42; color: var(--ink2); }
+
+  .src { font-size: 11.5px; line-height: 1.4; margin: 0 0 7px; break-inside: avoid; }
+  .src a { word-break: break-word; }
+  .src .w { color: var(--ink); font-weight: 600; }
+
+  .todo { counter-reset: s; list-style: none; padding: 0; margin: 10px 0; }
+  .todo li { counter-increment: s; position: relative; padding: 10px 0 10px 40px; border-bottom: 1px solid var(--line); break-inside: avoid; font-size: 14.5px; line-height: 1.42; }
+  .todo li:last-child { border-bottom: 0; }
+  .todo li::before { content: counter(s); position: absolute; left: 0; top: 9px; width: 28px; height: 28px; border-radius: 8px; background: var(--navy); color: #fff; font-family: "Inter Display"; font-weight: 800; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+
+  svg.chart text { font-family: Inter, sans-serif; }
+  h2 { break-inside: avoid; }
+  p, li { orphans: 2; widows: 2; }
+  .head { break-inside: avoid; break-after: avoid; }
+  .card.line { break-inside: auto; }
+  .test14 { break-before: page; }
+  .t14head { break-inside: avoid; break-after: avoid; }
+  .sec { margin-top: 26px; padding-top: 18px; border-top: 1px solid var(--line); }
+  .kicker { break-after: avoid; }
+  h2 { break-after: avoid; }
+  .hbar { break-inside: avoid; }
+  .funnel-wrap { break-inside: avoid; }
+
+</style>
+</head>
+<body>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c.6-3 2.8-5 5.5-5s4.9 2 5.5 5"/><circle cx="17" cy="9" r="2.4"/><path d="M15.6 14.2c2.3.2 4.1 1.9 4.8 4.8"/></symbol>
+    <symbol id="i-leak" viewBox="0 0 24 24"><circle cx="10.5" cy="9.5" r="6.5"/><path d="M10.5 6.2v6.6M12.6 7.6c-.4-.6-1.1-.9-2-.9-1.2 0-2 .6-2 1.5 0 2 4.2 1 4.2 3 0 .9-.9 1.5-2.2 1.5-1 0-1.8-.4-2.2-1"/><path d="M18.5 15.2s2 2.3 2 3.5a2 2 0 0 1-4 0c0-1.2 2-3.5 2-3.5z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 12h6M9.5 15h6M9.5 18h4"/></symbol>
+    <symbol id="i-rules" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10"/><path d="M5 7h14"/><path d="M5 7l-2.5 6a2.5 2.5 0 0 0 5 0z"/><path d="M19 7l-2.5 6a2.5 2.5 0 0 0 5 0z"/></symbol>
+    <symbol id="i-speed" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7"/><path d="M12 13.5V9.6M10 3h4M12 3v3.5M17.8 7.4l1.4-1.4"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3.5l1.8 5.2 5.2 1.8-5.2 1.8L11 17.5l-1.8-5.2L4 10.5l5.2-1.8z"/><path d="M18.5 15.5v5M16 18h5"/></symbol>
+    <symbol id="i-badsw" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M3 8.5h18"/><path d="M9.5 11.5l5 5M14.5 11.5l-5 5"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8.5h15M15.5 5l3.5 3.5-3.5 3.5"/><path d="M20 15.5H5M8.5 12L5 15.5 8.5 19"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><path d="M4 18l5-5 3.5 3.5L20 9"/><path d="M15 9h5v5"/></symbol>
+    <symbol id="i-demand" viewBox="0 0 24 24"><path d="M4 5h16v10.5H10l-4.5 3.5v-3.5H4z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M3.5 13c2.6-4 5.8-4 8.5 0s5.9 4 8.5 0"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4.5M12 17.4v.1"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M19 14.5A7.5 7.5 0 0 1 9.5 5a7.5 7.5 0 1 0 9.5 9.5z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14-1 9-6 14-14 14z"/><path d="M5 19l7-7"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===================== COVER ===================== -->
+<section class="cover">
+  <div class="glow"></div>
+  <div class="glow2"></div>
+  <div class="tag">Research guide &middot; October 2026</div>
+  <h1>Where AI work can make <span>real money</span></h1>
+  <p class="sub">We studied 72 business problems that cost companies money every week. This guide shows the 3 best ones for Wanile, in plain words, with pictures.</p>
+
+  <div class="chain">
+    <div class="chain-row">
+      <div class="chain-step"><b>72</b><span>problems found</span></div>
+      <div class="chain-arrow">&rsaquo;</div>
+      <div class="chain-step"><b>17</b><span>passed all 6 tests</span></div>
+      <div class="chain-arrow">&rsaquo;</div>
+      <div class="chain-step"><b>10</b><span>studied up close</span></div>
+      <div class="chain-arrow">&rsaquo;</div>
+      <div class="chain-step last"><b>3</b><span>best bets for you</span></div>
+    </div>
+    <div class="who"><span>For Muhammad Abdullah, Wanile Technologies</span><span>About 20 min read</span></div>
+  </div>
+</section>
+
+<!-- ===================== ANSWER ===================== -->
+<section class="wrap">
+  <div class="head"><div class="kicker">The short answer</div>
+  <h2>Sell finished, checked work. Not AI tools.</h2></div>
+  <p class="lead">Software now does simple typing jobs for very little money. <strong>What companies still pay well for is a job that is done, checked and handed back on time, with someone responsible for it.</strong></p>
+  <p>These 3 fit Wanile best:</p>
+
+  <div class="bet-mini c1">
+    <div class="num">1</div>
+    <div>
+      <div class="t">Monthly books for groups of small companies</div>
+      <p>Investment firms buy many small companies. Every month someone must join all their books into one clean report. You do it with AI plus accountants, ready by day 10.</p>
+      <div class="score">Score 46 out of 70 &middot; US clients</div>
+    </div>
+  </div>
+  <div class="bet-mini c2">
+    <div class="num">2</div>
+    <div>
+      <div class="t">Client checks for Australian firms</div>
+      <p>A new Australian law (live since July 2026) makes lawyers, accountants and real estate agents check every new client. You prepare the checks. Their compliance officer approves.</p>
+      <div class="score">Score 45 out of 70 &middot; Australian clients</div>
+    </div>
+  </div>
+  <div class="bet-mini c3">
+    <div class="num">3</div>
+    <div>
+      <div class="t">Getting back money insurers did not pay</div>
+      <p>US doctors lose money when insurers refuse or underpay claims. You find it, fight for it, and take a share of what comes back. Sold through billing companies.</p>
+      <div class="score">Score 44 out of 70 &middot; US clients</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>My advice: start Bet 1. Test Bet 2 in the same 2 weeks. Test Bet 3 after that.</strong></p>
+    <p class="small">The scores are very close (46, 45, 44). Real talks with buyers should decide the final order. Each bet has a 14-day test later in this guide.</p>
+  </div>
+</section>
+
+<!-- ===================== BIG IDEA ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">The big idea</div>
+  <h2>Typing is cheap now. Owning the result is not.</h2></div>
+  <p>Think of the work as a ladder. The higher you go, the more people pay.</p>
+
+  <div class="ladder">
+    <div class="rung top keep">
+      <div class="lvl">Top step &middot; still pays well</div>
+      <div class="t">Own the result</div>
+      <p>The job is done by a deadline, checked, and a named person signs it.</p>
+      <div class="pay">Example: a US group controller costs $120K to $175K a year. Companies pay that because someone must own the numbers.</div>
+    </div>
+    <div class="rung-gap">&#9650;</div>
+    <div class="rung mid keep">
+      <div class="lvl">Middle step &middot; paid if tied to a result</div>
+      <div class="t">Check the work</div>
+      <p>Catch errors, chase missing papers, make judgement calls a tool cannot make.</p>
+    </div>
+    <div class="rung-gap">&#9650;</div>
+    <div class="rung low keep">
+      <div class="lvl">Bottom step &middot; now very cheap</div>
+      <div class="t">Type it in</div>
+      <p>Read a document and enter it into software.</p>
+      <div class="pay">Now about $1 to $2 per order, about $2.75 per faxed referral, and AI phone answering from $29 a month.</div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <p><strong>In 2025 and 2026, the big software companies added AI for exactly these typing jobs.</strong> A service that only types will lose to a free feature. A service that owns a checked result by a fixed date still gets paid.</p>
+  </div>
+</section>
+
+<!-- ===================== HOW WE SEARCHED ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">How we searched</div>
+  <h2>From about 85 findings down to 3 bets</h2></div>
+  <p>Ten researchers each looked at business pain from one angle. Then five more studied the top 10 up close.</p>
+
+  <div class="funnel-wrap" style="margin:16px 0 8px">
+    <div class="funnel-row"><div class="n">85</div><div class="body"><div class="track"><div class="bar" style="width:100%"></div></div><div class="lbl">findings (a rough count) from 10 research angles</div></div></div>
+    <div class="funnel-row"><div class="n">72</div><div class="body"><div class="track"><div class="bar" style="width:84.7%"></div></div><div class="lbl">different problems, after removing repeats</div></div></div>
+    <div class="funnel-row"><div class="n">17</div><div class="body"><div class="track"><div class="bar" style="width:20%"></div></div><div class="lbl">passed all 6 tests</div></div></div>
+    <div class="funnel-row"><div class="n">10</div><div class="body"><div class="track"><div class="bar" style="width:11.8%"></div></div><div class="lbl">studied up close (cost, rivals, proof, buyers)</div></div></div>
+    <div class="funnel-row final"><div class="n">3</div><div class="body"><div class="track"><div class="bar" style="width:3.5%"></div></div><div class="lbl"><strong>best for Wanile</strong>, after using your team, time zone and halal rules</div></div></div>
+  </div>
+  <p class="tiny">Bar length shows the real count, so the drop is to scale.</p>
+
+  <div class="card">
+    <p style="margin:0"><strong>We searched blind on purpose.</strong> The researchers did not know who you are or what you like. Your background was used only at the very end, so it could not bend what we found.</p>
+  </div>
+
+  <div class="two">
+    <div class="col" style="background:var(--bad-b)"><h5 style="color:var(--bad-t)">41 thrown out</h5><ul><li>Failed at least one of the 6 tests</li></ul></div>
+    <div class="col" style="background:var(--paper)"><h5>14 parked</h5><ul><li>Passed, but scored lower than the top picks</li></ul></div>
+  </div>
+  <p class="small">On top of that, 18 new laws were checked and dropped. Courts cancelled some, some were delayed, and some only create work once a year.</p>
+</section>
+
+<!-- ===================== 10 LENSES ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">The 10 angles</div>
+  <h2>We looked at business pain from 10 sides</h2></div>
+  <p class="small">Each angle asks one simple question: where do companies lose money, time or customers every week?</p>
+  <div class="tiles">
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-people"/></svg><b>Hard jobs</b></div><p>Jobs companies cannot fill, or pay offshore teams to do by hand.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-leak"/></svg><b>Money leaks</b></div><p>Money that slips away: unpaid claims, short payments, missed refunds.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-doc"/></svg><b>Paperwork</b></div><p>PDFs, faxes and emails that someone retypes into a system.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-rules"/></svg><b>New rules</b></div><p>New laws from 2025 to 2027 that create new weekly work.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-speed"/></svg><b>Speed</b></div><p>Places where a slow reply loses the sale.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-sparkle"/></svg><b>Problems AI made</b></div><p>Fake invoices, fake photos, broken AI-built apps.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-badsw"/></svg><b>Bad software</b></div><p>Old or hated software that forces manual work.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-swap"/></svg><b>New owners</b></div><p>Companies being bought and merged that need clean numbers fast.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-growth"/></svg><b>Investor money</b></div><p>Where investors funded AI startups, and which customers those startups ignore.</p></div>
+    <div class="tile"><div class="hd"><svg class="icon"><use href="#i-demand"/></svg><b>Buyer posts</b></div><p>What buyers ask for and pay on Upwork and job boards.</p></div>
+  </div>
+</section>
+
+<!-- ===================== 6 TESTS ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">The 6 tests</div>
+  <h2>A problem only counted if it passed all 6</h2></div>
+  <div class="card line" style="padding:4px 14px">
+    <div class="test"><div class="n">1</div><p>It happens <strong>every week</strong>.</p></div>
+    <div class="test"><div class="n">2</div><p>It costs <strong>real money</strong> or customers.</p></div>
+    <div class="test"><div class="n">3</div><p>Someone <strong>already pays</strong> to deal with it (staff, outsourcing or software).</p></div>
+    <div class="test"><div class="n">4</div><p>The person who feels the pain <strong>can approve spending</strong>.</p></div>
+    <div class="test"><div class="n">5</div><p><strong>AI plus a human checker</strong> can do most of it today.</p></div>
+    <div class="test"><div class="n hot">6</div><p><strong>No cheap tool</strong> (under $100 a month) or free feature from Google, Microsoft, Meta, Salesforce, HubSpot or the main industry software already solves it.</p></div>
+  </div>
+  <div class="callout" style="border-left-color:var(--bad-t);background:var(--bad-b)">
+    <p><strong>Test 6 killed the most ideas.</strong> 30 of the 41 rejected problems failed because a cheap tool or a free feature already does the job.</p>
+  </div>
+</section>
+
+<!-- ===================== REJECTED ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">What we threw out</div>
+  <h2>41 ideas failed. Most because cheap software already does them.</h2></div>
+
+  <h4>Main reason each one failed</h4>
+  <div class="reason-row"><div class="top"><span>A cheap tool or free feature already does it</span><b>30</b></div><div class="track"><div class="bar" style="width:100%"></div></div></div>
+  <div class="reason-row minor"><div class="top"><span>Not weekly (monthly, yearly or one-time)</span><b>5</b></div><div class="track"><div class="bar" style="width:16.7%"></div></div></div>
+  <div class="reason-row minor"><div class="top"><span>No proof it costs real money</span><b>3</b></div><div class="track"><div class="bar" style="width:10%"></div></div></div>
+  <div class="reason-row minor"><div class="top"><span>Nobody pays for it today</span><b>1</b></div><div class="track"><div class="bar" style="width:3.3%"></div></div></div>
+  <div class="reason-row minor"><div class="top"><span>No one with a budget to say yes</span><b>1</b></div><div class="track"><div class="bar" style="width:3.3%"></div></div></div>
+  <div class="reason-row minor"><div class="top"><span>Mostly physical work AI cannot do</span><b>1</b></div><div class="track"><div class="bar" style="width:3.3%"></div></div></div>
+  <p class="tiny">Two of the 30 also had no proof of cost.</p>
+
+  <h4>Popular ideas that failed test 6</h4>
+  <div class="card line" style="padding:6px 14px">
+    <div class="law"><div class="k">AI phone receptionist</div><p>Tools from $29 to $99 a month already answer calls for plumbers and dentists.</p></div>
+    <div class="law"><div class="k">Bills into QuickBooks</div><p>Built in to QuickBooks, plus $12 to $39 add-ons and a free n8n template.</p></div>
+    <div class="law"><div class="k">Support chatbots</div><p>Help desk AI costs about $0.99 per solved ticket (not re-checked this time).</p></div>
+    <div class="law"><div class="k">Card chargebacks</div><p>Chargeflow takes 25% of wins with no minimum, and Stripe has dispute tools.</p></div>
+    <div class="law"><div class="k">Fake job candidates</div><p>Greenhouse now includes identity checks.</p></div>
+    <div class="law"><div class="k">AI video ads</div><p>Tools cost about $29 to $110 a month, and it sits close to deepfakes.</p></div>
+  </div>
+  <p class="small"><strong>Laws that turned out dead or far away:</strong> courts cancelled the FinCEN real estate rule and the FTC "click to cancel" rule. The US food tracing rule moved to 2028. Several others only create work once a year.</p>
+</section>
+
+<!-- ===================== TOP 10 VERDICTS ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">The top 10, up close</div>
+  <h2>Half of them got weaker when we looked closer</h2></div>
+  <p class="small">Listed by final score. Each has a label and an arrow, so you do not need the colors.</p>
+  <div class="card line" style="padding:2px 13px">
+    <div class="verdict"><span class="badge b-hold"><svg class="icon sm"><use href="#i-right"/></svg>Holds</span><div><div class="t">Monthly books for small company groups <span class="sc">46</span></div><p>Big salaries are paid for it. No one sells it as AI plus human for small groups.</p></div></div>
+    <div class="verdict"><span class="badge b-good"><svg class="icon sm"><use href="#i-up"/></svg>Stronger</span><div><div class="t">Australian client checks <span class="sc">45</span></div><p>The law went live in July 2026. Many firms are behind, and the regulator is sending letters.</p></div></div>
+    <div class="verdict"><span class="badge b-hold"><svg class="icon sm"><use href="#i-right"/></svg>Holds</span><div><div class="t">Insurance money doctors are owed <span class="sc">44</span></div><p>Best-proven pain of all. Very crowded, so only a narrow audit service fits.</p></div></div>
+    <div class="verdict"><span class="badge b-hold"><svg class="icon sm"><use href="#i-right"/></svg>Holds</span><div><div class="t">Fast price quotes for distributors <span class="sc">42</span></div><p>Big prize: faster quotes win more deals. But quotes must go out within hours in US daytime.</p></div></div>
+    <div class="verdict"><span class="badge b-bad"><svg class="icon sm"><use href="#i-down"/></svg>Weaker</span><div><div class="t">Short payments to food brands <span class="sc">40</span></div><p>A funded startup (Glimpse) already does this with AI plus a Philippines team.</p></div></div>
+    <div class="verdict"><span class="badge b-bad"><svg class="icon sm"><use href="#i-down"/></svg>Weaker</span><div><div class="t">Typing purchase orders <span class="sc">37</span></div><p>More than 15 software tools now do it for about $1 to $2 an order.</p></div></div>
+    <div class="verdict"><span class="badge b-mix"><svg class="icon sm"><use href="#i-wave"/></svg>Mixed</span><div><div class="t">Customs paperwork <span class="sc">36</span></div><p>Real pain from tariff changes. But US law keeps the records in the US, and refund work fades by late 2027.</p></div></div>
+    <div class="verdict"><span class="badge b-bad"><svg class="icon sm"><use href="#i-down"/></svg>Weaker</span><div><div class="t">Fake bank-change requests <span class="sc">34</span></div><p>Software comes with $1M loss guarantees, and checks must happen live in US hours.</p></div></div>
+    <div class="verdict"><span class="badge b-bad"><svg class="icon sm"><use href="#i-down"/></svg>Weaker</span><div><div class="t">AI-faked refund photos <span class="sc">33</span></div><p>Real, but the loss per brand is small. A $0 to $99 Shopify app blocks much of it.</p></div></div>
+    <div class="verdict"><span class="badge b-bad"><svg class="icon sm"><use href="#i-down"/></svg>Weaker</span><div><div class="t">Faxed patient referrals <span class="sc">31</span></div><p>Main healthcare software now reads faxes itself. Cheap tools cost about $2.75 a referral.</p></div></div>
+  </div>
+</section>
+
+<!-- ===================== SCORES ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Scoring against Wanile</div>
+  <h2>Final scores, out of 70</h2></div>
+  <p class="small">Each problem got 1 to 10 on seven things, then we added them up. Higher is always better.</p>
+
+  <div class="hbar">
+    <div class="hbar-row hi"><div class="name">Monthly books</div><div class="track"><div class="bar" style="width:calc(46 / 70 * 100%)"></div><div class="val">46</div></div></div>
+    <div class="hbar-row hi"><div class="name">AU client checks</div><div class="track"><div class="bar" style="width:calc(45 / 70 * 100%)"></div><div class="val">45</div></div></div>
+    <div class="hbar-row hi"><div class="name">Doctors' claims</div><div class="track"><div class="bar" style="width:calc(44 / 70 * 100%)"></div><div class="val">44</div></div></div>
+    <div class="hbar-row"><div class="name">Price quotes</div><div class="track"><div class="bar" style="width:calc(42 / 70 * 100%)"></div><div class="val">42</div></div></div>
+    <div class="hbar-row"><div class="name">Food brand payments</div><div class="track"><div class="bar" style="width:calc(40 / 70 * 100%)"></div><div class="val">40</div></div></div>
+    <div class="hbar-row"><div class="name">Purchase orders</div><div class="track"><div class="bar" style="width:calc(37 / 70 * 100%)"></div><div class="val">37</div></div></div>
+    <div class="hbar-row"><div class="name">Customs</div><div class="track"><div class="bar" style="width:calc(36 / 70 * 100%)"></div><div class="val">36</div></div></div>
+    <div class="hbar-row"><div class="name">Bank-change fraud</div><div class="track"><div class="bar" style="width:calc(34 / 70 * 100%)"></div><div class="val">34</div></div></div>
+    <div class="hbar-row"><div class="name">Refund photos</div><div class="track"><div class="bar" style="width:calc(33 / 70 * 100%)"></div><div class="val">33</div></div></div>
+    <div class="hbar-row"><div class="name">Fax referrals</div><div class="track"><div class="bar" style="width:calc(31 / 70 * 100%)"></div><div class="val">31</div></div></div>
+  </div>
+  <p class="tiny" style="margin-left:120px">Bars start at 0. Full width would be 70. Blue = the top 3.</p>
+
+  <h4>The seven scores behind each total</h4>
+  <table class="heat">
+    <colgroup><col style="width:27%"><col><col><col><col><col><col><col><col style="width:10%"></colgroup>
+    <tr><th class="rowh"></th><th>Pain</th><th>Pay</th><th>Reach</th><th>Few rivals</th><th>Lasts</th><th>Fit</th><th>Size</th><th>Total</th></tr>
+    <tr class="hi"><td class="rowh">Monthly books</td><td class="s7">7</td><td class="s8">8</td><td class="s6">6</td><td class="s4">4</td><td class="s6">6</td><td class="s9">9</td><td class="s6">6</td><td class="tot">46</td></tr>
+    <tr class="hi"><td class="rowh">AU checks</td><td class="s7">7</td><td class="s5">5</td><td class="s7">7</td><td class="s5">5</td><td class="s7">7</td><td class="s8">8</td><td class="s6">6</td><td class="tot">45</td></tr>
+    <tr class="hi"><td class="rowh">Doctors' claims</td><td class="s8">8</td><td class="s7">7</td><td class="s6">6</td><td class="s3">3</td><td class="s7">7</td><td class="s5">5</td><td class="s8">8</td><td class="tot">44</td></tr>
+    <tr><td class="rowh">Price quotes</td><td class="s8">8</td><td class="s6">6</td><td class="s5">5</td><td class="s5">5</td><td class="s7">7</td><td class="s4">4</td><td class="s7">7</td><td class="tot">42</td></tr>
+    <tr><td class="rowh">Food brands</td><td class="s7">7</td><td class="s7">7</td><td class="s6">6</td><td class="s3">3</td><td class="s5">5</td><td class="s7">7</td><td class="s5">5</td><td class="tot">40</td></tr>
+    <tr><td class="rowh">Purchase orders</td><td class="s6">6</td><td class="s6">6</td><td class="s6">6</td><td class="s3">3</td><td class="s3">3</td><td class="s6">6</td><td class="s7">7</td><td class="tot">37</td></tr>
+    <tr><td class="rowh">Customs</td><td class="s7">7</td><td class="s6">6</td><td class="s6">6</td><td class="s4">4</td><td class="s5">5</td><td class="s4">4</td><td class="s4">4</td><td class="tot">36</td></tr>
+    <tr><td class="rowh">Bank fraud</td><td class="s6">6</td><td class="s4">4</td><td class="s5">5</td><td class="s4">4</td><td class="s5">5</td><td class="s3">3</td><td class="s7">7</td><td class="tot">34</td></tr>
+    <tr><td class="rowh">Refund photos</td><td class="s4">4</td><td class="s3">3</td><td class="s5">5</td><td class="s5">5</td><td class="s5">5</td><td class="s6">6</td><td class="s5">5</td><td class="tot">33</td></tr>
+    <tr><td class="rowh">Fax referrals</td><td class="s6">6</td><td class="s5">5</td><td class="s5">5</td><td class="s3">3</td><td class="s3">3</td><td class="s3">3</td><td class="s6">6</td><td class="tot">31</td></tr>
+  </table>
+  <div class="keyrow"><span><b>Pay</b> = willing to pay</span><span><b>Reach</b> = easy to reach buyer</span><span><b>Lasts</b> = still needed as AI improves</span><span><b>Fit</b> = fits your team</span><span><b>Size</b> = market size</span><span>Darker blue = higher score</span></div>
+  <p class="tiny" style="margin-top:8px">These are judgement calls from the research, not exact measurements.</p>
+</section>
+
+<!-- ===================== CLOCK ===================== -->
+<section class="wrap pg">
+  <div class="head"><div class="kicker">Why the order changed</div>
+  <h2>Your clock decides a lot</h2></div>
+  <p class="small">The blue band is your normal workday in Lahore. The pale blocks are each city's office hours.</p>
+
+  <svg class="chart keep" viewBox="0 0 355 262" width="100%" role="img" aria-label="Lahore workday 9am to 6pm compared with New York and Sydney time">
+    <!-- work window band UTC 4 to 13 -->
+    <rect x="65.8" y="24" width="125.7" height="226" rx="8" fill="#2a78d6" fill-opacity="0.10" stroke="#2a78d6" stroke-opacity="0.55" stroke-dasharray="4 3"/>
+    <text x="128.6" y="16" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1c5cab">YOUR WORKDAY</text>
+
+    <!-- Lahore -->
+    <text x="10" y="50" font-size="12.5" font-weight="700" fill="#111827">Lahore</text>
+    <rect x="10" y="58" width="335" height="20" rx="4" fill="#eceef2"/>
+    <rect x="65.8" y="58" width="111.7" height="20" rx="3" fill="#b7d3f6"/>
+    <text x="65.8" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">9am</text>
+    <text x="191.5" y="94" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">6pm</text>
+
+    <!-- New York -->
+    <text x="10" y="124" font-size="12.5" font-weight="700" fill="#111827">New York</text>
+    <rect x="10" y="132" width="335" height="20" rx="4" fill="#eceef2"/>
+    <rect x="191.5" y="132" width="111.6" height="20" rx="3" fill="#b7d3f6"/>
+    <text x="247" y="146" text-anchor="middle" font-size="9.5" fill="#1d3f70">their office hours</text>
+    <text x="65.8" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">12am</text>
+    <text x="191.5" y="168" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">9am</text>
+    <text x="128.6" y="146" text-anchor="middle" font-size="9.5" fill="#464d5b">they sleep</text>
+
+    <!-- Sydney -->
+    <text x="10" y="198" font-size="12.5" font-weight="700" fill="#111827">Sydney</text>
+    <rect x="10" y="206" width="335" height="20" rx="4" fill="#eceef2"/>
+    <rect x="10" y="206" width="83.7" height="20" rx="3" fill="#b7d3f6"/>
+    <rect x="317.1" y="206" width="27.9" height="20" rx="3" fill="#b7d3f6"/>
+    <text x="65.8" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">3pm</text>
+    <text x="191.5" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="#111827">12am</text>
+    <text x="142" y="220" text-anchor="middle" font-size="9.5" fill="#464d5b">their evening</text>
+    <text x="37" y="220" text-anchor="middle" font-size="9.5" fill="#1d3f70">office</text>
+  </svg>
+
+  <div class="card" style="margin-top:6px">
+    <p style="margin:0 0 6px"><strong>New York:</strong> your day is their night. Work is ready when they wake up. Great for deadline work. Bad for anything live.</p>
+    <p style="margin:0"><strong>Sydney:</strong> your morning overlaps their afternoon, so you can talk live and still finish files overnight.</p>
+  </div>
+  <p class="tiny">New York shown in summer time. From 1 November 2026, New York is 10 hours behind Lahore, so its times move one hour earlier.</p>
+
+  <div class="two">
+    <div class="col ok"><h5><svg class="icon sm"><use href="#i-sun"/></svg>Fits your day</h5><ul><li>Monthly group books (due by day 10)</li><li>Australian client files</li><li>Insurance appeals and audits</li><li>Deduction disputes</li></ul></div>
+    <div class="col no"><h5><svg class="icon sm"><use href="#i-moon"/></svg>Needs night shifts</h5><ul><li>Price quotes within the hour</li><li>Live bank-change call-backs</li><li>Same-day patient intake</li><li>Truck and air customs</li></ul></div>
+  </div>
+</section>
+
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Why the order changed</div>
+  <h2>Where your team sits matters by law too</h2></div>
+  <div class="card line" style="padding:4px 14px">
+    <div class="law"><div class="k">US customs</div><p>Broker records must stay inside the US, and a licensed US broker must supervise. <strong>This pushed customs down to 7th.</strong></p></div>
+    <div class="law"><div class="k">US health data</div><p>US health privacy law (HIPAA) allows offshore work with a signed contract. But Texas Medicaid bars patient data leaving the US, Tennessee needs written consent, and some insurers ask for offshore forms.</p></div>
+    <div class="law"><div class="k">Defense parts</div><p>Defense drawings cannot be shown to foreign persons (ITAR). This hurt the price-quote idea for machine shops.</p></div>
+    <div class="law"><div class="k">Australia</div><p><span class="good">Good news.</span> Firms may rely on an outside team under a written agreement. The firm stays responsible, which is exactly a human-in-the-loop service.</p></div>
+    <div class="law"><div class="k">US data rule</div><p><span class="good">Good news.</span> The US rule on bulk personal data covers only six countries, and Pakistan is not one of them.</p></div>
+  </div>
+  <div class="callout">
+    <p><strong>That is why price quotes (42) fell to 4th place, even with the biggest dollar prize.</strong> Winning there means answering within an hour in US daytime, which is a night shift in Lahore.</p>
+  </div>
+</section>
+
+<!-- ===================== BET 1 ===================== -->
+<section class="wrap pg c1">
+  <div class="bet-head">
+    <div style="flex:1">
+      <div class="lbl">Bet 1 &middot; US</div>
+      <h2>Monthly books for groups of small companies</h2>
+    </div>
+    <div class="ring">
+      <svg viewBox="0 0 66 66"><circle cx="33" cy="33" r="27" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="6"/><circle cx="33" cy="33" r="27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="111.5 170"/></svg>
+      <div class="v">46<small>of 70</small></div>
+    </div>
+  </div>
+
+  <div class="oneline"><span class="q">What you sell, in one line</span>"Your group's month-end report, cleaned, checked and explained by day 10, signed by a named reviewer."</div>
+
+  <h3>What is going on</h3>
+  <p>Investment firms (private equity) buy one company. Then they keep buying small ones in the same trade: heating and cooling, vet clinics, dental, IT, accounting. <strong>74.9% of US buyouts so far in 2026 were these add-ons.</strong></p>
+  <p>Each new company comes with its own messy books. Every month, someone must join them all into one clean report for the owners. Tools like Fathom and Reach can add up the numbers, but only after a person has cleaned and matched every company's books first. <strong>That cleaning is the pain.</strong></p>
+
+  <h3>How the service works</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="dot">1</div><div class="box"><b>10 to 30 small companies</b><span>Each has its own QuickBooks or Xero books.</span></div></div>
+    <div class="flow-step you"><div class="dot">2</div><div class="box"><b>Your team cleans and matches</b><span>AI maps every account to one group list and flags odd numbers. Accountants fix the errors.</span></div></div>
+    <div class="flow-step you"><div class="dot">3</div><div class="box"><b>One group report, by day 10</b><span>With short comments on what changed and why.</span></div></div>
+    <div class="flow-step"><div class="dot">4</div><div class="box"><b>A named reviewer signs</b><span>The client approves the final numbers.</span></div></div>
+  </div>
+
+  <h3>Who pays, and what they pay today</h3>
+  <p class="small">The buyer is the group's CFO or controller, or the CEO in small groups. For people who just bought one business (first-time owners), it is the owner.</p>
+  <div class="stats">
+    <div class="stat"><b>$120K to $175K</b><span>a year for a group controller (2026 job posts)</span></div>
+    <div class="stat"><b>$6K to $25K</b><span>a month for a part-time CFO (seller's figure)</span></div>
+    <div class="stat"><b>$1.5K to $4K+</b><span>a month for outsourced multi-company bookkeeping (seller's figure)</span></div>
+  </div>
+
+  <div class="price">
+    <div class="tag">What you could charge (estimate, not tested yet)</div>
+    <div class="line"><span>Monthly base fee</span><b>$1,500</b></div>
+    <div class="line"><span>Per company, per month</span><b>$200 to $450</b></div>
+    <div class="line"><span>One-time, per new company added</span><b>$1,500 to $4,000</b></div>
+    <div class="line"><span>First-time owner (one company)</span><b>$1,200 to $2,500 / mo</b></div>
+    <div class="big">A 14-company group pays about $4,300 to $7,800 a month<small>10 such clients would be about $60K a month. That is still cheaper for them than hiring a controller (about $19K a month all-in).</small></div>
+  </div>
+
+  <h3>Why it fits Wanile</h3>
+  <ul class="bul">
+    <li><strong>Monthly deadline, not live work.</strong> Your day shift finishes while the US sleeps.</li>
+    <li><strong>You have built this before.</strong> It is the same kind of work as your bookkeeping agent for the Danish firm.</li>
+    <li><strong>The model is accepted.</strong> Offshore finance teams already serve these investment firms.</li>
+  </ul>
+
+  <h3>How to win clients without cold selling</h3>
+  <ul class="bul">
+    <li><strong>Free 72-hour check:</strong> rebuild last month's group report from their numbers and show what was off.</li>
+    <li><strong>Partner accountants</strong> listed in the Fathom, Reach and Intuit ProAdvisor directories. They sell tools, not the clean-up.</li>
+    <li><strong>ACG events</strong> (58 to 61 chapters) and the investors' operating partners, for referrals.</li>
+    <li><strong>SBA lenders and the SearchFunder community,</strong> for first-time owners.</li>
+  </ul>
+
+  <div class="warn">
+    <h5><svg class="icon sm"><use href="#i-alert"/></svg>Watch out for</h5>
+    <ul>
+      <li>It is getting crowded. One AI accounting group (Crete) plans to spend $500M+ buying accounting firms.</li>
+      <li>Each group may later hire its own controller or move to one system.</li>
+      <li>Buyers may want a SOC 2 security report and a US CPA name. Plan SOC 2 within 12 to 18 months, or partner with a small US CPA firm.</li>
+    </ul>
+  </div>
+  <div class="halal">
+    <h5><svg class="icon sm"><use href="#i-leaf"/></svg>Halal note (a flag, not a ruling)</h5>
+    <p>Most of these groups carry interest-bearing loans. Doing the company's own books is different from serving the lender. Leave out lender covenant certificates, and ask your scholar.</p>
+  </div>
+
+  <div class="test14">
+    <div class="t14head"><div class="ttl">Your 14-day test</div>
+    <div class="days"><div class="d1"><b>Days 1 to 4</b>Find 15 names</div><div class="d2"><b>Days 5 to 12</b>20-minute calls and the free 72-hour check</div><div class="d3"><b>Days 13 to 14</b>Score it</div></div></div>
+
+    <h4 style="margin-top:4px">Who to talk to</h4>
+    <p class="small">CFOs, finance heads and controllers at investor-owned groups with 5 to 30 sites. CEOs of companies just bought by a first-time owner (more than about $3M revenue). Plus 2 or 3 accountants and investors, as partner talks.</p>
+
+    <h4>How to find 15</h4>
+    <div class="find">
+      <div class="f"><div class="c">5</div><p>From live job posts for "holding company controller" or "multi-entity controller". Each one is about to spend $160K+ a year on this.</p></div>
+      <div class="f"><div class="c">5</div><p>From 2025 and 2026 press releases about a "platform investment" and its "first add-on". Pick groups with 5 to 30 sites, not the giants.</p></div>
+      <div class="f"><div class="c">5</div><p>First-time owners who announced a purchase in the last 6 months on SearchFunder or LinkedIn.</p></div>
+    </div>
+
+    <h4>The 5 questions</h4>
+    <ol class="qlist">
+      <li>Walk me through last month's close. How many companies, and what day did the report reach your investors?</li>
+      <li>Where did the hours go? Who did the clean-up, and how long did it take?</li>
+      <li>What do you pay for this today, in staff, outside bookkeepers, a part-time CFO and software?</li>
+      <li>What went wrong in the last two reports, and what did it cost you?</li>
+      <li>If an outside team did the first pass with accountant access (no power to make payments) and a named reviewer signed it, what would you need to see before saying yes?</li>
+    </ol>
+    <div class="pass"><div class="tag">Pass mark (my suggestion)</div><p>At least 5 of 15 confirm 60+ hours a month on this and $4K+ a month of spend today. At least 3 share real numbers for the free check.</p></div>
+  </div>
+</section>
+
+<!-- ===================== BET 2 ===================== -->
+<section class="wrap pg c2">
+  <div class="bet-head">
+    <div style="flex:1">
+      <div class="lbl">Bet 2 &middot; Australia</div>
+      <h2>Client checks for Australian law, accounting and real estate firms</h2>
+    </div>
+    <div class="ring">
+      <svg viewBox="0 0 66 66"><circle cx="33" cy="33" r="27" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="6"/><circle cx="33" cy="33" r="27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="109.1 170"/></svg>
+      <div class="v">45<small>of 70</small></div>
+    </div>
+  </div>
+
+  <div class="oneline"><span class="q">What you sell, in one line</span>"We prepare every client check, find who really owns the company or trust, re-check monthly and keep the records. Your compliance officer approves."</div>
+
+  <h3>What is going on</h3>
+  <p>Australia's money-laundering law (AML/CTF) used to cover mostly banks. <strong>Since 1 July 2026, it also covers lawyers, accountants, conveyancers and real estate agents.</strong> They must now check who every new client really is, and where the money comes from. The regulator, AUSTRAC, expects the businesses it watches to grow from about 19,000 to close to 100,000.</p>
+
+  <div class="stats">
+    <div class="stat"><b>About 50%</b><span>of accounting practices had signed up by the 29 July deadline. Real estate: 40%. Law firms: 12% to 14%.</span></div>
+    <div class="stat"><b>28 Aug 2026</b><span>AUSTRAC started sending formal notices to firms that had not signed up.</span></div>
+    <div class="stat"><b>Only 6%</b><span>of accountants surveyed felt on top of the rules (survey run by a software seller).</span></div>
+    <div class="stat"><b>A$23,250</b><span>a year: the government's own estimate of ongoing cost for an average small business.</span></div>
+  </div>
+
+  <h3>How the service works</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="dot">1</div><div class="box"><b>A new client walks in</b><span>A house sale, a new company or trust, or client money held in trust.</span></div></div>
+    <div class="flow-step"><div class="dot">2</div><div class="box"><b>The firm sends you the file</b><span>Under a written agreement, which the law allows.</span></div></div>
+    <div class="flow-step you"><div class="dot">3</div><div class="box"><b>Your desk does the checking</b><span>ID check, find the real owners, screen sanction lists, draft the risk rating.</span></div></div>
+    <div class="flow-step"><div class="dot">4</div><div class="box"><b>Their compliance officer approves</b><span>The law says this person must sit inside the firm.</span></div></div>
+    <div class="flow-step you"><div class="dot">5</div><div class="box"><b>You keep it current</b><span>Store the records and re-screen clients every month.</span></div></div>
+  </div>
+
+  <div class="price">
+    <div class="tag">What you could charge (estimate, not tested yet)</div>
+    <div class="line"><span>Per firm, per month</span><b>A$600 to A$1,500</b></div>
+    <div class="line"><span>Set-up or fixing their program</span><b>A$2,500 to A$5,000</b></div>
+    <div class="line"><span>Extra files above the plan</span><b>A$40 to A$120 each</b></div>
+    <div class="big">100 firms at A$800 = about US$52K a month<small>US dollars at an assumed rate of 1 AUD = 0.65 USD (not checked). Small price per firm, so it only works at volume.</small></div>
+  </div>
+
+  <h3>Why it fits Wanile</h3>
+  <ul class="bul">
+    <li><strong>Best clock match on the list.</strong> Your workday covers Sydney's afternoon and evening. Files sent after lunch are ready by morning.</li>
+    <li><strong>The law allows it.</strong> A firm may rely on an outside team under a written agreement.</li>
+    <li><strong>You have proof.</strong> Your compliance AI for a US bank and your legal AI are direct examples.</li>
+  </ul>
+
+  <h3>How to win clients without cold selling</h3>
+  <ul class="bul">
+    <li><strong>Free "AUSTRAC readiness check"</strong> on one real client file.</li>
+    <li><strong>Partners with no human service yet:</strong> a smaller state real estate institute, a practice software or forms vendor, law society referral lists, the Australian Institute of Conveyancers.</li>
+  </ul>
+  <p class="small">Note: this does not give you the first US client logo you want. It gives you revenue and a strong compliance case study to show US buyers.</p>
+
+  <div class="warn">
+    <h5><svg class="icon sm"><use href="#i-alert"/></svg>Watch out for</h5>
+    <ul>
+      <li>Small price per firm.</li>
+      <li>AUSTRAC promised not to chase small firms over small slips in year one.</li>
+      <li>Rivals sit inside tools firms already use: First AML is the real estate body's partner, and InfoTrack works with LEAP.</li>
+      <li>Cheap ID-check tools (from US$0.15 a check) and free law society templates.</li>
+      <li>Some firms will simply stop offering the covered services.</li>
+    </ul>
+  </div>
+  <div class="halal">
+    <h5><svg class="icon sm"><use href="#i-leaf"/></svg>Halal note (a flag, not a ruling)</h5>
+    <p>Do not take lenders, casinos or bookmakers as clients. Decide up front about precious-metal dealers. Most property sales use interest-based mortgages, which is worth asking your scholar about.</p>
+  </div>
+
+  <div class="test14">
+    <div class="t14head"><div class="ttl">Your 14-day test</div>
+    <div class="days"><div class="d1"><b>Days 1 to 4</b>Find 15 names</div><div class="d2"><b>Days 5 to 12</b>Calls and the free readiness check</div><div class="d3"><b>Days 13 to 14</b>Score it</div></div></div>
+
+    <h4 style="margin-top:4px">Who to talk to</h4>
+    <p class="small">Principals and practice managers (they are usually the compliance officer). Plus 2 partner talks: a state real estate institute and a practice software vendor.</p>
+
+    <h4>How to find 15</h4>
+    <div class="find">
+      <div class="f"><div class="c">5</div><p>Conveyancers from the Australian Institute of Conveyancers state directories. They are clearly covered.</p></div>
+      <div class="f"><div class="c">5</div><p>Small accounting firms that set up companies or trusts, from CPA Australia, CA ANZ or IPA "find an accountant" lists.</p></div>
+      <div class="f"><div class="c">5</div><p>Real estate agencies with 1 to 3 offices from REINSW, REIV or REIQ lists. An "ID check" page on their website is a pain signal.</p></div>
+    </div>
+    <p class="tiny">Directory access was not checked in this research.</p>
+
+    <h4>The 5 questions</h4>
+    <ol class="qlist">
+      <li>Have you signed up with AUSTRAC, and which of your services are covered?</li>
+      <li>Who is your compliance officer, and how many hours a month do client checks take now?</li>
+      <li>How many new covered clients a month, and how many are companies or trusts?</li>
+      <li>What do you use today (a template, First AML, InfoTrack, a consultant), and what does it cost?</li>
+      <li>Would you let an outside team prepare files if your compliance officer approves every risk rating? What would stop you?</li>
+    </ol>
+    <div class="pass"><div class="tag">Pass mark (my suggestion)</div><p>At least 5 of 15 spend 8+ hours a month on this. At least 3 would pay A$600+ a month. At least 1 partner wants a pilot.</p></div>
+  </div>
+</section>
+
+<!-- ===================== BET 3 ===================== -->
+<section class="wrap pg c3">
+  <div class="bet-head">
+    <div style="flex:1">
+      <div class="lbl">Bet 3 &middot; US</div>
+      <h2>Getting back money insurers did not pay doctors</h2>
+    </div>
+    <div class="ring">
+      <svg viewBox="0 0 66 66"><circle cx="33" cy="33" r="27" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="6"/><circle cx="33" cy="33" r="27" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-dasharray="106.6 170"/></svg>
+      <div class="v">44<small>of 70</small></div>
+    </div>
+  </div>
+
+  <div class="oneline"><span class="q">What you sell, in one line</span>"We check 90 days of paid claims against your insurance contracts and work the old denials nobody touched. You pay a share of what comes back."</div>
+
+  <h3>What is going on</h3>
+  <p>Insurers refuse some claims (a <strong>denial</strong>). On others they pay less than the contract says (an <strong>underpayment</strong>). Underpaid claims look "paid", so nobody checks them.</p>
+  <div class="stats">
+    <div class="stat"><b>48%</b><span>of practice leaders said denials are their biggest money leak (MGMA poll, January 2026).</span></div>
+    <div class="stat"><b>41%</b><span>of providers have denial rates of 10% or more (Experian, 2025).</span></div>
+    <div class="stat"><b>$9.6K to $22K</b><span>a month a 5-doctor practice may leave on the table (estimate).</span></div>
+  </div>
+
+  <h3>How the service works</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="dot">1</div><div class="box"><b>A billing company or practice shares data</b><span>90 days of paid claims, plus their insurance contracts.</span></div></div>
+    <div class="flow-step you"><div class="dot">2</div><div class="box"><b>AI compares paid vs. promised</b><span>It finds short payments and sorts the old denials.</span></div></div>
+    <div class="flow-step you"><div class="dot">3</div><div class="box"><b>Your team writes the appeals</b><span>Fix and resubmit. This part does not need live calls.</span></div></div>
+    <div class="flow-step"><div class="dot">4</div><div class="box"><b>Money comes back</b><span>You keep a share of what is recovered.</span></div></div>
+  </div>
+
+  <div class="price">
+    <div class="tag">How it makes money (estimate)</div>
+    <div class="line"><span>Direct to a practice</span><b>20% to 25% of money recovered</b></div>
+    <div class="line"><span>Through a billing company</span><b>about 10% to 15% (a guess)</b></div>
+    <div class="big">Up to $2,400 to $5,500 a month per practice<small>If you recover everything, at 25%. One billing company with 30 clients multiplies this. Today practices already pay billing firms 4% to 10% of collections, and denial firms 25%.</small></div>
+  </div>
+
+  <h3>Why it fits Wanile</h3>
+  <ul class="bul">
+    <li><strong>The work can wait for your day.</strong> Checking contracts and writing appeals do not need live calls.</li>
+    <li><strong>It sells through partners.</strong> The billing companies' association (HBMA) has nearly 500 member firms.</li>
+    <li><strong>The weak spot:</strong> you have no healthcare billing history yet. This is your weakest fit of the three.</li>
+  </ul>
+
+  <div class="warn">
+    <h5><svg class="icon sm"><use href="#i-alert"/></svg>Watch out for</h5>
+    <ul>
+      <li>Very crowded. athenahealth and WebPT launched AI denial tools in mid-2026. Commure/Athelas sells full billing to small practices.</li>
+      <li>Sign a business associate agreement (the HIPAA contract). Keep patient data on a US-hosted system with no local copies.</li>
+      <li>Avoid Texas and Tennessee Medicaid data unless consent is in place. Be ready for insurers' offshore forms.</li>
+      <li>No bots on insurer portals. Availity, a main portal, bans them.</li>
+    </ul>
+  </div>
+  <div class="halal">
+    <h5><svg class="icon sm"><use href="#i-leaf"/></svg>Halal note (a flag, not a ruling)</h5>
+    <p>The money comes from conventional insurers, and a share-of-recovery fee ties your income to insurer money. Please ask your scholar before you start.</p>
+  </div>
+
+  <div class="test14">
+    <div class="t14head"><div class="ttl">Your 14-day test</div>
+    <div class="days"><div class="d1"><b>Days 1 to 4</b>Find 15 names</div><div class="d2"><b>Days 5 to 12</b>Calls and a free 90-day audit offer</div><div class="d3"><b>Days 13 to 14</b>Score it</div></div></div>
+
+    <h4 style="margin-top:4px">Who to talk to</h4>
+    <p class="small">Owners and COOs of small billing companies (10 to 60 staff). Practice managers or billing managers at independent doctors' groups.</p>
+
+    <h4>How to find 15</h4>
+    <div class="find">
+      <div class="f"><div class="c">8</div><p>Small billing companies from the HBMA member list, state billing groups and LinkedIn searches for "medical billing company owner".</p></div>
+      <div class="f"><div class="c">7</div><p>Independent groups in eye care, orthopedics, ENT, foot care or physical therapy that are not on athenahealth or WebPT. Skip Texas and Tennessee Medicaid-heavy groups for now.</p></div>
+    </div>
+
+    <h4>The 5 questions</h4>
+    <ol class="qlist">
+      <li>What share of denials do you actually work, and what happens to the ones nobody touches?</li>
+      <li>Do you check payments against your contract rates today? How often, and who does it?</li>
+      <li>How many people work denials and follow-up, and where are they?</li>
+      <li>What do your client or insurer contracts say about offshore staff and patient data?</li>
+      <li>Would you pay a share of recovered money for a second-look audit of 90 days of claims, under your name? What share feels fair?</li>
+    </ol>
+    <div class="pass"><div class="tag">Pass mark (my suggestion)</div><p>At least 4 of 8 billing companies say they do not check underpayments properly. At least 2 agree to a free 90-day audit. None of the contracts you see bans offshore access.</p></div>
+  </div>
+</section>
+
+<!-- ===================== SURPRISES ===================== -->
+<section class="wrap pg">
+  <div class="head"><div class="kicker">Things you did not ask about</div>
+  <h2>3 surprises from the research</h2></div>
+
+  <div class="surp"><div class="n">1</div><div>
+    <div class="t">Your exact business model already has investor money behind it.</div>
+    <p>Glimpse, a funded startup, is hiring people in the Philippines to be "the expert human-in-the-loop" behind its AI. Y Combinator's 2026 wish list asks for AI-native agencies that sell finished work, not tools.</p>
+    <p><strong>So "AI plus humans" alone will not set you apart.</strong> Your edge must come from the niche you pick, the partners who send you work, and how trusted your security and compliance are.</p>
+  </div></div>
+
+  <div class="surp"><div class="n">2</div><div>
+    <div class="t">The famous new laws mostly died. The money is in boring rules with teeth.</div>
+    <p>Courts cancelled the FinCEN real estate rule and the FTC "click to cancel" rule. The food tracing rule slipped to 2028.</p>
+    <p><strong>The weekly work sits in rules where someone is already getting sued or warned.</strong> Washington's pay-transparency law has drawn 300+ class actions since June 2024. AUSTRAC is already mailing notices.</p>
+  </div></div>
+
+  <div class="surp"><div class="n">3</div><div>
+    <div class="t">Where your team sits matters by law, not just by time zone.</div>
+    <p>US customs records must stay in the US. Texas Medicaid bars patient data leaving the US. Defense drawings cannot be shown to foreign persons.</p>
+    <p><strong>But some doors are open:</strong> the US bulk data rule does not include Pakistan, and Australia openly allows outside client-check providers.</p>
+  </div></div>
+
+  <div class="card" style="margin-top:16px">
+    <p style="margin:0"><strong>One more:</strong> in February 2026 the US Supreme Court struck down a big set of tariffs. By mid-September, about $134.7B of refunds had been accepted. That created real paid work for customs firms, but it fades by late 2027.</p>
+  </div>
+</section>
+
+<!-- ===================== HALAL SUMMARY ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Halal check</div>
+  <h2>None of the top 3 is ruled out. The care is in which clients you take.</h2></div>
+  <p class="small">These are flags for your scholar, not rulings.</p>
+
+  <div class="card line" style="padding:4px 14px">
+    <div class="law"><div class="k" style="color:var(--blue-d)">Bet 1 Books</div><p>Groups usually carry interest-bearing loans. Do the company books. Leave out reports made for the lender (covenant certificates).</p></div>
+    <div class="law"><div class="k" style="color:var(--aqua-d)">Bet 2 AU checks</div><p>Turn away lenders, casinos and bookmakers as clients. Decide on precious-metal dealers. Property sales often use interest mortgages.</p></div>
+    <div class="law"><div class="k" style="color:var(--violet-d)">Bet 3 Claims</div><p>Income comes from conventional insurers, and the fee is a share of insurer money. Ask before starting. Avoid patient credit plans.</p></div>
+  </div>
+
+  <h4>Simple client screens for every bet</h4>
+  <ul class="bul">
+    <li>No alcohol-centred brands, importers or distributors.</li>
+    <li>No gambling, interest-based lending, adult content or prediction markets.</li>
+    <li>Never create fake images or deepfakes, not even to test a detector.</li>
+  </ul>
+</section>
+
+<!-- ===================== THIN EVIDENCE ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Be careful</div>
+  <h2>Where the proof is thin</h2></div>
+  <div class="warn" style="margin-top:4px">
+    <h5><svg class="icon sm"><use href="#i-alert"/></svg>How much to trust this</h5>
+    <ul>
+      <li>Almost every web page was blocked in this research, so the facts come from search result summaries, not full pages.</li>
+      <li>Most numbers come from companies that sell a fix.</li>
+      <li>There are very few real quotes from business owners.</li>
+      <li>Most hours and costs are my estimates, with the math shown in the full report.</li>
+    </ul>
+  </div>
+  <p><strong>Check the key numbers on the original page before you show them to a client.</strong></p>
+
+  <h3>What would change my mind</h3>
+  <div class="card line" style="padding:4px 14px">
+    <div class="law"><div class="k" style="color:var(--blue-d)">Bet 1</div><p>Drop it to 2nd if buyers insist on a US CPA firm, are happy with their current offshore team, or will not pay $200+ per company.</p></div>
+    <div class="law"><div class="k" style="color:var(--aqua-d)">Bet 2</div><p>Drop it if firm owners say free templates plus First AML or InfoTrack are enough, or if partners say no.</p></div>
+    <div class="law"><div class="k" style="color:var(--violet-d)">Bet 3</div><p>Drop it if billing companies see you as a rival, already check contracts, or their contracts ban offshore access.</p></div>
+  </div>
+
+  <h3>What could move up</h3>
+  <ul class="bul">
+    <li><strong>Price quotes</strong> beat Bet 3 if distributors accept next-morning quotes on big project bids, or if you add a US-hours closer.</li>
+    <li><strong>Food brand payments</strong> come back if regional grocers, club stores or non-food brands have pain Glimpse does not cover.</li>
+    <li><strong>Customs</strong> comes back if US customs confirms offshore staff may work inside a US-hosted system.</li>
+  </ul>
+  <p class="small"><strong>Never tested (no search budget left):</strong> phone and utility bill audits, missed software renewals, quote follow-up, tax refunds, failed card payments, matching customer payments, hiring screens, inbox triage. The UK was barely covered. A better problem could still be hiding there.</p>
+</section>
+
+<!-- ===================== NEXT STEPS ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">What to do next</div>
+  <h2>Your next 2 weeks</h2></div>
+  <ol class="todo">
+    <li><strong>Run Bet 1 and Bet 2 tests at the same time.</strong> Bet 1 is US and in USD. Bet 2 costs little and the clock favours you.</li>
+    <li><strong>Build the two free checks first:</strong> the 72-hour group report rebuild, and the one-file AUSTRAC readiness check. These are your demos.</li>
+    <li><strong>Find 15 names for each bet</strong> using the lists on the bet pages.</li>
+    <li><strong>Book 20-minute calls</strong> and ask the 5 questions. Write down hours, money spent today, and objections.</li>
+    <li><strong>On day 14, score against the pass marks.</strong> Keep the bet that passes. Start Bet 3 tests after that.</li>
+  </ol>
+  <div class="callout">
+    <p><strong>Start the trust work early.</strong> A SOC 2 report, written agreements, US-hosted systems and a named reviewer will win your first US client faster than a better AI agent will.</p>
+  </div>
+</section>
+
+<!-- ===================== GLOSSARY ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Words explained</div>
+  <h2>Simple meanings</h2></div>
+  <div class="gl"><b>Private equity (PE) group, or roll-up</b><span>An investment firm buys one company, then keeps buying small similar companies and joins them together.</span></div>
+  <div class="gl"><b>Add-on</b><span>Each smaller company bought after the first one.</span></div>
+  <div class="gl"><b>Monthly close</b><span>Finishing the month's books so the numbers are final.</span></div>
+  <div class="gl"><b>Consolidation</b><span>Adding every company's numbers into one group report.</span></div>
+  <div class="gl"><b>Chart of accounts</b><span>The list of categories a company uses in its books.</span></div>
+  <div class="gl"><b>First-time owner (search fund or SBA buyer)</b><span>A person who buys one small business, often with a loan from the SBA, a US government-backed loan program.</span></div>
+  <div class="gl"><b>AML/CTF</b><span>Rules against money laundering and terror financing.</span></div>
+  <div class="gl"><b>Client checks (CDD)</b><span>Checking who a client really is and where their money comes from.</span></div>
+  <div class="gl"><b>AUSTRAC</b><span>Australia's government body that enforces these rules.</span></div>
+  <div class="gl"><b>Denial / underpayment</b><span>The insurer refuses to pay a claim / pays less than the contract says.</span></div>
+  <div class="gl"><b>Share of recovery (contingency)</b><span>You only get paid a part of the money you win back.</span></div>
+  <div class="gl"><b>White-label</b><span>You do the work, but your partner sells it under their own name.</span></div>
+  <div class="gl"><b>Billing company</b><span>A firm that handles insurance billing for doctors.</span></div>
+  <div class="gl"><b>RFQ</b><span>Request for quote: a buyer asks for a price.</span></div>
+  <div class="gl"><b>ERP</b><span>A company's main business software for orders, stock and money.</span></div>
+  <div class="gl"><b>SOC 2</b><span>A security audit report US buyers often ask vendors for.</span></div>
+  <div class="gl"><b>HIPAA</b><span>The US law that protects patient data.</span></div>
+  <div class="gl"><b>ITAR</b><span>A US rule that controls who may see defense-related data.</span></div>
+</section>
+
+<!-- ===================== SOURCES ===================== -->
+<section class="wrap sec">
+  <div class="head"><div class="kicker">Key sources</div>
+  <h2>Where the main numbers come from</h2></div>
+  <p class="small">Tap a link to open it. The full report has about 200 more.</p>
+
+  <h4>Bet 1</h4>
+  <p class="src"><span class="w">Controller job post, up to $160K + bonus (Jan 2026):</span> <a href="https://host.pcrecruiter.net/pcrbin/jobboard/job/Controller/b/LAD7CGTS6ZMHSILH2XDSJU6XWBWSXRIDZTODGWAFRETOKJZZM7MA2LMN3SG5LUM3MWJVATBIU4">pcrecruiter.net</a></p>
+  <p class="src"><span class="w">Add-ons were 74.9% of US buyouts (PitchBook data):</span> <a href="https://www.claconnect.com/en/resources/blogs/private-equity/larger-deals-lift-us-private-equity-but-selectivity-still-matters">claconnect.com</a></p>
+  <p class="src"><span class="w">13,509 US PE-backed companies:</span> <a href="https://www.pennmutualam.com/market-insights/blogs/chart-of-the-week/2026-10-22-private-equitys-unsold-backlog-keeps-growing-as-exit-routes-narrow">pennmutualam.com</a></p>
+  <p class="src"><span class="w">Fathom needs each company imported first:</span> <a href="https://support.fathomhq.com/en/articles/999174">support.fathomhq.com</a></p>
+  <p class="src"><span class="w">Crete plans $500M+ of accounting firm buys:</span> <a href="https://finance.yahoo.com/news/thrive-backed-accounting-firm-crete-130200467.html">finance.yahoo.com</a></p>
+
+  <h4>Bet 2</h4>
+  <p class="src"><span class="w">Enrolment rates and AUSTRAC notices:</span> <a href="https://www.clydeco.com/en/insights/2026/08/austrac-takes-compliance-action-in-relation-to-tra">clydeco.com</a></p>
+  <p class="src"><span class="w">Firms may rely on an outside team:</span> <a href="https://www.austrac.gov.au/business/core-guidance/customer-identification-and-verification/reliance-customer-identification-procedures-third-party">austrac.gov.au</a></p>
+  <p class="src"><span class="w">From about 19,000 to close to 100,000 businesses:</span> <a href="https://www.austrac.gov.au/new-and-media/news/austrac-opens-enrolment-new-professions-next-step-aml-reforms">austrac.gov.au</a></p>
+  <p class="src"><span class="w">Only 6% of accountants on top of the rules:</span> <a href="https://www.accountingtimes.com.au/profession/access-group-warns-of-guidance-gap-ahead-of-tranche-2-aml-ctf">accountingtimes.com.au</a></p>
+  <p class="src"><span class="w">A$23,250 a year government cost estimate:</span> <a href="https://scantek.com/how-much-will-aml-ctf-tranche-2-compliance-cost-your-business/">scantek.com</a></p>
+
+  <h4>Bet 3</h4>
+  <p class="src"><span class="w">48% say denials are the biggest leak (MGMA):</span> <a href="https://www.physicianspractice.com/view/mgma-poll-denials-are-biggest-revenue-cycle-leak-for-medical-practices">physicianspractice.com</a></p>
+  <p class="src"><span class="w">Offshore patient data limits:</span> <a href="https://www.shumaker.com/insight/offshoring-patient-data-what-health-care-providers-need-to-know-now/">shumaker.com</a></p>
+  <p class="src"><span class="w">Availity bans portal bots:</span> <a href="https://essentials.availity.com/availity/documents/Availity_OAA.pdf">availity.com</a></p>
+  <p class="src"><span class="w">HBMA has nearly 500 member firms:</span> <a href="https://hbma.org/content/about/about-hbma">hbma.org</a></p>
+
+  <h4>Other key facts</h4>
+  <p class="src"><span class="w">US customs records must stay in the US:</span> <a href="https://www.law.cornell.edu/cfr/text/19/111.23">law.cornell.edu</a></p>
+  <p class="src"><span class="w">Glimpse hiring humans-in-the-loop:</span> <a href="https://ph.indeed.com/q-glimpse-jobs.html">ph.indeed.com</a></p>
+  <p class="src"><span class="w">Fast quotes win (distributor case study):</span> <a href="https://instalily.ai/case-studies/quoting-speed">instalily.ai</a></p>
+  <p class="src"><span class="w">Fax referral tool pricing:</span> <a href="https://www.capterra.com/p/215989/Medsender/pricing/">capterra.com</a></p>
+  <p class="src"><span class="w">IEEPA tariff refunds:</span> <a href="https://www.chrobinson.com/en-au/resources/insights-and-advisories/client-advisories/2026q3/09-17-26-cbp-cape-phase-3-ieepa-refunds/">chrobinson.com</a></p>
+
+  <p class="tiny" style="margin-top:14px">Made from the full research report "AI ops open problem discovery" (27 October 2026). Money in USD unless marked A$.</p>
+</section>
+
+</body>
+</html>
